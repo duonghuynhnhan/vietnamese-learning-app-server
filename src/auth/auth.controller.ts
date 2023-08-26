@@ -28,11 +28,10 @@ export class AuthController {
   async signIn(@Body() signInDto: SignInDto): Promise<SignInResponseDto> {
     try {
       const { username, password } = signInDto;
-
       const account = await this.accountService.getAccountByUsername(username);
 
       if (account && (await bcrypt.compare(password, account.password))) {
-        const payload: JwtPayload = { username: account.username, role: account.role };
+        const payload: JwtPayload = { id: account.id, username: account.username, role: account.role };
         const accessToken = await this.jwtService.sign(payload);
 
         return { accessToken };

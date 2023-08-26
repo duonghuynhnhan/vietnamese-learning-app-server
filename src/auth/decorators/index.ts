@@ -1,1 +1,1 @@
-export * from './getAccount.decorator';
+export * from './getCurentAccount.decorator';
