@@ -5,6 +5,7 @@ import { join } from 'path';
 import { configValidationSchema } from '../config/config.schema';
 import { AccountModule } from './account/account.module';
 import { AuthModule } from './auth/auth.module';
+import { FileModule } from './file/file.module';
 
 @Module({
   imports: [
@@ -17,6 +18,7 @@ import { AuthModule } from './auth/auth.module';
     }),
     AuthModule,
     AccountModule,
+    FileModule,
   ],
   controllers: [],
   providers: [],

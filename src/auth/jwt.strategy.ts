@@ -4,7 +4,7 @@ import { ConfigService } from '@nestjs/config';
 import { account } from '@prisma/client';
 import { JwtService } from '@nestjs/jwt';
 import { ExtractJwt, Strategy } from 'passport-jwt';
-import { ApiError } from 'src/api-response';
+import { ApiError } from 'src/api-responses';
 import { AccountService } from 'src/account/account.service';
 import { JwtPayload } from './interface/jwt-payload.interface';
 

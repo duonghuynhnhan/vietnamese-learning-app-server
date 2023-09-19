@@ -2,7 +2,7 @@ import { Body, Controller, Post } from '@nestjs/common';
 import { JwtService } from '@nestjs/jwt';
 import { ApiExtraModels, ApiOkResponse, ApiOperation, ApiTags, getSchemaPath } from '@nestjs/swagger';
 import * as bcrypt from 'bcrypt';
-import { ApiError } from 'src/api-response';
+import { ApiError } from 'src/api-responses';
 import { AccountService } from 'src/account/account.service';
 import { JwtPayload } from './interface';
 import { SignInDto, SignInResponseDto } from './dto';

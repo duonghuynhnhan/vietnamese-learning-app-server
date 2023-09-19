@@ -21,3 +21,23 @@ model account {
   updatedAt   String? @db.VarChar(25)
   deletedAt   String? @db.VarChar(25)
 }
+
+model lesson {
+  id String @id() @default(uuid())
+}
+
+model file {
+  id           String  @id @default(uuid())
+  fieldName    String  @db.VarChar(512)
+  originalName String  @db.VarChar(2000)
+  encoding     String  @db.VarChar(255)
+  mimeType     String  @db.VarChar(512)
+  fileName     String  @db.VarChar(512)
+  url          String  @db.VarChar(512)
+  size         BigInt
+  objectType   String? @db.VarChar(30)
+  objectId     String?
+
+  createdAt String  @db.VarChar(30)
+  deletedAt String? @db.VarChar(30)
+}

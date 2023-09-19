@@ -71,3 +71,14 @@ Nest is an MIT-licensed open source project. It can grow thanks to the sponsors 
 ## License
 
 Nest is [MIT licensed](LICENSE).
+
+## Build Local
+
+```bash
+docker pull mysql
+docker run --name mysql -p 3306:3306 -e MYSQL_ROOT_PASSWORD=password -d mysql --default-authentication-plugin=mysql_native_password
+docker pull phpmyadmin
+docker run --name phpmyadmin -d --link mysql:db -e PMA_HOST=172.17.0.2 -p 8080:80 phpmyadmin
+yarn prisma generate
+yarn prisma db seed
+```
