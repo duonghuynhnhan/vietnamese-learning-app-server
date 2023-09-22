@@ -1,5 +1,7 @@
 generator client {
-  provider = "prisma-client-js"
+  provider        = "prisma-client-js"
+  binaryTargets   = ["rhel-openssl-1.0.x", "native"]
+  previewFeatures = ["fullTextSearch", "fullTextIndex"]
 }
 
 datasource db {
@@ -8,35 +10,112 @@ datasource db {
 }
 
 model account {
-  id          String  @id() @default(uuid())
-  username    String  @unique
-  fullName    String  @db.VarChar(255)
-  email       String  @db.VarChar(255)
-  dob         String  @db.VarChar(25)
-  gender      String  @db.VarChar(10)
-  nationality String  @db.VarChar(255)
-  password    String  @db.VarChar(255)
-  role        String  @db.VarChar(10)
-  createdAt   String  @db.VarChar(25)
-  updatedAt   String? @db.VarChar(25)
-  deletedAt   String? @db.VarChar(25)
+  id       String @id() @default(uuid())
+  username String @unique
+  fullName String @db.VarChar(255)
+  email    String @db.VarChar(255)
+  dob      String @db.VarChar(25)
+  gender   String @db.VarChar(10)
+  phone    String @db.VarChar(20)
+  password String @db.VarChar(255)
+  role     String @db.VarChar(10)
+
+  createdAt String  @db.VarChar(30)
+  updatedAt String? @db.VarChar(30)
+  deletedAt String? @db.VarChar(30)
+
+  topicProgresses topic_progress[]
+
+  country   country @relation(fields: [countryId], references: [id])
+  countryId String  @db.VarChar(20)
+}
+
+model country {
+  id     String @id @db.VarChar(20)
+  name   String @db.VarChar(255)
+  nameEN String @db.VarChar(255)
+
+  createdAt String? @db.VarChar(30)
+  updatedAt String? @db.VarChar(30)
+  deletedAt String? @db.VarChar(30)
+
+  accounts account[]
+
+  @@fulltext([name, nameEN])
+}
+
+model topic {
+  id     String @id() @default(uuid())
+  name   String @db.VarChar(255)
+  avatar String @db.VarChar(255)
+
+  createdAt String  @db.VarChar(30)
+  updatedAt String? @db.VarChar(30)
+  deletedAt String? @db.VarChar(30)
+
+  lessons         lesson[]
+  topicProgresses topic_progress[]
 }
 
 model lesson {
-  id String @id() @default(uuid())
+  id           String @id() @default(uuid())
+  name         String @db.VarChar(255)
+  avatar       String @db.VarChar(255)
+  question     String @db.VarChar(255)
+  rightAnswer  String @db.VarChar(255)
+  wrongAnswer1 String @db.VarChar(255)
+  wrongAnswer2 String @db.VarChar(255)
+  wrongAnswer3 String @db.VarChar(255)
+
+  createdAt String  @db.VarChar(30)
+  updatedAt String? @db.VarChar(30)
+  deletedAt String? @db.VarChar(30)
+
+  lessonProgresses lesson_progress[]
+
+  topic   topic  @relation(fields: [topicId], references: [id])
+  topicId String
+}
+
+model topic_progress {
+  status   String @db.VarChar(255)
+  progress Int
+
+  lessonProgresses lesson_progress[]
+
+  account   account @relation(fields: [accountId], references: [id])
+  accountId String
+  topic     topic   @relation(fields: [topicId], references: [id])
+  topicId   String
+
+  @@id([accountId, topicId])
+}
+
+model lesson_progress {
+  status   String @db.VarChar(255)
+  progress Int
+
+  lesson                  lesson         @relation(fields: [lessonId], references: [id])
+  lessonId                String
+  topic_progress          topic_progress @relation(fields: [topic_progressAccountId, topic_progressTopicId], references: [accountId, topicId])
+  topic_progressAccountId String
+  topic_progressTopicId   String
+
+  @@id([topic_progressAccountId, lessonId, topic_progressTopicId])
 }
 
 model file {
-  id           String  @id @default(uuid())
-  fieldName    String  @db.VarChar(512)
-  originalName String  @db.VarChar(2000)
-  encoding     String  @db.VarChar(255)
-  mimeType     String  @db.VarChar(512)
-  fileName     String  @db.VarChar(512)
-  url          String  @db.VarChar(512)
+  id           String @id @default(uuid())
+  fieldName    String @db.VarChar(512)
+  originalName String @db.VarChar(2000)
+  encoding     String @db.VarChar(255)
+  mimeType     String @db.VarChar(512)
+  fileName     String @db.VarChar(512)
+  url          String @db.VarChar(512)
   size         BigInt
-  objectType   String? @db.VarChar(30)
-  objectId     String?
+
+  objectType String? @db.VarChar(30)
+  objectId   String?
 
   createdAt String  @db.VarChar(30)
   deletedAt String? @db.VarChar(30)

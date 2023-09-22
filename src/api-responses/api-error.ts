@@ -1,4 +1,6 @@
 const ERROR = {
+  '200': '',
+  '201': '',
   '300': 'Multiple Choices',
   '302': 'Found(Redirect)',
   '304': 'Not Modified',

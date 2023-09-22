@@ -1,0 +1,7052 @@
+[
+  {
+    "id": "001",
+    "name": "Ba Đình",
+    "nameEN": "Ba Dinh",
+    "fullName": "Quận Ba Đình",
+    "fullNameEN": "Ba Dinh District",
+    "codeName": "ba_dinh",
+    "provinceId": "01",
+    "administrativeUnitId": 5
+  },
+  {
+    "id": "002",
+    "name": "Hoàn Kiếm",
+    "nameEN": "Hoan Kiem",
+    "fullName": "Quận Hoàn Kiếm",
+    "fullNameEN": "Hoan Kiem District",
+    "codeName": "hoan_kiem",
+    "provinceId": "01",
+    "administrativeUnitId": 5
+  },
+  {
+    "id": "003",
+    "name": "Tây Hồ",
+    "nameEN": "Tay Ho",
+    "fullName": "Quận Tây Hồ",
+    "fullNameEN": "Tay Ho District",
+    "codeName": "tay_ho",
+    "provinceId": "01",
+    "administrativeUnitId": 5
+  },
+  {
+    "id": "004",
+    "name": "Long Biên",
+    "nameEN": "Long Bien",
+    "fullName": "Quận Long Biên",
+    "fullNameEN": "Long Bien District",
+    "codeName": "long_bien",
+    "provinceId": "01",
+    "administrativeUnitId": 5
+  },
+  {
+    "id": "005",
+    "name": "Cầu Giấy",
+    "nameEN": "Cau Giay",
+    "fullName": "Quận Cầu Giấy",
+    "fullNameEN": "Cau Giay District",
+    "codeName": "cau_giay",
+    "provinceId": "01",
+    "administrativeUnitId": 5
+  },
+  {
+    "id": "006",
+    "name": "Đống Đa",
+    "nameEN": "Dong Da",
+    "fullName": "Quận Đống Đa",
+    "fullNameEN": "Dong Da District",
+    "codeName": "dong_da",
+    "provinceId": "01",
+    "administrativeUnitId": 5
+  },
+  {
+    "id": "007",
+    "name": "Hai Bà Trưng",
+    "nameEN": "Hai Ba Trung",
+    "fullName": "Quận Hai Bà Trưng",
+    "fullNameEN": "Hai Ba Trung District",
+    "codeName": "hai_ba_trung",
+    "provinceId": "01",
+    "administrativeUnitId": 5
+  },
+  {
+    "id": "008",
+    "name": "Hoàng Mai",
+    "nameEN": "Hoang Mai",
+    "fullName": "Quận Hoàng Mai",
+    "fullNameEN": "Hoang Mai District",
+    "codeName": "hoang_mai",
+    "provinceId": "01",
+    "administrativeUnitId": 5
+  },
+  {
+    "id": "009",
+    "name": "Thanh Xuân",
+    "nameEN": "Thanh Xuan",
+    "fullName": "Quận Thanh Xuân",
+    "fullNameEN": "Thanh Xuan District",
+    "codeName": "thanh_xuan",
+    "provinceId": "01",
+    "administrativeUnitId": 5
+  },
+  {
+    "id": "016",
+    "name": "Sóc Sơn",
+    "nameEN": "Soc Son",
+    "fullName": "Huyện Sóc Sơn",
+    "fullNameEN": "Soc Son District",
+    "codeName": "soc_son",
+    "provinceId": "01",
+    "administrativeUnitId": 7
+  },
+  {
+    "id": "017",
+    "name": "Đông Anh",
+    "nameEN": "Dong Anh",
+    "fullName": "Huyện Đông Anh",
+    "fullNameEN": "Dong Anh District",
+    "codeName": "dong_anh",
+    "provinceId": "01",
+    "administrativeUnitId": 7
+  },
+  {
+    "id": "018",
+    "name": "Gia Lâm",
+    "nameEN": "Gia Lam",
+    "fullName": "Huyện Gia Lâm",
+    "fullNameEN": "Gia Lam District",
+    "codeName": "gia_lam",
+    "provinceId": "01",
+    "administrativeUnitId": 7
+  },
+  {
+    "id": "019",
+    "name": "Nam Từ Liêm",
+    "nameEN": "Nam Tu Liem",
+    "fullName": "Quận Nam Từ Liêm",
+    "fullNameEN": "Nam Tu Liem District",
+    "codeName": "nam_tu_liem",
+    "provinceId": "01",
+    "administrativeUnitId": 5
+  },
+  {
+    "id": "020",
+    "name": "Thanh Trì",
+    "nameEN": "Thanh Tri",
+    "fullName": "Huyện Thanh Trì",
+    "fullNameEN": "Thanh Tri District",
+    "codeName": "thanh_tri",
+    "provinceId": "01",
+    "administrativeUnitId": 7
+  },
+  {
+    "id": "021",
+    "name": "Bắc Từ Liêm",
+    "nameEN": "Bac Tu Liem",
+    "fullName": "Quận Bắc Từ Liêm",
+    "fullNameEN": "Bac Tu Liem District",
+    "codeName": "bac_tu_liem",
+    "provinceId": "01",
+    "administrativeUnitId": 5
+  },
+  {
+    "id": "024",
+    "name": "Hà Giang",
+    "nameEN": "Ha Giang",
+    "fullName": "Thành phố Hà Giang",
+    "fullNameEN": "Ha Giang City",
+    "codeName": "ha_giang",
+    "provinceId": "02",
+    "administrativeUnitId": 4
+  },
+  {
+    "id": "026",
+    "name": "Đồng Văn",
+    "nameEN": "Dong Van",
+    "fullName": "Huyện Đồng Văn",
+    "fullNameEN": "Dong Van District",
+    "codeName": "dong_van",
+    "provinceId": "02",
+    "administrativeUnitId": 7
+  },
+  {
+    "id": "027",
+    "name": "Mèo Vạc",
+    "nameEN": "Meo Vac",
+    "fullName": "Huyện Mèo Vạc",
+    "fullNameEN": "Meo Vac District",
+    "codeName": "meo_vac",
+    "provinceId": "02",
+    "administrativeUnitId": 7
+  },
+  {
+    "id": "028",
+    "name": "Yên Minh",
+    "nameEN": "Yen Minh",
+    "fullName": "Huyện Yên Minh",
+    "fullNameEN": "Yen Minh District",
+    "codeName": "yen_minh",
+    "provinceId": "02",
+    "administrativeUnitId": 7
+  },
+  {
+    "id": "029",
+    "name": "Quản Bạ",
+    "nameEN": "Quan Ba",
+    "fullName": "Huyện Quản Bạ",
+    "fullNameEN": "Quan Ba District",
+    "codeName": "quan_ba",
+    "provinceId": "02",
+    "administrativeUnitId": 7
+  },
+  {
+    "id": "030",
+    "name": "Vị Xuyên",
+    "nameEN": "Vi Xuyen",
+    "fullName": "Huyện Vị Xuyên",
+    "fullNameEN": "Vi Xuyen District",
+    "codeName": "vi_xuyen",
+    "provinceId": "02",
+    "administrativeUnitId": 7
+  },
+  {
+    "id": "031",
+    "name": "Bắc Mê",
+    "nameEN": "Bac Me",
+    "fullName": "Huyện Bắc Mê",
+    "fullNameEN": "Bac Me District",
+    "codeName": "bac_me",
+    "provinceId": "02",
+    "administrativeUnitId": 7
+  },
+  {
+    "id": "032",
+    "name": "Hoàng Su Phì",
+    "nameEN": "Hoang Su Phi",
+    "fullName": "Huyện Hoàng Su Phì",
+    "fullNameEN": "Hoang Su Phi District",
+    "codeName": "hoang_su_phi",
+    "provinceId": "02",
+    "administrativeUnitId": 7
+  },
+  {
+    "id": "033",
+    "name": "Xín Mần",
+    "nameEN": "Xin Man",
+    "fullName": "Huyện Xín Mần",
+    "fullNameEN": "Xin Man District",
+    "codeName": "xin_man",
+    "provinceId": "02",
+    "administrativeUnitId": 7
+  },
+  {
+    "id": "034",
+    "name": "Bắc Quang",
+    "nameEN": "Bac Quang",
+    "fullName": "Huyện Bắc Quang",
+    "fullNameEN": "Bac Quang District",
+    "codeName": "bac_quang",
+    "provinceId": "02",
+    "administrativeUnitId": 7
+  },
+  {
+    "id": "035",
+    "name": "Quang Bình",
+    "nameEN": "Quang Binh",
+    "fullName": "Huyện Quang Bình",
+    "fullNameEN": "Quang Binh District",
+    "codeName": "quang_binh",
+    "provinceId": "02",
+    "administrativeUnitId": 7
+  },
+  {
+    "id": "040",
+    "name": "Cao Bằng",
+    "nameEN": "Cao Bang",
+    "fullName": "Thành phố Cao Bằng",
+    "fullNameEN": "Cao Bang City",
+    "codeName": "cao_bang",
+    "provinceId": "04",
+    "administrativeUnitId": 4
+  },
+  {
+    "id": "042",
+    "name": "Bảo Lâm",
+    "nameEN": "Bao Lam",
+    "fullName": "Huyện Bảo Lâm",
+    "fullNameEN": "Bao Lam District",
+    "codeName": "bao_lam",
+    "provinceId": "04",
+    "administrativeUnitId": 7
+  },
+  {
+    "id": "043",
+    "name": "Bảo Lạc",
+    "nameEN": "Bao Lac",
+    "fullName": "Huyện Bảo Lạc",
+    "fullNameEN": "Bao Lac District",
+    "codeName": "bao_lac",
+    "provinceId": "04",
+    "administrativeUnitId": 7
+  },
+  {
+    "id": "045",
+    "name": "Hà Quảng",
+    "nameEN": "Ha Quang",
+    "fullName": "Huyện Hà Quảng",
+    "fullNameEN": "Ha Quang District",
+    "codeName": "ha_quang",
+    "provinceId": "04",
+    "administrativeUnitId": 7
+  },
+  {
+    "id": "047",
+    "name": "Trùng Khánh",
+    "nameEN": "Trung Khanh",
+    "fullName": "Huyện Trùng Khánh",
+    "fullNameEN": "Trung Khanh District",
+    "codeName": "trung_khanh",
+    "provinceId": "04",
+    "administrativeUnitId": 7
+  },
+  {
+    "id": "048",
+    "name": "Hạ Lang",
+    "nameEN": "Ha Lang",
+    "fullName": "Huyện Hạ Lang",
+    "fullNameEN": "Ha Lang District",
+    "codeName": "ha_lang",
+    "provinceId": "04",
+    "administrativeUnitId": 7
+  },
+  {
+    "id": "049",
+    "name": "Quảng Hòa",
+    "nameEN": "Quang Hoa",
+    "fullName": "Huyện Quảng Hòa",
+    "fullNameEN": "Quang Hoa District",
+    "codeName": "quang_hoa",
+    "provinceId": "04",
+    "administrativeUnitId": 7
+  },
+  {
+    "id": "051",
+    "name": "Hoà An",
+    "nameEN": "Hoa An",
+    "fullName": "Huyện Hoà An",
+    "fullNameEN": "Hoa An District",
+    "codeName": "hoa_an",
+    "provinceId": "04",
+    "administrativeUnitId": 7
+  },
+  {
+    "id": "052",
+    "name": "Nguyên Bình",
+    "nameEN": "Nguyen Binh",
+    "fullName": "Huyện Nguyên Bình",
+    "fullNameEN": "Nguyen Binh District",
+    "codeName": "nguyen_binh",
+    "provinceId": "04",
+    "administrativeUnitId": 7
+  },
+  {
+    "id": "053",
+    "name": "Thạch An",
+    "nameEN": "Thach An",
+    "fullName": "Huyện Thạch An",
+    "fullNameEN": "Thach An District",
+    "codeName": "thach_an",
+    "provinceId": "04",
+    "administrativeUnitId": 7
+  },
+  {
+    "id": "058",
+    "name": "Bắc Kạn",
+    "nameEN": "Bac Kan",
+    "fullName": "Thành phố Bắc Kạn",
+    "fullNameEN": "Bac Kan City",
+    "codeName": "bac_kan",
+    "provinceId": "06",
+    "administrativeUnitId": 4
+  },
+  {
+    "id": "060",
+    "name": "Pác Nặm",
+    "nameEN": "Pac Nam",
+    "fullName": "Huyện Pác Nặm",
+    "fullNameEN": "Pac Nam District",
+    "codeName": "pac_nam",
+    "provinceId": "06",
+    "administrativeUnitId": 7
+  },
+  {
+    "id": "061",
+    "name": "Ba Bể",
+    "nameEN": "Ba Be",
+    "fullName": "Huyện Ba Bể",
+    "fullNameEN": "Ba Be District",
+    "codeName": "ba_be",
+    "provinceId": "06",
+    "administrativeUnitId": 7
+  },
+  {
+    "id": "062",
+    "name": "Ngân Sơn",
+    "nameEN": "Ngan Son",
+    "fullName": "Huyện Ngân Sơn",
+    "fullNameEN": "Ngan Son District",
+    "codeName": "ngan_son",
+    "provinceId": "06",
+    "administrativeUnitId": 7
+  },
+  {
+    "id": "063",
+    "name": "Bạch Thông",
+    "nameEN": "Bach Thong",
+    "fullName": "Huyện Bạch Thông",
+    "fullNameEN": "Bach Thong District",
+    "codeName": "bach_thong",
+    "provinceId": "06",
+    "administrativeUnitId": 7
+  },
+  {
+    "id": "064",
+    "name": "Chợ Đồn",
+    "nameEN": "Cho Don",
+    "fullName": "Huyện Chợ Đồn",
+    "fullNameEN": "Cho Don District",
+    "codeName": "cho_don",
+    "provinceId": "06",
+    "administrativeUnitId": 7
+  },
+  {
+    "id": "065",
+    "name": "Chợ Mới",
+    "nameEN": "Cho Moi",
+    "fullName": "Huyện Chợ Mới",
+    "fullNameEN": "Cho Moi District",
+    "codeName": "cho_moi",
+    "provinceId": "06",
+    "administrativeUnitId": 7
+  },
+  {
+    "id": "066",
+    "name": "Na Rì",
+    "nameEN": "Na Ri",
+    "fullName": "Huyện Na Rì",
+    "fullNameEN": "Na Ri District",
+    "codeName": "na_ri",
+    "provinceId": "06",
+    "administrativeUnitId": 7
+  },
+  {
+    "id": "070",
+    "name": "Tuyên Quang",
+    "nameEN": "Tuyen Quang",
+    "fullName": "Thành phố Tuyên Quang",
+    "fullNameEN": "Tuyen Quang City",
+    "codeName": "tuyen_quang",
+    "provinceId": "08",
+    "administrativeUnitId": 4
+  },
+  {
+    "id": "071",
+    "name": "Lâm Bình",
+    "nameEN": "Lam Binh",
+    "fullName": "Huyện Lâm Bình",
+    "fullNameEN": "Lam Binh District",
+    "codeName": "lam_binh",
+    "provinceId": "08",
+    "administrativeUnitId": 7
+  },
+  {
+    "id": "072",
+    "name": "Na Hang",
+    "nameEN": "Na Hang",
+    "fullName": "Huyện Na Hang",
+    "fullNameEN": "Na Hang District",
+    "codeName": "na_hang",
+    "provinceId": "08",
+    "administrativeUnitId": 7
+  },
+  {
+    "id": "073",
+    "name": "Chiêm Hóa",
+    "nameEN": "Chiem Hoa",
+    "fullName": "Huyện Chiêm Hóa",
+    "fullNameEN": "Chiem Hoa District",
+    "codeName": "chiem_hoa",
+    "provinceId": "08",
+    "administrativeUnitId": 7
+  },
+  {
+    "id": "074",
+    "name": "Hàm Yên",
+    "nameEN": "Ham Yen",
+    "fullName": "Huyện Hàm Yên",
+    "fullNameEN": "Ham Yen District",
+    "codeName": "ham_yen",
+    "provinceId": "08",
+    "administrativeUnitId": 7
+  },
+  {
+    "id": "075",
+    "name": "Yên Sơn",
+    "nameEN": "Yen Son",
+    "fullName": "Huyện Yên Sơn",
+    "fullNameEN": "Yen Son District",
+    "codeName": "yen_son",
+    "provinceId": "08",
+    "administrativeUnitId": 7
+  },
+  {
+    "id": "076",
+    "name": "Sơn Dương",
+    "nameEN": "Son Duong",
+    "fullName": "Huyện Sơn Dương",
+    "fullNameEN": "Son Duong District",
+    "codeName": "son_duong",
+    "provinceId": "08",
+    "administrativeUnitId": 7
+  },
+  {
+    "id": "080",
+    "name": "Lào Cai",
+    "nameEN": "Lao Cai",
+    "fullName": "Thành phố Lào Cai",
+    "fullNameEN": "Lao Cai City",
+    "codeName": "lao_cai",
+    "provinceId": "10",
+    "administrativeUnitId": 4
+  },
+  {
+    "id": "082",
+    "name": "Bát Xát",
+    "nameEN": "Bat Xat",
+    "fullName": "Huyện Bát Xát",
+    "fullNameEN": "Bat Xat District",
+    "codeName": "bat_xat",
+    "provinceId": "10",
+    "administrativeUnitId": 7
+  },
+  {
+    "id": "083",
+    "name": "Mường Khương",
+    "nameEN": "Muong Khuong",
+    "fullName": "Huyện Mường Khương",
+    "fullNameEN": "Muong Khuong District",
+    "codeName": "muong_khuong",
+    "provinceId": "10",
+    "administrativeUnitId": 7
+  },
+  {
+    "id": "084",
+    "name": "Si Ma Cai",
+    "nameEN": "Si Ma Cai",
+    "fullName": "Huyện Si Ma Cai",
+    "fullNameEN": "Si Ma Cai District",
+    "codeName": "si_ma_cai",
+    "provinceId": "10",
+    "administrativeUnitId": 7
+  },
+  {
+    "id": "085",
+    "name": "Bắc Hà",
+    "nameEN": "Bac Ha",
+    "fullName": "Huyện Bắc Hà",
+    "fullNameEN": "Bac Ha District",
+    "codeName": "bac_ha",
+    "provinceId": "10",
+    "administrativeUnitId": 7
+  },
+  {
+    "id": "086",
+    "name": "Bảo Thắng",
+    "nameEN": "Bao Thang",
+    "fullName": "Huyện Bảo Thắng",
+    "fullNameEN": "Bao Thang District",
+    "codeName": "bao_thang",
+    "provinceId": "10",
+    "administrativeUnitId": 7
+  },
+  {
+    "id": "087",
+    "name": "Bảo Yên",
+    "nameEN": "Bao Yen",
+    "fullName": "Huyện Bảo Yên",
+    "fullNameEN": "Bao Yen District",
+    "codeName": "bao_yen",
+    "provinceId": "10",
+    "administrativeUnitId": 7
+  },
+  {
+    "id": "088",
+    "name": "Sa Pa",
+    "nameEN": "Sa Pa",
+    "fullName": "Thị xã Sa Pa",
+    "fullNameEN": "Sa Pa Town",
+    "codeName": "sa_pa",
+    "provinceId": "10",
+    "administrativeUnitId": 6
+  },
+  {
+    "id": "089",
+    "name": "Văn Bàn",
+    "nameEN": "Van Ban",
+    "fullName": "Huyện Văn Bàn",
+    "fullNameEN": "Van Ban District",
+    "codeName": "van_ban",
+    "provinceId": "10",
+    "administrativeUnitId": 7
+  },
+  {
+    "id": "094",
+    "name": "Điện Biên Phủ",
+    "nameEN": "Dien Bien Phu",
+    "fullName": "Thành phố Điện Biên Phủ",
+    "fullNameEN": "Dien Bien Phu City",
+    "codeName": "dien_bien_phu",
+    "provinceId": "11",
+    "administrativeUnitId": 4
+  },
+  {
+    "id": "095",
+    "name": "Mường Lay",
+    "nameEN": "Muong Lay",
+    "fullName": "Thị xã Mường Lay",
+    "fullNameEN": "Muong Lay Town",
+    "codeName": "muong_lay",
+    "provinceId": "11",
+    "administrativeUnitId": 6
+  },
+  {
+    "id": "096",
+    "name": "Mường Nhé",
+    "nameEN": "Muong Nhe",
+    "fullName": "Huyện Mường Nhé",
+    "fullNameEN": "Muong Nhe District",
+    "codeName": "muong_nhe",
+    "provinceId": "11",
+    "administrativeUnitId": 7
+  },
+  {
+    "id": "097",
+    "name": "Mường Chà",
+    "nameEN": "Muong Cha",
+    "fullName": "Huyện Mường Chà",
+    "fullNameEN": "Muong Cha District",
+    "codeName": "muong_cha",
+    "provinceId": "11",
+    "administrativeUnitId": 7
+  },
+  {
+    "id": "098",
+    "name": "Tủa Chùa",
+    "nameEN": "Tua Chua",
+    "fullName": "Huyện Tủa Chùa",
+    "fullNameEN": "Tua Chua District",
+    "codeName": "tua_chua",
+    "provinceId": "11",
+    "administrativeUnitId": 7
+  },
+  {
+    "id": "099",
+    "name": "Tuần Giáo",
+    "nameEN": "Tuan Giao",
+    "fullName": "Huyện Tuần Giáo",
+    "fullNameEN": "Tuan Giao District",
+    "codeName": "tuan_giao",
+    "provinceId": "11",
+    "administrativeUnitId": 7
+  },
+  {
+    "id": "100",
+    "name": "Điện Biên",
+    "nameEN": "Dien Bien",
+    "fullName": "Huyện Điện Biên",
+    "fullNameEN": "Dien Bien District",
+    "codeName": "dien_bien",
+    "provinceId": "11",
+    "administrativeUnitId": 7
+  },
+  {
+    "id": "101",
+    "name": "Điện Biên Đông",
+    "nameEN": "Dien Bien Dong",
+    "fullName": "Huyện Điện Biên Đông",
+    "fullNameEN": "Dien Bien Dong District",
+    "codeName": "dien_bien_dong",
+    "provinceId": "11",
+    "administrativeUnitId": 7
+  },
+  {
+    "id": "102",
+    "name": "Mường Ảng",
+    "nameEN": "Muong Ang",
+    "fullName": "Huyện Mường Ảng",
+    "fullNameEN": "Muong Ang District",
+    "codeName": "muong_ang",
+    "provinceId": "11",
+    "administrativeUnitId": 7
+  },
+  {
+    "id": "103",
+    "name": "Nậm Pồ",
+    "nameEN": "Nam Po",
+    "fullName": "Huyện Nậm Pồ",
+    "fullNameEN": "Nam Po District",
+    "codeName": "nam_po",
+    "provinceId": "11",
+    "administrativeUnitId": 7
+  },
+  {
+    "id": "105",
+    "name": "Lai Châu",
+    "nameEN": "Lai Chau",
+    "fullName": "Thành phố Lai Châu",
+    "fullNameEN": "Lai Chau City",
+    "codeName": "lai_chau",
+    "provinceId": "12",
+    "administrativeUnitId": 4
+  },
+  {
+    "id": "106",
+    "name": "Tam Đường",
+    "nameEN": "Tam Duong",
+    "fullName": "Huyện Tam Đường",
+    "fullNameEN": "Tam Duong District",
+    "codeName": "tam_duong",
+    "provinceId": "12",
+    "administrativeUnitId": 7
+  },
+  {
+    "id": "107",
+    "name": "Mường Tè",
+    "nameEN": "Muong Te",
+    "fullName": "Huyện Mường Tè",
+    "fullNameEN": "Muong Te District",
+    "codeName": "muong_te",
+    "provinceId": "12",
+    "administrativeUnitId": 7
+  },
+  {
+    "id": "108",
+    "name": "Sìn Hồ",
+    "nameEN": "Sin Ho",
+    "fullName": "Huyện Sìn Hồ",
+    "fullNameEN": "Sin Ho District",
+    "codeName": "sin_ho",
+    "provinceId": "12",
+    "administrativeUnitId": 7
+  },
+  {
+    "id": "109",
+    "name": "Phong Thổ",
+    "nameEN": "Phong Tho",
+    "fullName": "Huyện Phong Thổ",
+    "fullNameEN": "Phong Tho District",
+    "codeName": "phong_tho",
+    "provinceId": "12",
+    "administrativeUnitId": 7
+  },
+  {
+    "id": "110",
+    "name": "Than Uyên",
+    "nameEN": "Than Uyen",
+    "fullName": "Huyện Than Uyên",
+    "fullNameEN": "Than Uyen District",
+    "codeName": "than_uyen",
+    "provinceId": "12",
+    "administrativeUnitId": 7
+  },
+  {
+    "id": "111",
+    "name": "Tân Uyên",
+    "nameEN": "Tan Uyen",
+    "fullName": "Huyện Tân Uyên",
+    "fullNameEN": "Tan Uyen District",
+    "codeName": "tan_uyen",
+    "provinceId": "12",
+    "administrativeUnitId": 7
+  },
+  {
+    "id": "112",
+    "name": "Nậm Nhùn",
+    "nameEN": "Nam Nhun",
+    "fullName": "Huyện Nậm Nhùn",
+    "fullNameEN": "Nam Nhun District",
+    "codeName": "nam_nhun",
+    "provinceId": "12",
+    "administrativeUnitId": 7
+  },
+  {
+    "id": "116",
+    "name": "Sơn La",
+    "nameEN": "Son La",
+    "fullName": "Thành phố Sơn La",
+    "fullNameEN": "Son La City",
+    "codeName": "son_la",
+    "provinceId": "14",
+    "administrativeUnitId": 4
+  },
+  {
+    "id": "118",
+    "name": "Quỳnh Nhai",
+    "nameEN": "Quynh Nhai",
+    "fullName": "Huyện Quỳnh Nhai",
+    "fullNameEN": "Quynh Nhai District",
+    "codeName": "quynh_nhai",
+    "provinceId": "14",
+    "administrativeUnitId": 7
+  },
+  {
+    "id": "119",
+    "name": "Thuận Châu",
+    "nameEN": "Thuan Chau",
+    "fullName": "Huyện Thuận Châu",
+    "fullNameEN": "Thuan Chau District",
+    "codeName": "thuan_chau",
+    "provinceId": "14",
+    "administrativeUnitId": 7
+  },
+  {
+    "id": "120",
+    "name": "Mường La",
+    "nameEN": "Muong La",
+    "fullName": "Huyện Mường La",
+    "fullNameEN": "Muong La District",
+    "codeName": "muong_la",
+    "provinceId": "14",
+    "administrativeUnitId": 7
+  },
+  {
+    "id": "121",
+    "name": "Bắc Yên",
+    "nameEN": "Bac Yen",
+    "fullName": "Huyện Bắc Yên",
+    "fullNameEN": "Bac Yen District",
+    "codeName": "bac_yen",
+    "provinceId": "14",
+    "administrativeUnitId": 7
+  },
+  {
+    "id": "122",
+    "name": "Phù Yên",
+    "nameEN": "Phu Yen",
+    "fullName": "Huyện Phù Yên",
+    "fullNameEN": "Phu Yen District",
+    "codeName": "phu_yen",
+    "provinceId": "14",
+    "administrativeUnitId": 7
+  },
+  {
+    "id": "123",
+    "name": "Mộc Châu",
+    "nameEN": "Moc Chau",
+    "fullName": "Huyện Mộc Châu",
+    "fullNameEN": "Moc Chau District",
+    "codeName": "moc_chau",
+    "provinceId": "14",
+    "administrativeUnitId": 7
+  },
+  {
+    "id": "124",
+    "name": "Yên Châu",
+    "nameEN": "Yen Chau",
+    "fullName": "Huyện Yên Châu",
+    "fullNameEN": "Yen Chau District",
+    "codeName": "yen_chau",
+    "provinceId": "14",
+    "administrativeUnitId": 7
+  },
+  {
+    "id": "125",
+    "name": "Mai Sơn",
+    "nameEN": "Mai Son",
+    "fullName": "Huyện Mai Sơn",
+    "fullNameEN": "Mai Son District",
+    "codeName": "mai_son",
+    "provinceId": "14",
+    "administrativeUnitId": 7
+  },
+  {
+    "id": "126",
+    "name": "Sông Mã",
+    "nameEN": "Song Ma",
+    "fullName": "Huyện Sông Mã",
+    "fullNameEN": "Song Ma District",
+    "codeName": "song_ma",
+    "provinceId": "14",
+    "administrativeUnitId": 7
+  },
+  {
+    "id": "127",
+    "name": "Sốp Cộp",
+    "nameEN": "Sop Cop",
+    "fullName": "Huyện Sốp Cộp",
+    "fullNameEN": "Sop Cop District",
+    "codeName": "sop_cop",
+    "provinceId": "14",
+    "administrativeUnitId": 7
+  },
+  {
+    "id": "128",
+    "name": "Vân Hồ",
+    "nameEN": "Van Ho",
+    "fullName": "Huyện Vân Hồ",
+    "fullNameEN": "Van Ho District",
+    "codeName": "van_ho",
+    "provinceId": "14",
+    "administrativeUnitId": 7
+  },
+  {
+    "id": "132",
+    "name": "Yên Bái",
+    "nameEN": "Yen Bai",
+    "fullName": "Thành phố Yên Bái",
+    "fullNameEN": "Yen Bai City",
+    "codeName": "yen_bai",
+    "provinceId": "15",
+    "administrativeUnitId": 4
+  },
+  {
+    "id": "133",
+    "name": "Nghĩa Lộ",
+    "nameEN": "Nghia Lo",
+    "fullName": "Thị xã Nghĩa Lộ",
+    "fullNameEN": "Nghia Lo Town",
+    "codeName": "nghia_lo",
+    "provinceId": "15",
+    "administrativeUnitId": 6
+  },
+  {
+    "id": "135",
+    "name": "Lục Yên",
+    "nameEN": "Luc Yen",
+    "fullName": "Huyện Lục Yên",
+    "fullNameEN": "Luc Yen District",
+    "codeName": "luc_yen",
+    "provinceId": "15",
+    "administrativeUnitId": 7
+  },
+  {
+    "id": "136",
+    "name": "Văn Yên",
+    "nameEN": "Van Yen",
+    "fullName": "Huyện Văn Yên",
+    "fullNameEN": "Van Yen District",
+    "codeName": "van_yen",
+    "provinceId": "15",
+    "administrativeUnitId": 7
+  },
+  {
+    "id": "137",
+    "name": "Mù Căng Chải",
+    "nameEN": "Mu Cang Chai",
+    "fullName": "Huyện Mù Căng Chải",
+    "fullNameEN": "Mu Cang Chai District",
+    "codeName": "mu_cang_chai",
+    "provinceId": "15",
+    "administrativeUnitId": 7
+  },
+  {
+    "id": "138",
+    "name": "Trấn Yên",
+    "nameEN": "Tran Yen",
+    "fullName": "Huyện Trấn Yên",
+    "fullNameEN": "Tran Yen District",
+    "codeName": "tran_yen",
+    "provinceId": "15",
+    "administrativeUnitId": 7
+  },
+  {
+    "id": "139",
+    "name": "Trạm Tấu",
+    "nameEN": "Tram Tau",
+    "fullName": "Huyện Trạm Tấu",
+    "fullNameEN": "Tram Tau District",
+    "codeName": "tram_tau",
+    "provinceId": "15",
+    "administrativeUnitId": 7
+  },
+  {
+    "id": "140",
+    "name": "Văn Chấn",
+    "nameEN": "Van Chan",
+    "fullName": "Huyện Văn Chấn",
+    "fullNameEN": "Van Chan District",
+    "codeName": "van_chan",
+    "provinceId": "15",
+    "administrativeUnitId": 7
+  },
+  {
+    "id": "141",
+    "name": "Yên Bình",
+    "nameEN": "Yen Binh",
+    "fullName": "Huyện Yên Bình",
+    "fullNameEN": "Yen Binh District",
+    "codeName": "yen_binh",
+    "provinceId": "15",
+    "administrativeUnitId": 7
+  },
+  {
+    "id": "148",
+    "name": "Hòa Bình",
+    "nameEN": "Hoa Binh",
+    "fullName": "Thành phố Hòa Bình",
+    "fullNameEN": "Hoa Binh City",
+    "codeName": "hoa_binh",
+    "provinceId": "17",
+    "administrativeUnitId": 4
+  },
+  {
+    "id": "150",
+    "name": "Đà Bắc",
+    "nameEN": "Da Bac",
+    "fullName": "Huyện Đà Bắc",
+    "fullNameEN": "Da Bac District",
+    "codeName": "da_bac",
+    "provinceId": "17",
+    "administrativeUnitId": 7
+  },
+  {
+    "id": "152",
+    "name": "Lương Sơn",
+    "nameEN": "Luong Son",
+    "fullName": "Huyện Lương Sơn",
+    "fullNameEN": "Luong Son District",
+    "codeName": "luong_son",
+    "provinceId": "17",
+    "administrativeUnitId": 7
+  },
+  {
+    "id": "153",
+    "name": "Kim Bôi",
+    "nameEN": "Kim Boi",
+    "fullName": "Huyện Kim Bôi",
+    "fullNameEN": "Kim Boi District",
+    "codeName": "kim_boi",
+    "provinceId": "17",
+    "administrativeUnitId": 7
+  },
+  {
+    "id": "154",
+    "name": "Cao Phong",
+    "nameEN": "Cao Phong",
+    "fullName": "Huyện Cao Phong",
+    "fullNameEN": "Cao Phong District",
+    "codeName": "cao_phong",
+    "provinceId": "17",
+    "administrativeUnitId": 7
+  },
+  {
+    "id": "155",
+    "name": "Tân Lạc",
+    "nameEN": "Tan Lac",
+    "fullName": "Huyện Tân Lạc",
+    "fullNameEN": "Tan Lac District",
+    "codeName": "tan_lac",
+    "provinceId": "17",
+    "administrativeUnitId": 7
+  },
+  {
+    "id": "156",
+    "name": "Mai Châu",
+    "nameEN": "Mai Chau",
+    "fullName": "Huyện Mai Châu",
+    "fullNameEN": "Mai Chau District",
+    "codeName": "mai_chau",
+    "provinceId": "17",
+    "administrativeUnitId": 7
+  },
+  {
+    "id": "157",
+    "name": "Lạc Sơn",
+    "nameEN": "Lac Son",
+    "fullName": "Huyện Lạc Sơn",
+    "fullNameEN": "Lac Son District",
+    "codeName": "lac_son",
+    "provinceId": "17",
+    "administrativeUnitId": 7
+  },
+  {
+    "id": "158",
+    "name": "Yên Thủy",
+    "nameEN": "Yen Thuy",
+    "fullName": "Huyện Yên Thủy",
+    "fullNameEN": "Yen Thuy District",
+    "codeName": "yen_thuy",
+    "provinceId": "17",
+    "administrativeUnitId": 7
+  },
+  {
+    "id": "159",
+    "name": "Lạc Thủy",
+    "nameEN": "Lac Thuy",
+    "fullName": "Huyện Lạc Thủy",
+    "fullNameEN": "Lac Thuy District",
+    "codeName": "lac_thuy",
+    "provinceId": "17",
+    "administrativeUnitId": 7
+  },
+  {
+    "id": "164",
+    "name": "Thái Nguyên",
+    "nameEN": "Thai Nguyen",
+    "fullName": "Thành phố Thái Nguyên",
+    "fullNameEN": "Thai Nguyen City",
+    "codeName": "thai_nguyen",
+    "provinceId": "19",
+    "administrativeUnitId": 4
+  },
+  {
+    "id": "165",
+    "name": "Sông Công",
+    "nameEN": "Song Cong",
+    "fullName": "Thành phố Sông Công",
+    "fullNameEN": "Song Cong City",
+    "codeName": "song_cong",
+    "provinceId": "19",
+    "administrativeUnitId": 4
+  },
+  {
+    "id": "167",
+    "name": "Định Hóa",
+    "nameEN": "Dinh Hoa",
+    "fullName": "Huyện Định Hóa",
+    "fullNameEN": "Dinh Hoa District",
+    "codeName": "dinh_hoa",
+    "provinceId": "19",
+    "administrativeUnitId": 7
+  },
+  {
+    "id": "168",
+    "name": "Phú Lương",
+    "nameEN": "Phu Luong",
+    "fullName": "Huyện Phú Lương",
+    "fullNameEN": "Phu Luong District",
+    "codeName": "phu_luong",
+    "provinceId": "19",
+    "administrativeUnitId": 7
+  },
+  {
+    "id": "169",
+    "name": "Đồng Hỷ",
+    "nameEN": "Dong Hy",
+    "fullName": "Huyện Đồng Hỷ",
+    "fullNameEN": "Dong Hy District",
+    "codeName": "dong_hy",
+    "provinceId": "19",
+    "administrativeUnitId": 7
+  },
+  {
+    "id": "170",
+    "name": "Võ Nhai",
+    "nameEN": "Vo Nhai",
+    "fullName": "Huyện Võ Nhai",
+    "fullNameEN": "Vo Nhai District",
+    "codeName": "vo_nhai",
+    "provinceId": "19",
+    "administrativeUnitId": 7
+  },
+  {
+    "id": "171",
+    "name": "Đại Từ",
+    "nameEN": "Dai Tu",
+    "fullName": "Huyện Đại Từ",
+    "fullNameEN": "Dai Tu District",
+    "codeName": "dai_tu",
+    "provinceId": "19",
+    "administrativeUnitId": 7
+  },
+  {
+    "id": "172",
+    "name": "Phổ Yên",
+    "nameEN": "Pho Yen",
+    "fullName": "Thành phố Phổ Yên",
+    "fullNameEN": "Pho Yen City",
+    "codeName": "pho_yen",
+    "provinceId": "19",
+    "administrativeUnitId": 4
+  },
+  {
+    "id": "173",
+    "name": "Phú Bình",
+    "nameEN": "Phu Binh",
+    "fullName": "Huyện Phú Bình",
+    "fullNameEN": "Phu Binh District",
+    "codeName": "phu_binh",
+    "provinceId": "19",
+    "administrativeUnitId": 7
+  },
+  {
+    "id": "178",
+    "name": "Lạng Sơn",
+    "nameEN": "Lang Son",
+    "fullName": "Thành phố Lạng Sơn",
+    "fullNameEN": "Lang Son City",
+    "codeName": "lang_son",
+    "provinceId": "20",
+    "administrativeUnitId": 4
+  },
+  {
+    "id": "180",
+    "name": "Tràng Định",
+    "nameEN": "Trang Dinh",
+    "fullName": "Huyện Tràng Định",
+    "fullNameEN": "Trang Dinh District",
+    "codeName": "trang_dinh",
+    "provinceId": "20",
+    "administrativeUnitId": 7
+  },
+  {
+    "id": "181",
+    "name": "Bình Gia",
+    "nameEN": "Binh Gia",
+    "fullName": "Huyện Bình Gia",
+    "fullNameEN": "Binh Gia District",
+    "codeName": "binh_gia",
+    "provinceId": "20",
+    "administrativeUnitId": 7
+  },
+  {
+    "id": "182",
+    "name": "Văn Lãng",
+    "nameEN": "Van Lang",
+    "fullName": "Huyện Văn Lãng",
+    "fullNameEN": "Van Lang District",
+    "codeName": "van_lang",
+    "provinceId": "20",
+    "administrativeUnitId": 7
+  },
+  {
+    "id": "183",
+    "name": "Cao Lộc",
+    "nameEN": "Cao Loc",
+    "fullName": "Huyện Cao Lộc",
+    "fullNameEN": "Cao Loc District",
+    "codeName": "cao_loc",
+    "provinceId": "20",
+    "administrativeUnitId": 7
+  },
+  {
+    "id": "184",
+    "name": "Văn Quan",
+    "nameEN": "Van Quan",
+    "fullName": "Huyện Văn Quan",
+    "fullNameEN": "Van Quan District",
+    "codeName": "van_quan",
+    "provinceId": "20",
+    "administrativeUnitId": 7
+  },
+  {
+    "id": "185",
+    "name": "Bắc Sơn",
+    "nameEN": "Bac Son",
+    "fullName": "Huyện Bắc Sơn",
+    "fullNameEN": "Bac Son District",
+    "codeName": "bac_son",
+    "provinceId": "20",
+    "administrativeUnitId": 7
+  },
+  {
+    "id": "186",
+    "name": "Hữu Lũng",
+    "nameEN": "Huu Lung",
+    "fullName": "Huyện Hữu Lũng",
+    "fullNameEN": "Huu Lung District",
+    "codeName": "huu_lung",
+    "provinceId": "20",
+    "administrativeUnitId": 7
+  },
+  {
+    "id": "187",
+    "name": "Chi Lăng",
+    "nameEN": "Chi Lang",
+    "fullName": "Huyện Chi Lăng",
+    "fullNameEN": "Chi Lang District",
+    "codeName": "chi_lang",
+    "provinceId": "20",
+    "administrativeUnitId": 7
+  },
+  {
+    "id": "188",
+    "name": "Lộc Bình",
+    "nameEN": "Loc Binh",
+    "fullName": "Huyện Lộc Bình",
+    "fullNameEN": "Loc Binh District",
+    "codeName": "loc_binh",
+    "provinceId": "20",
+    "administrativeUnitId": 7
+  },
+  {
+    "id": "189",
+    "name": "Đình Lập",
+    "nameEN": "Dinh Lap",
+    "fullName": "Huyện Đình Lập",
+    "fullNameEN": "Dinh Lap District",
+    "codeName": "dinh_lap",
+    "provinceId": "20",
+    "administrativeUnitId": 7
+  },
+  {
+    "id": "193",
+    "name": "Hạ Long",
+    "nameEN": "Ha Long",
+    "fullName": "Thành phố Hạ Long",
+    "fullNameEN": "Ha Long City",
+    "codeName": "ha_long",
+    "provinceId": "22",
+    "administrativeUnitId": 4
+  },
+  {
+    "id": "194",
+    "name": "Móng Cái",
+    "nameEN": "Mong Cai",
+    "fullName": "Thành phố Móng Cái",
+    "fullNameEN": "Mong Cai City",
+    "codeName": "mong_cai",
+    "provinceId": "22",
+    "administrativeUnitId": 4
+  },
+  {
+    "id": "195",
+    "name": "Cẩm Phả",
+    "nameEN": "Cam Pha",
+    "fullName": "Thành phố Cẩm Phả",
+    "fullNameEN": "Cam Pha City",
+    "codeName": "cam_pha",
+    "provinceId": "22",
+    "administrativeUnitId": 4
+  },
+  {
+    "id": "196",
+    "name": "Uông Bí",
+    "nameEN": "Uong Bi",
+    "fullName": "Thành phố Uông Bí",
+    "fullNameEN": "Uong Bi City",
+    "codeName": "uong_bi",
+    "provinceId": "22",
+    "administrativeUnitId": 4
+  },
+  {
+    "id": "198",
+    "name": "Bình Liêu",
+    "nameEN": "Binh Lieu",
+    "fullName": "Huyện Bình Liêu",
+    "fullNameEN": "Binh Lieu District",
+    "codeName": "binh_lieu",
+    "provinceId": "22",
+    "administrativeUnitId": 7
+  },
+  {
+    "id": "199",
+    "name": "Tiên Yên",
+    "nameEN": "Tien Yen",
+    "fullName": "Huyện Tiên Yên",
+    "fullNameEN": "Tien Yen District",
+    "codeName": "tien_yen",
+    "provinceId": "22",
+    "administrativeUnitId": 7
+  },
+  {
+    "id": "200",
+    "name": "Đầm Hà",
+    "nameEN": "Dam Ha",
+    "fullName": "Huyện Đầm Hà",
+    "fullNameEN": "Dam Ha District",
+    "codeName": "dam_ha",
+    "provinceId": "22",
+    "administrativeUnitId": 7
+  },
+  {
+    "id": "201",
+    "name": "Hải Hà",
+    "nameEN": "Hai Ha",
+    "fullName": "Huyện Hải Hà",
+    "fullNameEN": "Hai Ha District",
+    "codeName": "hai_ha",
+    "provinceId": "22",
+    "administrativeUnitId": 7
+  },
+  {
+    "id": "202",
+    "name": "Ba Chẽ",
+    "nameEN": "Ba Che",
+    "fullName": "Huyện Ba Chẽ",
+    "fullNameEN": "Ba Che District",
+    "codeName": "ba_che",
+    "provinceId": "22",
+    "administrativeUnitId": 7
+  },
+  {
+    "id": "203",
+    "name": "Vân Đồn",
+    "nameEN": "Van Don",
+    "fullName": "Huyện Vân Đồn",
+    "fullNameEN": "Van Don District",
+    "codeName": "van_don",
+    "provinceId": "22",
+    "administrativeUnitId": 7
+  },
+  {
+    "id": "205",
+    "name": "Đông Triều",
+    "nameEN": "Dong Trieu",
+    "fullName": "Thị xã Đông Triều",
+    "fullNameEN": "Dong Trieu Town",
+    "codeName": "dong_trieu",
+    "provinceId": "22",
+    "administrativeUnitId": 6
+  },
+  {
+    "id": "206",
+    "name": "Quảng Yên",
+    "nameEN": "Quang Yen",
+    "fullName": "Thị xã Quảng Yên",
+    "fullNameEN": "Quang Yen Town",
+    "codeName": "quang_yen",
+    "provinceId": "22",
+    "administrativeUnitId": 6
+  },
+  {
+    "id": "207",
+    "name": "Cô Tô",
+    "nameEN": "Co To",
+    "fullName": "Huyện Cô Tô",
+    "fullNameEN": "Co To District",
+    "codeName": "co_to",
+    "provinceId": "22",
+    "administrativeUnitId": 7
+  },
+  {
+    "id": "213",
+    "name": "Bắc Giang",
+    "nameEN": "Bac Giang",
+    "fullName": "Thành phố Bắc Giang",
+    "fullNameEN": "Bac Giang City",
+    "codeName": "bac_giang",
+    "provinceId": "24",
+    "administrativeUnitId": 4
+  },
+  {
+    "id": "215",
+    "name": "Yên Thế",
+    "nameEN": "Yen The",
+    "fullName": "Huyện Yên Thế",
+    "fullNameEN": "Yen The District",
+    "codeName": "yen_the",
+    "provinceId": "24",
+    "administrativeUnitId": 7
+  },
+  {
+    "id": "216",
+    "name": "Tân Yên",
+    "nameEN": "Tan Yen",
+    "fullName": "Huyện Tân Yên",
+    "fullNameEN": "Tan Yen District",
+    "codeName": "tan_yen",
+    "provinceId": "24",
+    "administrativeUnitId": 7
+  },
+  {
+    "id": "217",
+    "name": "Lạng Giang",
+    "nameEN": "Lang Giang",
+    "fullName": "Huyện Lạng Giang",
+    "fullNameEN": "Lang Giang District",
+    "codeName": "lang_giang",
+    "provinceId": "24",
+    "administrativeUnitId": 7
+  },
+  {
+    "id": "218",
+    "name": "Lục Nam",
+    "nameEN": "Luc Nam",
+    "fullName": "Huyện Lục Nam",
+    "fullNameEN": "Luc Nam District",
+    "codeName": "luc_nam",
+    "provinceId": "24",
+    "administrativeUnitId": 7
+  },
+  {
+    "id": "219",
+    "name": "Lục Ngạn",
+    "nameEN": "Luc Ngan",
+    "fullName": "Huyện Lục Ngạn",
+    "fullNameEN": "Luc Ngan District",
+    "codeName": "luc_ngan",
+    "provinceId": "24",
+    "administrativeUnitId": 7
+  },
+  {
+    "id": "220",
+    "name": "Sơn Động",
+    "nameEN": "Son Dong",
+    "fullName": "Huyện Sơn Động",
+    "fullNameEN": "Son Dong District",
+    "codeName": "son_dong",
+    "provinceId": "24",
+    "administrativeUnitId": 7
+  },
+  {
+    "id": "221",
+    "name": "Yên Dũng",
+    "nameEN": "Yen Dung",
+    "fullName": "Huyện Yên Dũng",
+    "fullNameEN": "Yen Dung District",
+    "codeName": "yen_dung",
+    "provinceId": "24",
+    "administrativeUnitId": 7
+  },
+  {
+    "id": "222",
+    "name": "Việt Yên",
+    "nameEN": "Viet Yen",
+    "fullName": "Huyện Việt Yên",
+    "fullNameEN": "Viet Yen District",
+    "codeName": "viet_yen",
+    "provinceId": "24",
+    "administrativeUnitId": 7
+  },
+  {
+    "id": "223",
+    "name": "Hiệp Hòa",
+    "nameEN": "Hiep Hoa",
+    "fullName": "Huyện Hiệp Hòa",
+    "fullNameEN": "Hiep Hoa District",
+    "codeName": "hiep_hoa",
+    "provinceId": "24",
+    "administrativeUnitId": 7
+  },
+  {
+    "id": "227",
+    "name": "Việt Trì",
+    "nameEN": "Viet Tri",
+    "fullName": "Thành phố Việt Trì",
+    "fullNameEN": "Viet Tri City",
+    "codeName": "viet_tri",
+    "provinceId": "25",
+    "administrativeUnitId": 4
+  },
+  {
+    "id": "228",
+    "name": "Phú Thọ",
+    "nameEN": "Phu Tho",
+    "fullName": "Thị xã Phú Thọ",
+    "fullNameEN": "Phu Tho Town",
+    "codeName": "phu_tho",
+    "provinceId": "25",
+    "administrativeUnitId": 6
+  },
+  {
+    "id": "230",
+    "name": "Đoan Hùng",
+    "nameEN": "Doan Hung",
+    "fullName": "Huyện Đoan Hùng",
+    "fullNameEN": "Doan Hung District",
+    "codeName": "doan_hung",
+    "provinceId": "25",
+    "administrativeUnitId": 7
+  },
+  {
+    "id": "231",
+    "name": "Hạ Hoà",
+    "nameEN": "Ha Hoa",
+    "fullName": "Huyện Hạ Hoà",
+    "fullNameEN": "Ha Hoa District",
+    "codeName": "ha_hoa",
+    "provinceId": "25",
+    "administrativeUnitId": 7
+  },
+  {
+    "id": "232",
+    "name": "Thanh Ba",
+    "nameEN": "Thanh Ba",
+    "fullName": "Huyện Thanh Ba",
+    "fullNameEN": "Thanh Ba District",
+    "codeName": "thanh_ba",
+    "provinceId": "25",
+    "administrativeUnitId": 7
+  },
+  {
+    "id": "233",
+    "name": "Phù Ninh",
+    "nameEN": "Phu Ninh",
+    "fullName": "Huyện Phù Ninh",
+    "fullNameEN": "Phu Ninh District",
+    "codeName": "phu_ninh",
+    "provinceId": "25",
+    "administrativeUnitId": 7
+  },
+  {
+    "id": "234",
+    "name": "Yên Lập",
+    "nameEN": "Yen Lap",
+    "fullName": "Huyện Yên Lập",
+    "fullNameEN": "Yen Lap District",
+    "codeName": "yen_lap",
+    "provinceId": "25",
+    "administrativeUnitId": 7
+  },
+  {
+    "id": "235",
+    "name": "Cẩm Khê",
+    "nameEN": "Cam Khe",
+    "fullName": "Huyện Cẩm Khê",
+    "fullNameEN": "Cam Khe District",
+    "codeName": "cam_khe",
+    "provinceId": "25",
+    "administrativeUnitId": 7
+  },
+  {
+    "id": "236",
+    "name": "Tam Nông",
+    "nameEN": "Tam Nong",
+    "fullName": "Huyện Tam Nông",
+    "fullNameEN": "Tam Nong District",
+    "codeName": "tam_nong",
+    "provinceId": "25",
+    "administrativeUnitId": 7
+  },
+  {
+    "id": "237",
+    "name": "Lâm Thao",
+    "nameEN": "Lam Thao",
+    "fullName": "Huyện Lâm Thao",
+    "fullNameEN": "Lam Thao District",
+    "codeName": "lam_thao",
+    "provinceId": "25",
+    "administrativeUnitId": 7
+  },
+  {
+    "id": "238",
+    "name": "Thanh Sơn",
+    "nameEN": "Thanh Son",
+    "fullName": "Huyện Thanh Sơn",
+    "fullNameEN": "Thanh Son District",
+    "codeName": "thanh_son",
+    "provinceId": "25",
+    "administrativeUnitId": 7
+  },
+  {
+    "id": "239",
+    "name": "Thanh Thuỷ",
+    "nameEN": "Thanh Thuy",
+    "fullName": "Huyện Thanh Thuỷ",
+    "fullNameEN": "Thanh Thuy District",
+    "codeName": "thanh_thuy",
+    "provinceId": "25",
+    "administrativeUnitId": 7
+  },
+  {
+    "id": "240",
+    "name": "Tân Sơn",
+    "nameEN": "Tan Son",
+    "fullName": "Huyện Tân Sơn",
+    "fullNameEN": "Tan Son District",
+    "codeName": "tan_son",
+    "provinceId": "25",
+    "administrativeUnitId": 7
+  },
+  {
+    "id": "243",
+    "name": "Vĩnh Yên",
+    "nameEN": "Vinh Yen",
+    "fullName": "Thành phố Vĩnh Yên",
+    "fullNameEN": "Vinh Yen City",
+    "codeName": "vinh_yen",
+    "provinceId": "26",
+    "administrativeUnitId": 4
+  },
+  {
+    "id": "244",
+    "name": "Phúc Yên",
+    "nameEN": "Phuc Yen",
+    "fullName": "Thành phố Phúc Yên",
+    "fullNameEN": "Phuc Yen City",
+    "codeName": "phuc_yen",
+    "provinceId": "26",
+    "administrativeUnitId": 4
+  },
+  {
+    "id": "246",
+    "name": "Lập Thạch",
+    "nameEN": "Lap Thach",
+    "fullName": "Huyện Lập Thạch",
+    "fullNameEN": "Lap Thach District",
+    "codeName": "lap_thach",
+    "provinceId": "26",
+    "administrativeUnitId": 7
+  },
+  {
+    "id": "247",
+    "name": "Tam Dương",
+    "nameEN": "Tam Duong",
+    "fullName": "Huyện Tam Dương",
+    "fullNameEN": "Tam Duong District",
+    "codeName": "tam_duong",
+    "provinceId": "26",
+    "administrativeUnitId": 7
+  },
+  {
+    "id": "248",
+    "name": "Tam Đảo",
+    "nameEN": "Tam Dao",
+    "fullName": "Huyện Tam Đảo",
+    "fullNameEN": "Tam Dao District",
+    "codeName": "tam_dao",
+    "provinceId": "26",
+    "administrativeUnitId": 7
+  },
+  {
+    "id": "249",
+    "name": "Bình Xuyên",
+    "nameEN": "Binh Xuyen",
+    "fullName": "Huyện Bình Xuyên",
+    "fullNameEN": "Binh Xuyen District",
+    "codeName": "binh_xuyen",
+    "provinceId": "26",
+    "administrativeUnitId": 7
+  },
+  {
+    "id": "250",
+    "name": "Mê Linh",
+    "nameEN": "Me Linh",
+    "fullName": "Huyện Mê Linh",
+    "fullNameEN": "Me Linh District",
+    "codeName": "me_linh",
+    "provinceId": "01",
+    "administrativeUnitId": 7
+  },
+  {
+    "id": "251",
+    "name": "Yên Lạc",
+    "nameEN": "Yen Lac",
+    "fullName": "Huyện Yên Lạc",
+    "fullNameEN": "Yen Lac District",
+    "codeName": "yen_lac",
+    "provinceId": "26",
+    "administrativeUnitId": 7
+  },
+  {
+    "id": "252",
+    "name": "Vĩnh Tường",
+    "nameEN": "Vinh Tuong",
+    "fullName": "Huyện Vĩnh Tường",
+    "fullNameEN": "Vinh Tuong District",
+    "codeName": "vinh_tuong",
+    "provinceId": "26",
+    "administrativeUnitId": 7
+  },
+  {
+    "id": "253",
+    "name": "Sông Lô",
+    "nameEN": "Song Lo",
+    "fullName": "Huyện Sông Lô",
+    "fullNameEN": "Song Lo District",
+    "codeName": "song_lo",
+    "provinceId": "26",
+    "administrativeUnitId": 7
+  },
+  {
+    "id": "256",
+    "name": "Bắc Ninh",
+    "nameEN": "Bac Ninh",
+    "fullName": "Thành phố Bắc Ninh",
+    "fullNameEN": "Bac Ninh City",
+    "codeName": "bac_ninh",
+    "provinceId": "27",
+    "administrativeUnitId": 4
+  },
+  {
+    "id": "258",
+    "name": "Yên Phong",
+    "nameEN": "Yen Phong",
+    "fullName": "Huyện Yên Phong",
+    "fullNameEN": "Yen Phong District",
+    "codeName": "yen_phong",
+    "provinceId": "27",
+    "administrativeUnitId": 7
+  },
+  {
+    "id": "259",
+    "name": "Quế Võ",
+    "nameEN": "Que Vo",
+    "fullName": "Thị xã Quế Võ",
+    "fullNameEN": "Que Vo Town",
+    "codeName": "que_vo",
+    "provinceId": "27",
+    "administrativeUnitId": 6
+  },
+  {
+    "id": "260",
+    "name": "Tiên Du",
+    "nameEN": "Tien Du",
+    "fullName": "Huyện Tiên Du",
+    "fullNameEN": "Tien Du District",
+    "codeName": "tien_du",
+    "provinceId": "27",
+    "administrativeUnitId": 7
+  },
+  {
+    "id": "261",
+    "name": "Từ Sơn",
+    "nameEN": "Tu Son",
+    "fullName": "Thành phố Từ Sơn",
+    "fullNameEN": "Tu Son City",
+    "codeName": "tu_son",
+    "provinceId": "27",
+    "administrativeUnitId": 4
+  },
+  {
+    "id": "262",
+    "name": "Thuận Thành",
+    "nameEN": "Thuan Thanh",
+    "fullName": "Thị xã Thuận Thành",
+    "fullNameEN": "Thuan Thanh Town",
+    "codeName": "thuan_thanh",
+    "provinceId": "27",
+    "administrativeUnitId": 6
+  },
+  {
+    "id": "263",
+    "name": "Gia Bình",
+    "nameEN": "Gia Binh",
+    "fullName": "Huyện Gia Bình",
+    "fullNameEN": "Gia Binh District",
+    "codeName": "gia_binh",
+    "provinceId": "27",
+    "administrativeUnitId": 7
+  },
+  {
+    "id": "264",
+    "name": "Lương Tài",
+    "nameEN": "Luong Tai",
+    "fullName": "Huyện Lương Tài",
+    "fullNameEN": "Luong Tai District",
+    "codeName": "luong_tai",
+    "provinceId": "27",
+    "administrativeUnitId": 7
+  },
+  {
+    "id": "268",
+    "name": "Hà Đông",
+    "nameEN": "Ha Dong",
+    "fullName": "Quận Hà Đông",
+    "fullNameEN": "Ha Dong District",
+    "codeName": "ha_dong",
+    "provinceId": "01",
+    "administrativeUnitId": 5
+  },
+  {
+    "id": "269",
+    "name": "Sơn Tây",
+    "nameEN": "Son Tay",
+    "fullName": "Thị xã Sơn Tây",
+    "fullNameEN": "Son Tay Town",
+    "codeName": "son_tay",
+    "provinceId": "01",
+    "administrativeUnitId": 6
+  },
+  {
+    "id": "271",
+    "name": "Ba Vì",
+    "nameEN": "Ba Vi",
+    "fullName": "Huyện Ba Vì",
+    "fullNameEN": "Ba Vi District",
+    "codeName": "ba_vi",
+    "provinceId": "01",
+    "administrativeUnitId": 7
+  },
+  {
+    "id": "272",
+    "name": "Phúc Thọ",
+    "nameEN": "Phuc Tho",
+    "fullName": "Huyện Phúc Thọ",
+    "fullNameEN": "Phuc Tho District",
+    "codeName": "phuc_tho",
+    "provinceId": "01",
+    "administrativeUnitId": 7
+  },
+  {
+    "id": "273",
+    "name": "Đan Phượng",
+    "nameEN": "Dan Phuong",
+    "fullName": "Huyện Đan Phượng",
+    "fullNameEN": "Dan Phuong District",
+    "codeName": "dan_phuong",
+    "provinceId": "01",
+    "administrativeUnitId": 7
+  },
+  {
+    "id": "274",
+    "name": "Hoài Đức",
+    "nameEN": "Hoai Duc",
+    "fullName": "Huyện Hoài Đức",
+    "fullNameEN": "Hoai Duc District",
+    "codeName": "hoai_duc",
+    "provinceId": "01",
+    "administrativeUnitId": 7
+  },
+  {
+    "id": "275",
+    "name": "Quốc Oai",
+    "nameEN": "Quoc Oai",
+    "fullName": "Huyện Quốc Oai",
+    "fullNameEN": "Quoc Oai District",
+    "codeName": "quoc_oai",
+    "provinceId": "01",
+    "administrativeUnitId": 7
+  },
+  {
+    "id": "276",
+    "name": "Thạch Thất",
+    "nameEN": "Thach That",
+    "fullName": "Huyện Thạch Thất",
+    "fullNameEN": "Thach That District",
+    "codeName": "thach_that",
+    "provinceId": "01",
+    "administrativeUnitId": 7
+  },
+  {
+    "id": "277",
+    "name": "Chương Mỹ",
+    "nameEN": "Chuong My",
+    "fullName": "Huyện Chương Mỹ",
+    "fullNameEN": "Chuong My District",
+    "codeName": "chuong_my",
+    "provinceId": "01",
+    "administrativeUnitId": 7
+  },
+  {
+    "id": "278",
+    "name": "Thanh Oai",
+    "nameEN": "Thanh Oai",
+    "fullName": "Huyện Thanh Oai",
+    "fullNameEN": "Thanh Oai District",
+    "codeName": "thanh_oai",
+    "provinceId": "01",
+    "administrativeUnitId": 7
+  },
+  {
+    "id": "279",
+    "name": "Thường Tín",
+    "nameEN": "Thuong Tin",
+    "fullName": "Huyện Thường Tín",
+    "fullNameEN": "Thuong Tin District",
+    "codeName": "thuong_tin",
+    "provinceId": "01",
+    "administrativeUnitId": 7
+  },
+  {
+    "id": "280",
+    "name": "Phú Xuyên",
+    "nameEN": "Phu Xuyen",
+    "fullName": "Huyện Phú Xuyên",
+    "fullNameEN": "Phu Xuyen District",
+    "codeName": "phu_xuyen",
+    "provinceId": "01",
+    "administrativeUnitId": 7
+  },
+  {
+    "id": "281",
+    "name": "Ứng Hòa",
+    "nameEN": "Ung Hoa",
+    "fullName": "Huyện Ứng Hòa",
+    "fullNameEN": "Ung Hoa District",
+    "codeName": "ung_hoa",
+    "provinceId": "01",
+    "administrativeUnitId": 7
+  },
+  {
+    "id": "282",
+    "name": "Mỹ Đức",
+    "nameEN": "My Duc",
+    "fullName": "Huyện Mỹ Đức",
+    "fullNameEN": "My Duc District",
+    "codeName": "my_duc",
+    "provinceId": "01",
+    "administrativeUnitId": 7
+  },
+  {
+    "id": "288",
+    "name": "Hải Dương",
+    "nameEN": "Hai Duong",
+    "fullName": "Thành phố Hải Dương",
+    "fullNameEN": "Hai Duong City",
+    "codeName": "hai_duong",
+    "provinceId": "30",
+    "administrativeUnitId": 4
+  },
+  {
+    "id": "290",
+    "name": "Chí Linh",
+    "nameEN": "Chi Linh",
+    "fullName": "Thành phố Chí Linh",
+    "fullNameEN": "Chi Linh City",
+    "codeName": "chi_linh",
+    "provinceId": "30",
+    "administrativeUnitId": 4
+  },
+  {
+    "id": "291",
+    "name": "Nam Sách",
+    "nameEN": "Nam Sach",
+    "fullName": "Huyện Nam Sách",
+    "fullNameEN": "Nam Sach District",
+    "codeName": "nam_sach",
+    "provinceId": "30",
+    "administrativeUnitId": 7
+  },
+  {
+    "id": "292",
+    "name": "Kinh Môn",
+    "nameEN": "Kinh Mon",
+    "fullName": "Thị xã Kinh Môn",
+    "fullNameEN": "Kinh Mon Town",
+    "codeName": "kinh_mon",
+    "provinceId": "30",
+    "administrativeUnitId": 6
+  },
+  {
+    "id": "293",
+    "name": "Kim Thành",
+    "nameEN": "Kim Thanh",
+    "fullName": "Huyện Kim Thành",
+    "fullNameEN": "Kim Thanh District",
+    "codeName": "kim_thanh",
+    "provinceId": "30",
+    "administrativeUnitId": 7
+  },
+  {
+    "id": "294",
+    "name": "Thanh Hà",
+    "nameEN": "Thanh Ha",
+    "fullName": "Huyện Thanh Hà",
+    "fullNameEN": "Thanh Ha District",
+    "codeName": "thanh_ha",
+    "provinceId": "30",
+    "administrativeUnitId": 7
+  },
+  {
+    "id": "295",
+    "name": "Cẩm Giàng",
+    "nameEN": "Cam Giang",
+    "fullName": "Huyện Cẩm Giàng",
+    "fullNameEN": "Cam Giang District",
+    "codeName": "cam_giang",
+    "provinceId": "30",
+    "administrativeUnitId": 7
+  },
+  {
+    "id": "296",
+    "name": "Bình Giang",
+    "nameEN": "Binh Giang",
+    "fullName": "Huyện Bình Giang",
+    "fullNameEN": "Binh Giang District",
+    "codeName": "binh_giang",
+    "provinceId": "30",
+    "administrativeUnitId": 7
+  },
+  {
+    "id": "297",
+    "name": "Gia Lộc",
+    "nameEN": "Gia Loc",
+    "fullName": "Huyện Gia Lộc",
+    "fullNameEN": "Gia Loc District",
+    "codeName": "gia_loc",
+    "provinceId": "30",
+    "administrativeUnitId": 7
+  },
+  {
+    "id": "298",
+    "name": "Tứ Kỳ",
+    "nameEN": "Tu Ky",
+    "fullName": "Huyện Tứ Kỳ",
+    "fullNameEN": "Tu Ky District",
+    "codeName": "tu_ky",
+    "provinceId": "30",
+    "administrativeUnitId": 7
+  },
+  {
+    "id": "299",
+    "name": "Ninh Giang",
+    "nameEN": "Ninh Giang",
+    "fullName": "Huyện Ninh Giang",
+    "fullNameEN": "Ninh Giang District",
+    "codeName": "ninh_giang",
+    "provinceId": "30",
+    "administrativeUnitId": 7
+  },
+  {
+    "id": "300",
+    "name": "Thanh Miện",
+    "nameEN": "Thanh Mien",
+    "fullName": "Huyện Thanh Miện",
+    "fullNameEN": "Thanh Mien District",
+    "codeName": "thanh_mien",
+    "provinceId": "30",
+    "administrativeUnitId": 7
+  },
+  {
+    "id": "303",
+    "name": "Hồng Bàng",
+    "nameEN": "Hong Bang",
+    "fullName": "Quận Hồng Bàng",
+    "fullNameEN": "Hong Bang District",
+    "codeName": "hong_bang",
+    "provinceId": "31",
+    "administrativeUnitId": 5
+  },
+  {
+    "id": "304",
+    "name": "Ngô Quyền",
+    "nameEN": "Ngo Quyen",
+    "fullName": "Quận Ngô Quyền",
+    "fullNameEN": "Ngo Quyen District",
+    "codeName": "ngo_quyen",
+    "provinceId": "31",
+    "administrativeUnitId": 5
+  },
+  {
+    "id": "305",
+    "name": "Lê Chân",
+    "nameEN": "Le Chan",
+    "fullName": "Quận Lê Chân",
+    "fullNameEN": "Le Chan District",
+    "codeName": "le_chan",
+    "provinceId": "31",
+    "administrativeUnitId": 5
+  },
+  {
+    "id": "306",
+    "name": "Hải An",
+    "nameEN": "Hai An",
+    "fullName": "Quận Hải An",
+    "fullNameEN": "Hai An District",
+    "codeName": "hai_an",
+    "provinceId": "31",
+    "administrativeUnitId": 5
+  },
+  {
+    "id": "307",
+    "name": "Kiến An",
+    "nameEN": "Kien An",
+    "fullName": "Quận Kiến An",
+    "fullNameEN": "Kien An District",
+    "codeName": "kien_an",
+    "provinceId": "31",
+    "administrativeUnitId": 5
+  },
+  {
+    "id": "308",
+    "name": "Đồ Sơn",
+    "nameEN": "Do Son",
+    "fullName": "Quận Đồ Sơn",
+    "fullNameEN": "Do Son District",
+    "codeName": "do_son",
+    "provinceId": "31",
+    "administrativeUnitId": 5
+  },
+  {
+    "id": "309",
+    "name": "Dương Kinh",
+    "nameEN": "Duong Kinh",
+    "fullName": "Quận Dương Kinh",
+    "fullNameEN": "Duong Kinh District",
+    "codeName": "duong_kinh",
+    "provinceId": "31",
+    "administrativeUnitId": 5
+  },
+  {
+    "id": "311",
+    "name": "Thuỷ Nguyên",
+    "nameEN": "Thuy Nguyen",
+    "fullName": "Huyện Thuỷ Nguyên",
+    "fullNameEN": "Thuy Nguyen District",
+    "codeName": "thuy_nguyen",
+    "provinceId": "31",
+    "administrativeUnitId": 7
+  },
+  {
+    "id": "312",
+    "name": "An Dương",
+    "nameEN": "An Duong",
+    "fullName": "Huyện An Dương",
+    "fullNameEN": "An Duong District",
+    "codeName": "an_duong",
+    "provinceId": "31",
+    "administrativeUnitId": 7
+  },
+  {
+    "id": "313",
+    "name": "An Lão",
+    "nameEN": "An Lao",
+    "fullName": "Huyện An Lão",
+    "fullNameEN": "An Lao District",
+    "codeName": "an_lao",
+    "provinceId": "31",
+    "administrativeUnitId": 7
+  },
+  {
+    "id": "314",
+    "name": "Kiến Thuỵ",
+    "nameEN": "Kien Thuy",
+    "fullName": "Huyện Kiến Thuỵ",
+    "fullNameEN": "Kien Thuy District",
+    "codeName": "kien_thuy",
+    "provinceId": "31",
+    "administrativeUnitId": 7
+  },
+  {
+    "id": "315",
+    "name": "Tiên Lãng",
+    "nameEN": "Tien Lang",
+    "fullName": "Huyện Tiên Lãng",
+    "fullNameEN": "Tien Lang District",
+    "codeName": "tien_lang",
+    "provinceId": "31",
+    "administrativeUnitId": 7
+  },
+  {
+    "id": "316",
+    "name": "Vĩnh Bảo",
+    "nameEN": "Vinh Bao",
+    "fullName": "Huyện Vĩnh Bảo",
+    "fullNameEN": "Vinh Bao District",
+    "codeName": "vinh_bao",
+    "provinceId": "31",
+    "administrativeUnitId": 7
+  },
+  {
+    "id": "317",
+    "name": "Cát Hải",
+    "nameEN": "Cat Hai",
+    "fullName": "Huyện Cát Hải",
+    "fullNameEN": "Cat Hai District",
+    "codeName": "cat_hai",
+    "provinceId": "31",
+    "administrativeUnitId": 7
+  },
+  {
+    "id": "318",
+    "name": "Bạch Long Vĩ",
+    "nameEN": "Bach Long Vi",
+    "fullName": "Huyện Bạch Long Vĩ",
+    "fullNameEN": "Bach Long Vi District",
+    "codeName": "bach_long_vi",
+    "provinceId": "31",
+    "administrativeUnitId": 7
+  },
+  {
+    "id": "323",
+    "name": "Hưng Yên",
+    "nameEN": "Hung Yen",
+    "fullName": "Thành phố Hưng Yên",
+    "fullNameEN": "Hung Yen City",
+    "codeName": "hung_yen",
+    "provinceId": "33",
+    "administrativeUnitId": 4
+  },
+  {
+    "id": "325",
+    "name": "Văn Lâm",
+    "nameEN": "Van Lam",
+    "fullName": "Huyện Văn Lâm",
+    "fullNameEN": "Van Lam District",
+    "codeName": "van_lam",
+    "provinceId": "33",
+    "administrativeUnitId": 7
+  },
+  {
+    "id": "326",
+    "name": "Văn Giang",
+    "nameEN": "Van Giang",
+    "fullName": "Huyện Văn Giang",
+    "fullNameEN": "Van Giang District",
+    "codeName": "van_giang",
+    "provinceId": "33",
+    "administrativeUnitId": 7
+  },
+  {
+    "id": "327",
+    "name": "Yên Mỹ",
+    "nameEN": "Yen My",
+    "fullName": "Huyện Yên Mỹ",
+    "fullNameEN": "Yen My District",
+    "codeName": "yen_my",
+    "provinceId": "33",
+    "administrativeUnitId": 7
+  },
+  {
+    "id": "328",
+    "name": "Mỹ Hào",
+    "nameEN": "My Hao",
+    "fullName": "Thị xã Mỹ Hào",
+    "fullNameEN": "My Hao Town",
+    "codeName": "my_hao",
+    "provinceId": "33",
+    "administrativeUnitId": 6
+  },
+  {
+    "id": "329",
+    "name": "Ân Thi",
+    "nameEN": "An Thi",
+    "fullName": "Huyện Ân Thi",
+    "fullNameEN": "An Thi District",
+    "codeName": "an_thi",
+    "provinceId": "33",
+    "administrativeUnitId": 7
+  },
+  {
+    "id": "330",
+    "name": "Khoái Châu",
+    "nameEN": "Khoai Chau",
+    "fullName": "Huyện Khoái Châu",
+    "fullNameEN": "Khoai Chau District",
+    "codeName": "khoai_chau",
+    "provinceId": "33",
+    "administrativeUnitId": 7
+  },
+  {
+    "id": "331",
+    "name": "Kim Động",
+    "nameEN": "Kim Dong",
+    "fullName": "Huyện Kim Động",
+    "fullNameEN": "Kim Dong District",
+    "codeName": "kim_dong",
+    "provinceId": "33",
+    "administrativeUnitId": 7
+  },
+  {
+    "id": "332",
+    "name": "Tiên Lữ",
+    "nameEN": "Tien Lu",
+    "fullName": "Huyện Tiên Lữ",
+    "fullNameEN": "Tien Lu District",
+    "codeName": "tien_lu",
+    "provinceId": "33",
+    "administrativeUnitId": 7
+  },
+  {
+    "id": "333",
+    "name": "Phù Cừ",
+    "nameEN": "Phu Cu",
+    "fullName": "Huyện Phù Cừ",
+    "fullNameEN": "Phu Cu District",
+    "codeName": "phu_cu",
+    "provinceId": "33",
+    "administrativeUnitId": 7
+  },
+  {
+    "id": "336",
+    "name": "Thái Bình",
+    "nameEN": "Thai Binh",
+    "fullName": "Thành phố Thái Bình",
+    "fullNameEN": "Thai Binh City",
+    "codeName": "thai_binh",
+    "provinceId": "34",
+    "administrativeUnitId": 4
+  },
+  {
+    "id": "338",
+    "name": "Quỳnh Phụ",
+    "nameEN": "Quynh Phu",
+    "fullName": "Huyện Quỳnh Phụ",
+    "fullNameEN": "Quynh Phu District",
+    "codeName": "quynh_phu",
+    "provinceId": "34",
+    "administrativeUnitId": 7
+  },
+  {
+    "id": "339",
+    "name": "Hưng Hà",
+    "nameEN": "Hung Ha",
+    "fullName": "Huyện Hưng Hà",
+    "fullNameEN": "Hung Ha District",
+    "codeName": "hung_ha",
+    "provinceId": "34",
+    "administrativeUnitId": 7
+  },
+  {
+    "id": "340",
+    "name": "Đông Hưng",
+    "nameEN": "Dong Hung",
+    "fullName": "Huyện Đông Hưng",
+    "fullNameEN": "Dong Hung District",
+    "codeName": "dong_hung",
+    "provinceId": "34",
+    "administrativeUnitId": 7
+  },
+  {
+    "id": "341",
+    "name": "Thái Thụy",
+    "nameEN": "Thai Thuy",
+    "fullName": "Huyện Thái Thụy",
+    "fullNameEN": "Thai Thuy District",
+    "codeName": "thai_thuy",
+    "provinceId": "34",
+    "administrativeUnitId": 7
+  },
+  {
+    "id": "342",
+    "name": "Tiền Hải",
+    "nameEN": "Tien Hai",
+    "fullName": "Huyện Tiền Hải",
+    "fullNameEN": "Tien Hai District",
+    "codeName": "tien_hai",
+    "provinceId": "34",
+    "administrativeUnitId": 7
+  },
+  {
+    "id": "343",
+    "name": "Kiến Xương",
+    "nameEN": "Kien Xuong",
+    "fullName": "Huyện Kiến Xương",
+    "fullNameEN": "Kien Xuong District",
+    "codeName": "kien_xuong",
+    "provinceId": "34",
+    "administrativeUnitId": 7
+  },
+  {
+    "id": "344",
+    "name": "Vũ Thư",
+    "nameEN": "Vu Thu",
+    "fullName": "Huyện Vũ Thư",
+    "fullNameEN": "Vu Thu District",
+    "codeName": "vu_thu",
+    "provinceId": "34",
+    "administrativeUnitId": 7
+  },
+  {
+    "id": "347",
+    "name": "Phủ Lý",
+    "nameEN": "Phu Ly",
+    "fullName": "Thành phố Phủ Lý",
+    "fullNameEN": "Phu Ly City",
+    "codeName": "phu_ly",
+    "provinceId": "35",
+    "administrativeUnitId": 4
+  },
+  {
+    "id": "349",
+    "name": "Duy Tiên",
+    "nameEN": "Duy Tien",
+    "fullName": "Thị xã Duy Tiên",
+    "fullNameEN": "Duy Tien Town",
+    "codeName": "duy_tien",
+    "provinceId": "35",
+    "administrativeUnitId": 6
+  },
+  {
+    "id": "350",
+    "name": "Kim Bảng",
+    "nameEN": "Kim Bang",
+    "fullName": "Huyện Kim Bảng",
+    "fullNameEN": "Kim Bang District",
+    "codeName": "kim_bang",
+    "provinceId": "35",
+    "administrativeUnitId": 7
+  },
+  {
+    "id": "351",
+    "name": "Thanh Liêm",
+    "nameEN": "Thanh Liem",
+    "fullName": "Huyện Thanh Liêm",
+    "fullNameEN": "Thanh Liem District",
+    "codeName": "thanh_liem",
+    "provinceId": "35",
+    "administrativeUnitId": 7
+  },
+  {
+    "id": "352",
+    "name": "Bình Lục",
+    "nameEN": "Binh Luc",
+    "fullName": "Huyện Bình Lục",
+    "fullNameEN": "Binh Luc District",
+    "codeName": "binh_luc",
+    "provinceId": "35",
+    "administrativeUnitId": 7
+  },
+  {
+    "id": "353",
+    "name": "Lý Nhân",
+    "nameEN": "Ly Nhan",
+    "fullName": "Huyện Lý Nhân",
+    "fullNameEN": "Ly Nhan District",
+    "codeName": "ly_nhan",
+    "provinceId": "35",
+    "administrativeUnitId": 7
+  },
+  {
+    "id": "356",
+    "name": "Nam Định",
+    "nameEN": "Nam Dinh",
+    "fullName": "Thành phố Nam Định",
+    "fullNameEN": "Nam Dinh City",
+    "codeName": "nam_dinh",
+    "provinceId": "36",
+    "administrativeUnitId": 4
+  },
+  {
+    "id": "358",
+    "name": "Mỹ Lộc",
+    "nameEN": "My Loc",
+    "fullName": "Huyện Mỹ Lộc",
+    "fullNameEN": "My Loc District",
+    "codeName": "my_loc",
+    "provinceId": "36",
+    "administrativeUnitId": 7
+  },
+  {
+    "id": "359",
+    "name": "Vụ Bản",
+    "nameEN": "Vu Ban",
+    "fullName": "Huyện Vụ Bản",
+    "fullNameEN": "Vu Ban District",
+    "codeName": "vu_ban",
+    "provinceId": "36",
+    "administrativeUnitId": 7
+  },
+  {
+    "id": "360",
+    "name": "Ý Yên",
+    "nameEN": "Y Yen",
+    "fullName": "Huyện Ý Yên",
+    "fullNameEN": "Y Yen District",
+    "codeName": "y_yen",
+    "provinceId": "36",
+    "administrativeUnitId": 7
+  },
+  {
+    "id": "361",
+    "name": "Nghĩa Hưng",
+    "nameEN": "Nghia Hung",
+    "fullName": "Huyện Nghĩa Hưng",
+    "fullNameEN": "Nghia Hung District",
+    "codeName": "nghia_hung",
+    "provinceId": "36",
+    "administrativeUnitId": 7
+  },
+  {
+    "id": "362",
+    "name": "Nam Trực",
+    "nameEN": "Nam Truc",
+    "fullName": "Huyện Nam Trực",
+    "fullNameEN": "Nam Truc District",
+    "codeName": "nam_truc",
+    "provinceId": "36",
+    "administrativeUnitId": 7
+  },
+  {
+    "id": "363",
+    "name": "Trực Ninh",
+    "nameEN": "Truc Ninh",
+    "fullName": "Huyện Trực Ninh",
+    "fullNameEN": "Truc Ninh District",
+    "codeName": "truc_ninh",
+    "provinceId": "36",
+    "administrativeUnitId": 7
+  },
+  {
+    "id": "364",
+    "name": "Xuân Trường",
+    "nameEN": "Xuan Truong",
+    "fullName": "Huyện Xuân Trường",
+    "fullNameEN": "Xuan Truong District",
+    "codeName": "xuan_truong",
+    "provinceId": "36",
+    "administrativeUnitId": 7
+  },
+  {
+    "id": "365",
+    "name": "Giao Thủy",
+    "nameEN": "Giao Thuy",
+    "fullName": "Huyện Giao Thủy",
+    "fullNameEN": "Giao Thuy District",
+    "codeName": "giao_thuy",
+    "provinceId": "36",
+    "administrativeUnitId": 7
+  },
+  {
+    "id": "366",
+    "name": "Hải Hậu",
+    "nameEN": "Hai Hau",
+    "fullName": "Huyện Hải Hậu",
+    "fullNameEN": "Hai Hau District",
+    "codeName": "hai_hau",
+    "provinceId": "36",
+    "administrativeUnitId": 7
+  },
+  {
+    "id": "369",
+    "name": "Ninh Bình",
+    "nameEN": "Ninh Binh",
+    "fullName": "Thành phố Ninh Bình",
+    "fullNameEN": "Ninh Binh City",
+    "codeName": "ninh_binh",
+    "provinceId": "37",
+    "administrativeUnitId": 4
+  },
+  {
+    "id": "370",
+    "name": "Tam Điệp",
+    "nameEN": "Tam Diep",
+    "fullName": "Thành phố Tam Điệp",
+    "fullNameEN": "Tam Diep City",
+    "codeName": "tam_diep",
+    "provinceId": "37",
+    "administrativeUnitId": 4
+  },
+  {
+    "id": "372",
+    "name": "Nho Quan",
+    "nameEN": "Nho Quan",
+    "fullName": "Huyện Nho Quan",
+    "fullNameEN": "Nho Quan District",
+    "codeName": "nho_quan",
+    "provinceId": "37",
+    "administrativeUnitId": 7
+  },
+  {
+    "id": "373",
+    "name": "Gia Viễn",
+    "nameEN": "Gia Vien",
+    "fullName": "Huyện Gia Viễn",
+    "fullNameEN": "Gia Vien District",
+    "codeName": "gia_vien",
+    "provinceId": "37",
+    "administrativeUnitId": 7
+  },
+  {
+    "id": "374",
+    "name": "Hoa Lư",
+    "nameEN": "Hoa Lu",
+    "fullName": "Huyện Hoa Lư",
+    "fullNameEN": "Hoa Lu District",
+    "codeName": "hoa_lu",
+    "provinceId": "37",
+    "administrativeUnitId": 7
+  },
+  {
+    "id": "375",
+    "name": "Yên Khánh",
+    "nameEN": "Yen Khanh",
+    "fullName": "Huyện Yên Khánh",
+    "fullNameEN": "Yen Khanh District",
+    "codeName": "yen_khanh",
+    "provinceId": "37",
+    "administrativeUnitId": 7
+  },
+  {
+    "id": "376",
+    "name": "Kim Sơn",
+    "nameEN": "Kim Son",
+    "fullName": "Huyện Kim Sơn",
+    "fullNameEN": "Kim Son District",
+    "codeName": "kim_son",
+    "provinceId": "37",
+    "administrativeUnitId": 7
+  },
+  {
+    "id": "377",
+    "name": "Yên Mô",
+    "nameEN": "Yen Mo",
+    "fullName": "Huyện Yên Mô",
+    "fullNameEN": "Yen Mo District",
+    "codeName": "yen_mo",
+    "provinceId": "37",
+    "administrativeUnitId": 7
+  },
+  {
+    "id": "380",
+    "name": "Thanh Hóa",
+    "nameEN": "Thanh Hoa",
+    "fullName": "Thành phố Thanh Hóa",
+    "fullNameEN": "Thanh Hoa City",
+    "codeName": "thanh_hoa",
+    "provinceId": "38",
+    "administrativeUnitId": 4
+  },
+  {
+    "id": "381",
+    "name": "Bỉm Sơn",
+    "nameEN": "Bim Son",
+    "fullName": "Thị xã Bỉm Sơn",
+    "fullNameEN": "Bim Son Town",
+    "codeName": "bim_son",
+    "provinceId": "38",
+    "administrativeUnitId": 6
+  },
+  {
+    "id": "382",
+    "name": "Sầm Sơn",
+    "nameEN": "Sam Son",
+    "fullName": "Thành phố Sầm Sơn",
+    "fullNameEN": "Sam Son City",
+    "codeName": "sam_son",
+    "provinceId": "38",
+    "administrativeUnitId": 4
+  },
+  {
+    "id": "384",
+    "name": "Mường Lát",
+    "nameEN": "Muong Lat",
+    "fullName": "Huyện Mường Lát",
+    "fullNameEN": "Muong Lat District",
+    "codeName": "muong_lat",
+    "provinceId": "38",
+    "administrativeUnitId": 7
+  },
+  {
+    "id": "385",
+    "name": "Quan Hóa",
+    "nameEN": "Quan Hoa",
+    "fullName": "Huyện Quan Hóa",
+    "fullNameEN": "Quan Hoa District",
+    "codeName": "quan_hoa",
+    "provinceId": "38",
+    "administrativeUnitId": 7
+  },
+  {
+    "id": "386",
+    "name": "Bá Thước",
+    "nameEN": "Ba Thuoc",
+    "fullName": "Huyện Bá Thước",
+    "fullNameEN": "Ba Thuoc District",
+    "codeName": "ba_thuoc",
+    "provinceId": "38",
+    "administrativeUnitId": 7
+  },
+  {
+    "id": "387",
+    "name": "Quan Sơn",
+    "nameEN": "Quan Son",
+    "fullName": "Huyện Quan Sơn",
+    "fullNameEN": "Quan Son District",
+    "codeName": "quan_son",
+    "provinceId": "38",
+    "administrativeUnitId": 7
+  },
+  {
+    "id": "388",
+    "name": "Lang Chánh",
+    "nameEN": "Lang Chanh",
+    "fullName": "Huyện Lang Chánh",
+    "fullNameEN": "Lang Chanh District",
+    "codeName": "lang_chanh",
+    "provinceId": "38",
+    "administrativeUnitId": 7
+  },
+  {
+    "id": "389",
+    "name": "Ngọc Lặc",
+    "nameEN": "Ngoc Lac",
+    "fullName": "Huyện Ngọc Lặc",
+    "fullNameEN": "Ngoc Lac District",
+    "codeName": "ngoc_lac",
+    "provinceId": "38",
+    "administrativeUnitId": 7
+  },
+  {
+    "id": "390",
+    "name": "Cẩm Thủy",
+    "nameEN": "Cam Thuy",
+    "fullName": "Huyện Cẩm Thủy",
+    "fullNameEN": "Cam Thuy District",
+    "codeName": "cam_thuy",
+    "provinceId": "38",
+    "administrativeUnitId": 7
+  },
+  {
+    "id": "391",
+    "name": "Thạch Thành",
+    "nameEN": "Thach Thanh",
+    "fullName": "Huyện Thạch Thành",
+    "fullNameEN": "Thach Thanh District",
+    "codeName": "thach_thanh",
+    "provinceId": "38",
+    "administrativeUnitId": 7
+  },
+  {
+    "id": "392",
+    "name": "Hà Trung",
+    "nameEN": "Ha Trung",
+    "fullName": "Huyện Hà Trung",
+    "fullNameEN": "Ha Trung District",
+    "codeName": "ha_trung",
+    "provinceId": "38",
+    "administrativeUnitId": 7
+  },
+  {
+    "id": "393",
+    "name": "Vĩnh Lộc",
+    "nameEN": "Vinh Loc",
+    "fullName": "Huyện Vĩnh Lộc",
+    "fullNameEN": "Vinh Loc District",
+    "codeName": "vinh_loc",
+    "provinceId": "38",
+    "administrativeUnitId": 7
+  },
+  {
+    "id": "394",
+    "name": "Yên Định",
+    "nameEN": "Yen Dinh",
+    "fullName": "Huyện Yên Định",
+    "fullNameEN": "Yen Dinh District",
+    "codeName": "yen_dinh",
+    "provinceId": "38",
+    "administrativeUnitId": 7
+  },
+  {
+    "id": "395",
+    "name": "Thọ Xuân",
+    "nameEN": "Tho Xuan",
+    "fullName": "Huyện Thọ Xuân",
+    "fullNameEN": "Tho Xuan District",
+    "codeName": "tho_xuan",
+    "provinceId": "38",
+    "administrativeUnitId": 7
+  },
+  {
+    "id": "396",
+    "name": "Thường Xuân",
+    "nameEN": "Thuong Xuan",
+    "fullName": "Huyện Thường Xuân",
+    "fullNameEN": "Thuong Xuan District",
+    "codeName": "thuong_xuan",
+    "provinceId": "38",
+    "administrativeUnitId": 7
+  },
+  {
+    "id": "397",
+    "name": "Triệu Sơn",
+    "nameEN": "Trieu Son",
+    "fullName": "Huyện Triệu Sơn",
+    "fullNameEN": "Trieu Son District",
+    "codeName": "trieu_son",
+    "provinceId": "38",
+    "administrativeUnitId": 7
+  },
+  {
+    "id": "398",
+    "name": "Thiệu Hóa",
+    "nameEN": "Thieu Hoa",
+    "fullName": "Huyện Thiệu Hóa",
+    "fullNameEN": "Thieu Hoa District",
+    "codeName": "thieu_hoa",
+    "provinceId": "38",
+    "administrativeUnitId": 7
+  },
+  {
+    "id": "399",
+    "name": "Hoằng Hóa",
+    "nameEN": "Hoang Hoa",
+    "fullName": "Huyện Hoằng Hóa",
+    "fullNameEN": "Hoang Hoa District",
+    "codeName": "hoang_hoa",
+    "provinceId": "38",
+    "administrativeUnitId": 7
+  },
+  {
+    "id": "400",
+    "name": "Hậu Lộc",
+    "nameEN": "Hau Loc",
+    "fullName": "Huyện Hậu Lộc",
+    "fullNameEN": "Hau Loc District",
+    "codeName": "hau_loc",
+    "provinceId": "38",
+    "administrativeUnitId": 7
+  },
+  {
+    "id": "401",
+    "name": "Nga Sơn",
+    "nameEN": "Nga Son",
+    "fullName": "Huyện Nga Sơn",
+    "fullNameEN": "Nga Son District",
+    "codeName": "nga_son",
+    "provinceId": "38",
+    "administrativeUnitId": 7
+  },
+  {
+    "id": "402",
+    "name": "Như Xuân",
+    "nameEN": "Nhu Xuan",
+    "fullName": "Huyện Như Xuân",
+    "fullNameEN": "Nhu Xuan District",
+    "codeName": "nhu_xuan",
+    "provinceId": "38",
+    "administrativeUnitId": 7
+  },
+  {
+    "id": "403",
+    "name": "Như Thanh",
+    "nameEN": "Nhu Thanh",
+    "fullName": "Huyện Như Thanh",
+    "fullNameEN": "Nhu Thanh District",
+    "codeName": "nhu_thanh",
+    "provinceId": "38",
+    "administrativeUnitId": 7
+  },
+  {
+    "id": "404",
+    "name": "Nông Cống",
+    "nameEN": "Nong Cong",
+    "fullName": "Huyện Nông Cống",
+    "fullNameEN": "Nong Cong District",
+    "codeName": "nong_cong",
+    "provinceId": "38",
+    "administrativeUnitId": 7
+  },
+  {
+    "id": "405",
+    "name": "Đông Sơn",
+    "nameEN": "Dong Son",
+    "fullName": "Huyện Đông Sơn",
+    "fullNameEN": "Dong Son District",
+    "codeName": "dong_son",
+    "provinceId": "38",
+    "administrativeUnitId": 7
+  },
+  {
+    "id": "406",
+    "name": "Quảng Xương",
+    "nameEN": "Quang Xuong",
+    "fullName": "Huyện Quảng Xương",
+    "fullNameEN": "Quang Xuong District",
+    "codeName": "quang_xuong",
+    "provinceId": "38",
+    "administrativeUnitId": 7
+  },
+  {
+    "id": "407",
+    "name": "Nghi Sơn",
+    "nameEN": "Nghi Son",
+    "fullName": "Thị xã Nghi Sơn",
+    "fullNameEN": "Nghi Son Town",
+    "codeName": "nghi_son",
+    "provinceId": "38",
+    "administrativeUnitId": 6
+  },
+  {
+    "id": "412",
+    "name": "Vinh",
+    "nameEN": "Vinh",
+    "fullName": "Thành phố Vinh",
+    "fullNameEN": "Vinh City",
+    "codeName": "vinh",
+    "provinceId": "40",
+    "administrativeUnitId": 4
+  },
+  {
+    "id": "413",
+    "name": "Cửa Lò",
+    "nameEN": "Cua Lo",
+    "fullName": "Thị xã Cửa Lò",
+    "fullNameEN": "Cua Lo Town",
+    "codeName": "cua_lo",
+    "provinceId": "40",
+    "administrativeUnitId": 6
+  },
+  {
+    "id": "414",
+    "name": "Thái Hoà",
+    "nameEN": "Thai Hoa",
+    "fullName": "Thị xã Thái Hoà",
+    "fullNameEN": "Thai Hoa Town",
+    "codeName": "thai_hoa",
+    "provinceId": "40",
+    "administrativeUnitId": 6
+  },
+  {
+    "id": "415",
+    "name": "Quế Phong",
+    "nameEN": "Que Phong",
+    "fullName": "Huyện Quế Phong",
+    "fullNameEN": "Que Phong District",
+    "codeName": "que_phong",
+    "provinceId": "40",
+    "administrativeUnitId": 7
+  },
+  {
+    "id": "416",
+    "name": "Quỳ Châu",
+    "nameEN": "Quy Chau",
+    "fullName": "Huyện Quỳ Châu",
+    "fullNameEN": "Quy Chau District",
+    "codeName": "quy_chau",
+    "provinceId": "40",
+    "administrativeUnitId": 7
+  },
+  {
+    "id": "417",
+    "name": "Kỳ Sơn",
+    "nameEN": "Ky Son",
+    "fullName": "Huyện Kỳ Sơn",
+    "fullNameEN": "Ky Son District",
+    "codeName": "ky_son",
+    "provinceId": "40",
+    "administrativeUnitId": 7
+  },
+  {
+    "id": "418",
+    "name": "Tương Dương",
+    "nameEN": "Tuong Duong",
+    "fullName": "Huyện Tương Dương",
+    "fullNameEN": "Tuong Duong District",
+    "codeName": "tuong_duong",
+    "provinceId": "40",
+    "administrativeUnitId": 7
+  },
+  {
+    "id": "419",
+    "name": "Nghĩa Đàn",
+    "nameEN": "Nghia Dan",
+    "fullName": "Huyện Nghĩa Đàn",
+    "fullNameEN": "Nghia Dan District",
+    "codeName": "nghia_dan",
+    "provinceId": "40",
+    "administrativeUnitId": 7
+  },
+  {
+    "id": "420",
+    "name": "Quỳ Hợp",
+    "nameEN": "Quy Hop",
+    "fullName": "Huyện Quỳ Hợp",
+    "fullNameEN": "Quy Hop District",
+    "codeName": "quy_hop",
+    "provinceId": "40",
+    "administrativeUnitId": 7
+  },
+  {
+    "id": "421",
+    "name": "Quỳnh Lưu",
+    "nameEN": "Quynh Luu",
+    "fullName": "Huyện Quỳnh Lưu",
+    "fullNameEN": "Quynh Luu District",
+    "codeName": "quynh_luu",
+    "provinceId": "40",
+    "administrativeUnitId": 7
+  },
+  {
+    "id": "422",
+    "name": "Con Cuông",
+    "nameEN": "Con Cuong",
+    "fullName": "Huyện Con Cuông",
+    "fullNameEN": "Con Cuong District",
+    "codeName": "con_cuong",
+    "provinceId": "40",
+    "administrativeUnitId": 7
+  },
+  {
+    "id": "423",
+    "name": "Tân Kỳ",
+    "nameEN": "Tan Ky",
+    "fullName": "Huyện Tân Kỳ",
+    "fullNameEN": "Tan Ky District",
+    "codeName": "tan_ky",
+    "provinceId": "40",
+    "administrativeUnitId": 7
+  },
+  {
+    "id": "424",
+    "name": "Anh Sơn",
+    "nameEN": "Anh Son",
+    "fullName": "Huyện Anh Sơn",
+    "fullNameEN": "Anh Son District",
+    "codeName": "anh_son",
+    "provinceId": "40",
+    "administrativeUnitId": 7
+  },
+  {
+    "id": "425",
+    "name": "Diễn Châu",
+    "nameEN": "Dien Chau",
+    "fullName": "Huyện Diễn Châu",
+    "fullNameEN": "Dien Chau District",
+    "codeName": "dien_chau",
+    "provinceId": "40",
+    "administrativeUnitId": 7
+  },
+  {
+    "id": "426",
+    "name": "Yên Thành",
+    "nameEN": "Yen Thanh",
+    "fullName": "Huyện Yên Thành",
+    "fullNameEN": "Yen Thanh District",
+    "codeName": "yen_thanh",
+    "provinceId": "40",
+    "administrativeUnitId": 7
+  },
+  {
+    "id": "427",
+    "name": "Đô Lương",
+    "nameEN": "Do Luong",
+    "fullName": "Huyện Đô Lương",
+    "fullNameEN": "Do Luong District",
+    "codeName": "do_luong",
+    "provinceId": "40",
+    "administrativeUnitId": 7
+  },
+  {
+    "id": "428",
+    "name": "Thanh Chương",
+    "nameEN": "Thanh Chuong",
+    "fullName": "Huyện Thanh Chương",
+    "fullNameEN": "Thanh Chuong District",
+    "codeName": "thanh_chuong",
+    "provinceId": "40",
+    "administrativeUnitId": 7
+  },
+  {
+    "id": "429",
+    "name": "Nghi Lộc",
+    "nameEN": "Nghi Loc",
+    "fullName": "Huyện Nghi Lộc",
+    "fullNameEN": "Nghi Loc District",
+    "codeName": "nghi_loc",
+    "provinceId": "40",
+    "administrativeUnitId": 7
+  },
+  {
+    "id": "430",
+    "name": "Nam Đàn",
+    "nameEN": "Nam Dan",
+    "fullName": "Huyện Nam Đàn",
+    "fullNameEN": "Nam Dan District",
+    "codeName": "nam_dan",
+    "provinceId": "40",
+    "administrativeUnitId": 7
+  },
+  {
+    "id": "431",
+    "name": "Hưng Nguyên",
+    "nameEN": "Hung Nguyen",
+    "fullName": "Huyện Hưng Nguyên",
+    "fullNameEN": "Hung Nguyen District",
+    "codeName": "hung_nguyen",
+    "provinceId": "40",
+    "administrativeUnitId": 7
+  },
+  {
+    "id": "432",
+    "name": "Hoàng Mai",
+    "nameEN": "Hoang Mai",
+    "fullName": "Thị xã Hoàng Mai",
+    "fullNameEN": "Hoang Mai Town",
+    "codeName": "hoang_mai",
+    "provinceId": "40",
+    "administrativeUnitId": 6
+  },
+  {
+    "id": "436",
+    "name": "Hà Tĩnh",
+    "nameEN": "Ha Tinh",
+    "fullName": "Thành phố Hà Tĩnh",
+    "fullNameEN": "Ha Tinh City",
+    "codeName": "ha_tinh",
+    "provinceId": "42",
+    "administrativeUnitId": 4
+  },
+  {
+    "id": "437",
+    "name": "Hồng Lĩnh",
+    "nameEN": "Hong Linh",
+    "fullName": "Thị xã Hồng Lĩnh",
+    "fullNameEN": "Hong Linh Town",
+    "codeName": "hong_linh",
+    "provinceId": "42",
+    "administrativeUnitId": 6
+  },
+  {
+    "id": "439",
+    "name": "Hương Sơn",
+    "nameEN": "Huong Son",
+    "fullName": "Huyện Hương Sơn",
+    "fullNameEN": "Huong Son District",
+    "codeName": "huong_son",
+    "provinceId": "42",
+    "administrativeUnitId": 7
+  },
+  {
+    "id": "440",
+    "name": "Đức Thọ",
+    "nameEN": "Duc Tho",
+    "fullName": "Huyện Đức Thọ",
+    "fullNameEN": "Duc Tho District",
+    "codeName": "duc_tho",
+    "provinceId": "42",
+    "administrativeUnitId": 7
+  },
+  {
+    "id": "441",
+    "name": "Vũ Quang",
+    "nameEN": "Vu Quang",
+    "fullName": "Huyện Vũ Quang",
+    "fullNameEN": "Vu Quang District",
+    "codeName": "vu_quang",
+    "provinceId": "42",
+    "administrativeUnitId": 7
+  },
+  {
+    "id": "442",
+    "name": "Nghi Xuân",
+    "nameEN": "Nghi Xuan",
+    "fullName": "Huyện Nghi Xuân",
+    "fullNameEN": "Nghi Xuan District",
+    "codeName": "nghi_xuan",
+    "provinceId": "42",
+    "administrativeUnitId": 7
+  },
+  {
+    "id": "443",
+    "name": "Can Lộc",
+    "nameEN": "Can Loc",
+    "fullName": "Huyện Can Lộc",
+    "fullNameEN": "Can Loc District",
+    "codeName": "can_loc",
+    "provinceId": "42",
+    "administrativeUnitId": 7
+  },
+  {
+    "id": "444",
+    "name": "Hương Khê",
+    "nameEN": "Huong Khe",
+    "fullName": "Huyện Hương Khê",
+    "fullNameEN": "Huong Khe District",
+    "codeName": "huong_khe",
+    "provinceId": "42",
+    "administrativeUnitId": 7
+  },
+  {
+    "id": "445",
+    "name": "Thạch Hà",
+    "nameEN": "Thach Ha",
+    "fullName": "Huyện Thạch Hà",
+    "fullNameEN": "Thach Ha District",
+    "codeName": "thach_ha",
+    "provinceId": "42",
+    "administrativeUnitId": 7
+  },
+  {
+    "id": "446",
+    "name": "Cẩm Xuyên",
+    "nameEN": "Cam Xuyen",
+    "fullName": "Huyện Cẩm Xuyên",
+    "fullNameEN": "Cam Xuyen District",
+    "codeName": "cam_xuyen",
+    "provinceId": "42",
+    "administrativeUnitId": 7
+  },
+  {
+    "id": "447",
+    "name": "Kỳ Anh",
+    "nameEN": "Ky Anh",
+    "fullName": "Huyện Kỳ Anh",
+    "fullNameEN": "Ky Anh District",
+    "codeName": "ky_anh",
+    "provinceId": "42",
+    "administrativeUnitId": 7
+  },
+  {
+    "id": "448",
+    "name": "Lộc Hà",
+    "nameEN": "Loc Ha",
+    "fullName": "Huyện Lộc Hà",
+    "fullNameEN": "Loc Ha District",
+    "codeName": "loc_ha",
+    "provinceId": "42",
+    "administrativeUnitId": 7
+  },
+  {
+    "id": "449",
+    "name": "Kỳ Anh",
+    "nameEN": "Ky Anh",
+    "fullName": "Thị xã Kỳ Anh",
+    "fullNameEN": "Ky Anh Town",
+    "codeName": "ky_anh",
+    "provinceId": "42",
+    "administrativeUnitId": 6
+  },
+  {
+    "id": "450",
+    "name": "Đồng Hới",
+    "nameEN": "Dong Hoi",
+    "fullName": "Thành phố Đồng Hới",
+    "fullNameEN": "Dong Hoi City",
+    "codeName": "dong_hoi",
+    "provinceId": "44",
+    "administrativeUnitId": 4
+  },
+  {
+    "id": "452",
+    "name": "Minh Hóa",
+    "nameEN": "Minh Hoa",
+    "fullName": "Huyện Minh Hóa",
+    "fullNameEN": "Minh Hoa District",
+    "codeName": "minh_hoa",
+    "provinceId": "44",
+    "administrativeUnitId": 7
+  },
+  {
+    "id": "453",
+    "name": "Tuyên Hóa",
+    "nameEN": "Tuyen Hoa",
+    "fullName": "Huyện Tuyên Hóa",
+    "fullNameEN": "Tuyen Hoa District",
+    "codeName": "tuyen_hoa",
+    "provinceId": "44",
+    "administrativeUnitId": 7
+  },
+  {
+    "id": "454",
+    "name": "Quảng Trạch",
+    "nameEN": "Quang Trach",
+    "fullName": "Huyện Quảng Trạch",
+    "fullNameEN": "Quang Trach District",
+    "codeName": "quang_trach",
+    "provinceId": "44",
+    "administrativeUnitId": 7
+  },
+  {
+    "id": "455",
+    "name": "Bố Trạch",
+    "nameEN": "Bo Trach",
+    "fullName": "Huyện Bố Trạch",
+    "fullNameEN": "Bo Trach District",
+    "codeName": "bo_trach",
+    "provinceId": "44",
+    "administrativeUnitId": 7
+  },
+  {
+    "id": "456",
+    "name": "Quảng Ninh",
+    "nameEN": "Quang Ninh",
+    "fullName": "Huyện Quảng Ninh",
+    "fullNameEN": "Quang Ninh District",
+    "codeName": "quang_ninh",
+    "provinceId": "44",
+    "administrativeUnitId": 7
+  },
+  {
+    "id": "457",
+    "name": "Lệ Thủy",
+    "nameEN": "Le Thuy",
+    "fullName": "Huyện Lệ Thủy",
+    "fullNameEN": "Le Thuy District",
+    "codeName": "le_thuy",
+    "provinceId": "44",
+    "administrativeUnitId": 7
+  },
+  {
+    "id": "458",
+    "name": "Ba Đồn",
+    "nameEN": "Ba Don",
+    "fullName": "Thị xã Ba Đồn",
+    "fullNameEN": "Ba Don Town",
+    "codeName": "ba_don",
+    "provinceId": "44",
+    "administrativeUnitId": 6
+  },
+  {
+    "id": "461",
+    "name": "Đông Hà",
+    "nameEN": "Dong Ha",
+    "fullName": "Thành phố Đông Hà",
+    "fullNameEN": "Dong Ha City",
+    "codeName": "dong_ha",
+    "provinceId": "45",
+    "administrativeUnitId": 4
+  },
+  {
+    "id": "462",
+    "name": "Quảng Trị",
+    "nameEN": "Quang Tri",
+    "fullName": "Thị xã Quảng Trị",
+    "fullNameEN": "Quang Tri Town",
+    "codeName": "quang_tri",
+    "provinceId": "45",
+    "administrativeUnitId": 6
+  },
+  {
+    "id": "464",
+    "name": "Vĩnh Linh",
+    "nameEN": "Vinh Linh",
+    "fullName": "Huyện Vĩnh Linh",
+    "fullNameEN": "Vinh Linh District",
+    "codeName": "vinh_linh",
+    "provinceId": "45",
+    "administrativeUnitId": 7
+  },
+  {
+    "id": "465",
+    "name": "Hướng Hóa",
+    "nameEN": "Huong Hoa",
+    "fullName": "Huyện Hướng Hóa",
+    "fullNameEN": "Huong Hoa District",
+    "codeName": "huong_hoa",
+    "provinceId": "45",
+    "administrativeUnitId": 7
+  },
+  {
+    "id": "466",
+    "name": "Gio Linh",
+    "nameEN": "Gio Linh",
+    "fullName": "Huyện Gio Linh",
+    "fullNameEN": "Gio Linh District",
+    "codeName": "gio_linh",
+    "provinceId": "45",
+    "administrativeUnitId": 7
+  },
+  {
+    "id": "467",
+    "name": "Đa Krông",
+    "nameEN": "Da Krong",
+    "fullName": "Huyện Đa Krông",
+    "fullNameEN": "Da Krong District",
+    "codeName": "da_krong",
+    "provinceId": "45",
+    "administrativeUnitId": 7
+  },
+  {
+    "id": "468",
+    "name": "Cam Lộ",
+    "nameEN": "Cam Lo",
+    "fullName": "Huyện Cam Lộ",
+    "fullNameEN": "Cam Lo District",
+    "codeName": "cam_lo",
+    "provinceId": "45",
+    "administrativeUnitId": 7
+  },
+  {
+    "id": "469",
+    "name": "Triệu Phong",
+    "nameEN": "Trieu Phong",
+    "fullName": "Huyện Triệu Phong",
+    "fullNameEN": "Trieu Phong District",
+    "codeName": "trieu_phong",
+    "provinceId": "45",
+    "administrativeUnitId": 7
+  },
+  {
+    "id": "470",
+    "name": "Hải Lăng",
+    "nameEN": "Hai Lang",
+    "fullName": "Huyện Hải Lăng",
+    "fullNameEN": "Hai Lang District",
+    "codeName": "hai_lang",
+    "provinceId": "45",
+    "administrativeUnitId": 7
+  },
+  {
+    "id": "471",
+    "name": "Cồn Cỏ",
+    "nameEN": "Con Co",
+    "fullName": "Huyện Cồn Cỏ",
+    "fullNameEN": "Con Co District",
+    "codeName": "con_co",
+    "provinceId": "45",
+    "administrativeUnitId": 7
+  },
+  {
+    "id": "474",
+    "name": "Huế",
+    "nameEN": "Hue",
+    "fullName": "Thành phố Huế",
+    "fullNameEN": "Hue City",
+    "codeName": "hue",
+    "provinceId": "46",
+    "administrativeUnitId": 4
+  },
+  {
+    "id": "476",
+    "name": "Phong Điền",
+    "nameEN": "Phong Dien",
+    "fullName": "Huyện Phong Điền",
+    "fullNameEN": "Phong Dien District",
+    "codeName": "phong_dien",
+    "provinceId": "46",
+    "administrativeUnitId": 7
+  },
+  {
+    "id": "477",
+    "name": "Quảng Điền",
+    "nameEN": "Quang Dien",
+    "fullName": "Huyện Quảng Điền",
+    "fullNameEN": "Quang Dien District",
+    "codeName": "quang_dien",
+    "provinceId": "46",
+    "administrativeUnitId": 7
+  },
+  {
+    "id": "478",
+    "name": "Phú Vang",
+    "nameEN": "Phu Vang",
+    "fullName": "Huyện Phú Vang",
+    "fullNameEN": "Phu Vang District",
+    "codeName": "phu_vang",
+    "provinceId": "46",
+    "administrativeUnitId": 7
+  },
+  {
+    "id": "479",
+    "name": "Hương Thủy",
+    "nameEN": "Huong Thuy",
+    "fullName": "Thị xã Hương Thủy",
+    "fullNameEN": "Huong Thuy Town",
+    "codeName": "huong_thuy",
+    "provinceId": "46",
+    "administrativeUnitId": 6
+  },
+  {
+    "id": "480",
+    "name": "Hương Trà",
+    "nameEN": "Huong Tra",
+    "fullName": "Thị xã Hương Trà",
+    "fullNameEN": "Huong Tra Town",
+    "codeName": "huong_tra",
+    "provinceId": "46",
+    "administrativeUnitId": 6
+  },
+  {
+    "id": "481",
+    "name": "A Lưới",
+    "nameEN": "A Luoi",
+    "fullName": "Huyện A Lưới",
+    "fullNameEN": "A Luoi District",
+    "codeName": "a_luoi",
+    "provinceId": "46",
+    "administrativeUnitId": 7
+  },
+  {
+    "id": "482",
+    "name": "Phú Lộc",
+    "nameEN": "Phu Loc",
+    "fullName": "Huyện Phú Lộc",
+    "fullNameEN": "Phu Loc District",
+    "codeName": "phu_loc",
+    "provinceId": "46",
+    "administrativeUnitId": 7
+  },
+  {
+    "id": "483",
+    "name": "Nam Đông",
+    "nameEN": "Nam Dong",
+    "fullName": "Huyện Nam Đông",
+    "fullNameEN": "Nam Dong District",
+    "codeName": "nam_dong",
+    "provinceId": "46",
+    "administrativeUnitId": 7
+  },
+  {
+    "id": "490",
+    "name": "Liên Chiểu",
+    "nameEN": "Lien Chieu",
+    "fullName": "Quận Liên Chiểu",
+    "fullNameEN": "Lien Chieu District",
+    "codeName": "lien_chieu",
+    "provinceId": "48",
+    "administrativeUnitId": 5
+  },
+  {
+    "id": "491",
+    "name": "Thanh Khê",
+    "nameEN": "Thanh Khe",
+    "fullName": "Quận Thanh Khê",
+    "fullNameEN": "Thanh Khe District",
+    "codeName": "thanh_khe",
+    "provinceId": "48",
+    "administrativeUnitId": 5
+  },
+  {
+    "id": "492",
+    "name": "Hải Châu",
+    "nameEN": "Hai Chau",
+    "fullName": "Quận Hải Châu",
+    "fullNameEN": "Hai Chau District",
+    "codeName": "hai_chau",
+    "provinceId": "48",
+    "administrativeUnitId": 5
+  },
+  {
+    "id": "493",
+    "name": "Sơn Trà",
+    "nameEN": "Son Tra",
+    "fullName": "Quận Sơn Trà",
+    "fullNameEN": "Son Tra District",
+    "codeName": "son_tra",
+    "provinceId": "48",
+    "administrativeUnitId": 5
+  },
+  {
+    "id": "494",
+    "name": "Ngũ Hành Sơn",
+    "nameEN": "Ngu Hanh Son",
+    "fullName": "Quận Ngũ Hành Sơn",
+    "fullNameEN": "Ngu Hanh Son District",
+    "codeName": "ngu_hanh_son",
+    "provinceId": "48",
+    "administrativeUnitId": 5
+  },
+  {
+    "id": "495",
+    "name": "Cẩm Lệ",
+    "nameEN": "Cam Le",
+    "fullName": "Quận Cẩm Lệ",
+    "fullNameEN": "Cam Le District",
+    "codeName": "cam_le",
+    "provinceId": "48",
+    "administrativeUnitId": 5
+  },
+  {
+    "id": "497",
+    "name": "Hòa Vang",
+    "nameEN": "Hoa Vang",
+    "fullName": "Huyện Hòa Vang",
+    "fullNameEN": "Hoa Vang District",
+    "codeName": "hoa_vang",
+    "provinceId": "48",
+    "administrativeUnitId": 7
+  },
+  {
+    "id": "498",
+    "name": "Hoàng Sa",
+    "nameEN": "Hoang Sa",
+    "fullName": "Huyện Hoàng Sa",
+    "fullNameEN": "Hoang Sa District",
+    "codeName": "hoang_sa",
+    "provinceId": "48",
+    "administrativeUnitId": 7
+  },
+  {
+    "id": "502",
+    "name": "Tam Kỳ",
+    "nameEN": "Tam Ky",
+    "fullName": "Thành phố Tam Kỳ",
+    "fullNameEN": "Tam Ky City",
+    "codeName": "tam_ky",
+    "provinceId": "49",
+    "administrativeUnitId": 4
+  },
+  {
+    "id": "503",
+    "name": "Hội An",
+    "nameEN": "Hoi An",
+    "fullName": "Thành phố Hội An",
+    "fullNameEN": "Hoi An City",
+    "codeName": "hoi_an",
+    "provinceId": "49",
+    "administrativeUnitId": 4
+  },
+  {
+    "id": "504",
+    "name": "Tây Giang",
+    "nameEN": "Tay Giang",
+    "fullName": "Huyện Tây Giang",
+    "fullNameEN": "Tay Giang District",
+    "codeName": "tay_giang",
+    "provinceId": "49",
+    "administrativeUnitId": 7
+  },
+  {
+    "id": "505",
+    "name": "Đông Giang",
+    "nameEN": "Dong Giang",
+    "fullName": "Huyện Đông Giang",
+    "fullNameEN": "Dong Giang District",
+    "codeName": "dong_giang",
+    "provinceId": "49",
+    "administrativeUnitId": 7
+  },
+  {
+    "id": "506",
+    "name": "Đại Lộc",
+    "nameEN": "Dai Loc",
+    "fullName": "Huyện Đại Lộc",
+    "fullNameEN": "Dai Loc District",
+    "codeName": "dai_loc",
+    "provinceId": "49",
+    "administrativeUnitId": 7
+  },
+  {
+    "id": "507",
+    "name": "Điện Bàn",
+    "nameEN": "Dien Ban",
+    "fullName": "Thị xã Điện Bàn",
+    "fullNameEN": "Dien Ban Town",
+    "codeName": "dien_ban",
+    "provinceId": "49",
+    "administrativeUnitId": 6
+  },
+  {
+    "id": "508",
+    "name": "Duy Xuyên",
+    "nameEN": "Duy Xuyen",
+    "fullName": "Huyện Duy Xuyên",
+    "fullNameEN": "Duy Xuyen District",
+    "codeName": "duy_xuyen",
+    "provinceId": "49",
+    "administrativeUnitId": 7
+  },
+  {
+    "id": "509",
+    "name": "Quế Sơn",
+    "nameEN": "Que Son",
+    "fullName": "Huyện Quế Sơn",
+    "fullNameEN": "Que Son District",
+    "codeName": "que_son",
+    "provinceId": "49",
+    "administrativeUnitId": 7
+  },
+  {
+    "id": "510",
+    "name": "Nam Giang",
+    "nameEN": "Nam Giang",
+    "fullName": "Huyện Nam Giang",
+    "fullNameEN": "Nam Giang District",
+    "codeName": "nam_giang",
+    "provinceId": "49",
+    "administrativeUnitId": 7
+  },
+  {
+    "id": "511",
+    "name": "Phước Sơn",
+    "nameEN": "Phuoc Son",
+    "fullName": "Huyện Phước Sơn",
+    "fullNameEN": "Phuoc Son District",
+    "codeName": "phuoc_son",
+    "provinceId": "49",
+    "administrativeUnitId": 7
+  },
+  {
+    "id": "512",
+    "name": "Hiệp Đức",
+    "nameEN": "Hiep Duc",
+    "fullName": "Huyện Hiệp Đức",
+    "fullNameEN": "Hiep Duc District",
+    "codeName": "hiep_duc",
+    "provinceId": "49",
+    "administrativeUnitId": 7
+  },
+  {
+    "id": "513",
+    "name": "Thăng Bình",
+    "nameEN": "Thang Binh",
+    "fullName": "Huyện Thăng Bình",
+    "fullNameEN": "Thang Binh District",
+    "codeName": "thang_binh",
+    "provinceId": "49",
+    "administrativeUnitId": 7
+  },
+  {
+    "id": "514",
+    "name": "Tiên Phước",
+    "nameEN": "Tien Phuoc",
+    "fullName": "Huyện Tiên Phước",
+    "fullNameEN": "Tien Phuoc District",
+    "codeName": "tien_phuoc",
+    "provinceId": "49",
+    "administrativeUnitId": 7
+  },
+  {
+    "id": "515",
+    "name": "Bắc Trà My",
+    "nameEN": "Bac Tra My",
+    "fullName": "Huyện Bắc Trà My",
+    "fullNameEN": "Bac Tra My District",
+    "codeName": "bac_tra_my",
+    "provinceId": "49",
+    "administrativeUnitId": 7
+  },
+  {
+    "id": "516",
+    "name": "Nam Trà My",
+    "nameEN": "Nam Tra My",
+    "fullName": "Huyện Nam Trà My",
+    "fullNameEN": "Nam Tra My District",
+    "codeName": "nam_tra_my",
+    "provinceId": "49",
+    "administrativeUnitId": 7
+  },
+  {
+    "id": "517",
+    "name": "Núi Thành",
+    "nameEN": "Nui Thanh",
+    "fullName": "Huyện Núi Thành",
+    "fullNameEN": "Nui Thanh District",
+    "codeName": "nui_thanh",
+    "provinceId": "49",
+    "administrativeUnitId": 7
+  },
+  {
+    "id": "518",
+    "name": "Phú Ninh",
+    "nameEN": "Phu Ninh",
+    "fullName": "Huyện Phú Ninh",
+    "fullNameEN": "Phu Ninh District",
+    "codeName": "phu_ninh",
+    "provinceId": "49",
+    "administrativeUnitId": 7
+  },
+  {
+    "id": "519",
+    "name": "Nông Sơn",
+    "nameEN": "Nong Son",
+    "fullName": "Huyện Nông Sơn",
+    "fullNameEN": "Nong Son District",
+    "codeName": "nong_son",
+    "provinceId": "49",
+    "administrativeUnitId": 7
+  },
+  {
+    "id": "522",
+    "name": "Quảng Ngãi",
+    "nameEN": "Quang Ngai",
+    "fullName": "Thành phố Quảng Ngãi",
+    "fullNameEN": "Quang Ngai City",
+    "codeName": "quang_ngai",
+    "provinceId": "51",
+    "administrativeUnitId": 4
+  },
+  {
+    "id": "524",
+    "name": "Bình Sơn",
+    "nameEN": "Binh Son",
+    "fullName": "Huyện Bình Sơn",
+    "fullNameEN": "Binh Son District",
+    "codeName": "binh_son",
+    "provinceId": "51",
+    "administrativeUnitId": 7
+  },
+  {
+    "id": "525",
+    "name": "Trà Bồng",
+    "nameEN": "Tra Bong",
+    "fullName": "Huyện Trà Bồng",
+    "fullNameEN": "Tra Bong District",
+    "codeName": "tra_bong",
+    "provinceId": "51",
+    "administrativeUnitId": 7
+  },
+  {
+    "id": "527",
+    "name": "Sơn Tịnh",
+    "nameEN": "Son Tinh",
+    "fullName": "Huyện Sơn Tịnh",
+    "fullNameEN": "Son Tinh District",
+    "codeName": "son_tinh",
+    "provinceId": "51",
+    "administrativeUnitId": 7
+  },
+  {
+    "id": "528",
+    "name": "Tư Nghĩa",
+    "nameEN": "Tu Nghia",
+    "fullName": "Huyện Tư Nghĩa",
+    "fullNameEN": "Tu Nghia District",
+    "codeName": "tu_nghia",
+    "provinceId": "51",
+    "administrativeUnitId": 7
+  },
+  {
+    "id": "529",
+    "name": "Sơn Hà",
+    "nameEN": "Son Ha",
+    "fullName": "Huyện Sơn Hà",
+    "fullNameEN": "Son Ha District",
+    "codeName": "son_ha",
+    "provinceId": "51",
+    "administrativeUnitId": 7
+  },
+  {
+    "id": "530",
+    "name": "Sơn Tây",
+    "nameEN": "Son Tay",
+    "fullName": "Huyện Sơn Tây",
+    "fullNameEN": "Son Tay District",
+    "codeName": "son_tay",
+    "provinceId": "51",
+    "administrativeUnitId": 7
+  },
+  {
+    "id": "531",
+    "name": "Minh Long",
+    "nameEN": "Minh Long",
+    "fullName": "Huyện Minh Long",
+    "fullNameEN": "Minh Long District",
+    "codeName": "minh_long",
+    "provinceId": "51",
+    "administrativeUnitId": 7
+  },
+  {
+    "id": "532",
+    "name": "Nghĩa Hành",
+    "nameEN": "Nghia Hanh",
+    "fullName": "Huyện Nghĩa Hành",
+    "fullNameEN": "Nghia Hanh District",
+    "codeName": "nghia_hanh",
+    "provinceId": "51",
+    "administrativeUnitId": 7
+  },
+  {
+    "id": "533",
+    "name": "Mộ Đức",
+    "nameEN": "Mo Duc",
+    "fullName": "Huyện Mộ Đức",
+    "fullNameEN": "Mo Duc District",
+    "codeName": "mo_duc",
+    "provinceId": "51",
+    "administrativeUnitId": 7
+  },
+  {
+    "id": "534",
+    "name": "Đức Phổ",
+    "nameEN": "Duc Pho",
+    "fullName": "Thị xã Đức Phổ",
+    "fullNameEN": "Duc Pho Town",
+    "codeName": "duc_pho",
+    "provinceId": "51",
+    "administrativeUnitId": 6
+  },
+  {
+    "id": "535",
+    "name": "Ba Tơ",
+    "nameEN": "Ba To",
+    "fullName": "Huyện Ba Tơ",
+    "fullNameEN": "Ba To District",
+    "codeName": "ba_to",
+    "provinceId": "51",
+    "administrativeUnitId": 7
+  },
+  {
+    "id": "536",
+    "name": "Lý Sơn",
+    "nameEN": "Ly Son",
+    "fullName": "Huyện Lý Sơn",
+    "fullNameEN": "Ly Son District",
+    "codeName": "ly_son",
+    "provinceId": "51",
+    "administrativeUnitId": 7
+  },
+  {
+    "id": "540",
+    "name": "Quy Nhơn",
+    "nameEN": "Quy Nhon",
+    "fullName": "Thành phố Quy Nhơn",
+    "fullNameEN": "Quy Nhon City",
+    "codeName": "quy_nhon",
+    "provinceId": "52",
+    "administrativeUnitId": 4
+  },
+  {
+    "id": "542",
+    "name": "An Lão",
+    "nameEN": "An Lao",
+    "fullName": "Huyện An Lão",
+    "fullNameEN": "An Lao District",
+    "codeName": "an_lao",
+    "provinceId": "52",
+    "administrativeUnitId": 7
+  },
+  {
+    "id": "543",
+    "name": "Hoài Nhơn",
+    "nameEN": "Hoai Nhon",
+    "fullName": "Thị xã Hoài Nhơn",
+    "fullNameEN": "Hoai Nhon Town",
+    "codeName": "hoai_nhon",
+    "provinceId": "52",
+    "administrativeUnitId": 6
+  },
+  {
+    "id": "544",
+    "name": "Hoài Ân",
+    "nameEN": "Hoai An",
+    "fullName": "Huyện Hoài Ân",
+    "fullNameEN": "Hoai An District",
+    "codeName": "hoai_an",
+    "provinceId": "52",
+    "administrativeUnitId": 7
+  },
+  {
+    "id": "545",
+    "name": "Phù Mỹ",
+    "nameEN": "Phu My",
+    "fullName": "Huyện Phù Mỹ",
+    "fullNameEN": "Phu My District",
+    "codeName": "phu_my",
+    "provinceId": "52",
+    "administrativeUnitId": 7
+  },
+  {
+    "id": "546",
+    "name": "Vĩnh Thạnh",
+    "nameEN": "Vinh Thanh",
+    "fullName": "Huyện Vĩnh Thạnh",
+    "fullNameEN": "Vinh Thanh District",
+    "codeName": "vinh_thanh",
+    "provinceId": "52",
+    "administrativeUnitId": 7
+  },
+  {
+    "id": "547",
+    "name": "Tây Sơn",
+    "nameEN": "Tay Son",
+    "fullName": "Huyện Tây Sơn",
+    "fullNameEN": "Tay Son District",
+    "codeName": "tay_son",
+    "provinceId": "52",
+    "administrativeUnitId": 7
+  },
+  {
+    "id": "548",
+    "name": "Phù Cát",
+    "nameEN": "Phu Cat",
+    "fullName": "Huyện Phù Cát",
+    "fullNameEN": "Phu Cat District",
+    "codeName": "phu_cat",
+    "provinceId": "52",
+    "administrativeUnitId": 7
+  },
+  {
+    "id": "549",
+    "name": "An Nhơn",
+    "nameEN": "An Nhon",
+    "fullName": "Thị xã An Nhơn",
+    "fullNameEN": "An Nhon Town",
+    "codeName": "an_nhon",
+    "provinceId": "52",
+    "administrativeUnitId": 6
+  },
+  {
+    "id": "550",
+    "name": "Tuy Phước",
+    "nameEN": "Tuy Phuoc",
+    "fullName": "Huyện Tuy Phước",
+    "fullNameEN": "Tuy Phuoc District",
+    "codeName": "tuy_phuoc",
+    "provinceId": "52",
+    "administrativeUnitId": 7
+  },
+  {
+    "id": "551",
+    "name": "Vân Canh",
+    "nameEN": "Van Canh",
+    "fullName": "Huyện Vân Canh",
+    "fullNameEN": "Van Canh District",
+    "codeName": "van_canh",
+    "provinceId": "52",
+    "administrativeUnitId": 7
+  },
+  {
+    "id": "555",
+    "name": "Tuy Hoà",
+    "nameEN": "Tuy Hoa",
+    "fullName": "Thành phố Tuy Hoà",
+    "fullNameEN": "Tuy Hoa City",
+    "codeName": "tuy_hoa",
+    "provinceId": "54",
+    "administrativeUnitId": 4
+  },
+  {
+    "id": "557",
+    "name": "Sông Cầu",
+    "nameEN": "Song Cau",
+    "fullName": "Thị xã Sông Cầu",
+    "fullNameEN": "Song Cau Town",
+    "codeName": "song_cau",
+    "provinceId": "54",
+    "administrativeUnitId": 6
+  },
+  {
+    "id": "558",
+    "name": "Đồng Xuân",
+    "nameEN": "Dong Xuan",
+    "fullName": "Huyện Đồng Xuân",
+    "fullNameEN": "Dong Xuan District",
+    "codeName": "dong_xuan",
+    "provinceId": "54",
+    "administrativeUnitId": 7
+  },
+  {
+    "id": "559",
+    "name": "Tuy An",
+    "nameEN": "Tuy An",
+    "fullName": "Huyện Tuy An",
+    "fullNameEN": "Tuy An District",
+    "codeName": "tuy_an",
+    "provinceId": "54",
+    "administrativeUnitId": 7
+  },
+  {
+    "id": "560",
+    "name": "Sơn Hòa",
+    "nameEN": "Son Hoa",
+    "fullName": "Huyện Sơn Hòa",
+    "fullNameEN": "Son Hoa District",
+    "codeName": "son_hoa",
+    "provinceId": "54",
+    "administrativeUnitId": 7
+  },
+  {
+    "id": "561",
+    "name": "Sông Hinh",
+    "nameEN": "Song Hinh",
+    "fullName": "Huyện Sông Hinh",
+    "fullNameEN": "Song Hinh District",
+    "codeName": "song_hinh",
+    "provinceId": "54",
+    "administrativeUnitId": 7
+  },
+  {
+    "id": "562",
+    "name": "Tây Hoà",
+    "nameEN": "Tay Hoa",
+    "fullName": "Huyện Tây Hoà",
+    "fullNameEN": "Tay Hoa District",
+    "codeName": "tay_hoa",
+    "provinceId": "54",
+    "administrativeUnitId": 7
+  },
+  {
+    "id": "563",
+    "name": "Phú Hoà",
+    "nameEN": "Phu Hoa",
+    "fullName": "Huyện Phú Hoà",
+    "fullNameEN": "Phu Hoa District",
+    "codeName": "phu_hoa",
+    "provinceId": "54",
+    "administrativeUnitId": 7
+  },
+  {
+    "id": "564",
+    "name": "Đông Hòa",
+    "nameEN": "Dong Hoa",
+    "fullName": "Thị xã Đông Hòa",
+    "fullNameEN": "Dong Hoa Town",
+    "codeName": "dong_hoa",
+    "provinceId": "54",
+    "administrativeUnitId": 6
+  },
+  {
+    "id": "568",
+    "name": "Nha Trang",
+    "nameEN": "Nha Trang",
+    "fullName": "Thành phố Nha Trang",
+    "fullNameEN": "Nha Trang City",
+    "codeName": "nha_trang",
+    "provinceId": "56",
+    "administrativeUnitId": 4
+  },
+  {
+    "id": "569",
+    "name": "Cam Ranh",
+    "nameEN": "Cam Ranh",
+    "fullName": "Thành phố Cam Ranh",
+    "fullNameEN": "Cam Ranh City",
+    "codeName": "cam_ranh",
+    "provinceId": "56",
+    "administrativeUnitId": 4
+  },
+  {
+    "id": "570",
+    "name": "Cam Lâm",
+    "nameEN": "Cam Lam",
+    "fullName": "Huyện Cam Lâm",
+    "fullNameEN": "Cam Lam District",
+    "codeName": "cam_lam",
+    "provinceId": "56",
+    "administrativeUnitId": 7
+  },
+  {
+    "id": "571",
+    "name": "Vạn Ninh",
+    "nameEN": "Van Ninh",
+    "fullName": "Huyện Vạn Ninh",
+    "fullNameEN": "Van Ninh District",
+    "codeName": "van_ninh",
+    "provinceId": "56",
+    "administrativeUnitId": 7
+  },
+  {
+    "id": "572",
+    "name": "Ninh Hòa",
+    "nameEN": "Ninh Hoa",
+    "fullName": "Thị xã Ninh Hòa",
+    "fullNameEN": "Ninh Hoa Town",
+    "codeName": "ninh_hoa",
+    "provinceId": "56",
+    "administrativeUnitId": 6
+  },
+  {
+    "id": "573",
+    "name": "Khánh Vĩnh",
+    "nameEN": "Khanh Vinh",
+    "fullName": "Huyện Khánh Vĩnh",
+    "fullNameEN": "Khanh Vinh District",
+    "codeName": "khanh_vinh",
+    "provinceId": "56",
+    "administrativeUnitId": 7
+  },
+  {
+    "id": "574",
+    "name": "Diên Khánh",
+    "nameEN": "Dien Khanh",
+    "fullName": "Huyện Diên Khánh",
+    "fullNameEN": "Dien Khanh District",
+    "codeName": "dien_khanh",
+    "provinceId": "56",
+    "administrativeUnitId": 7
+  },
+  {
+    "id": "575",
+    "name": "Khánh Sơn",
+    "nameEN": "Khanh Son",
+    "fullName": "Huyện Khánh Sơn",
+    "fullNameEN": "Khanh Son District",
+    "codeName": "khanh_son",
+    "provinceId": "56",
+    "administrativeUnitId": 7
+  },
+  {
+    "id": "576",
+    "name": "Trường Sa",
+    "nameEN": "Truong Sa",
+    "fullName": "Huyện Trường Sa",
+    "fullNameEN": "Truong Sa District",
+    "codeName": "truong_sa",
+    "provinceId": "56",
+    "administrativeUnitId": 7
+  },
+  {
+    "id": "582",
+    "name": "Phan Rang-Tháp Chàm",
+    "nameEN": "Phan Rang-Thap Cham",
+    "fullName": "Thành phố Phan Rang-Tháp Chàm",
+    "fullNameEN": "Phan Rang-Thap Cham City",
+    "codeName": "phan_rang-thap_cham",
+    "provinceId": "58",
+    "administrativeUnitId": 4
+  },
+  {
+    "id": "584",
+    "name": "Bác Ái",
+    "nameEN": "Bac Ai",
+    "fullName": "Huyện Bác Ái",
+    "fullNameEN": "Bac Ai District",
+    "codeName": "bac_ai",
+    "provinceId": "58",
+    "administrativeUnitId": 7
+  },
+  {
+    "id": "585",
+    "name": "Ninh Sơn",
+    "nameEN": "Ninh Son",
+    "fullName": "Huyện Ninh Sơn",
+    "fullNameEN": "Ninh Son District",
+    "codeName": "ninh_son",
+    "provinceId": "58",
+    "administrativeUnitId": 7
+  },
+  {
+    "id": "586",
+    "name": "Ninh Hải",
+    "nameEN": "Ninh Hai",
+    "fullName": "Huyện Ninh Hải",
+    "fullNameEN": "Ninh Hai District",
+    "codeName": "ninh_hai",
+    "provinceId": "58",
+    "administrativeUnitId": 7
+  },
+  {
+    "id": "587",
+    "name": "Ninh Phước",
+    "nameEN": "Ninh Phuoc",
+    "fullName": "Huyện Ninh Phước",
+    "fullNameEN": "Ninh Phuoc District",
+    "codeName": "ninh_phuoc",
+    "provinceId": "58",
+    "administrativeUnitId": 7
+  },
+  {
+    "id": "588",
+    "name": "Thuận Bắc",
+    "nameEN": "Thuan Bac",
+    "fullName": "Huyện Thuận Bắc",
+    "fullNameEN": "Thuan Bac District",
+    "codeName": "thuan_bac",
+    "provinceId": "58",
+    "administrativeUnitId": 7
+  },
+  {
+    "id": "589",
+    "name": "Thuận Nam",
+    "nameEN": "Thuan Nam",
+    "fullName": "Huyện Thuận Nam",
+    "fullNameEN": "Thuan Nam District",
+    "codeName": "thuan_nam",
+    "provinceId": "58",
+    "administrativeUnitId": 7
+  },
+  {
+    "id": "593",
+    "name": "Phan Thiết",
+    "nameEN": "Phan Thiet",
+    "fullName": "Thành phố Phan Thiết",
+    "fullNameEN": "Phan Thiet City",
+    "codeName": "phan_thiet",
+    "provinceId": "60",
+    "administrativeUnitId": 4
+  },
+  {
+    "id": "594",
+    "name": "La Gi",
+    "nameEN": "La Gi",
+    "fullName": "Thị xã La Gi",
+    "fullNameEN": "La Gi Town",
+    "codeName": "la_gi",
+    "provinceId": "60",
+    "administrativeUnitId": 6
+  },
+  {
+    "id": "595",
+    "name": "Tuy Phong",
+    "nameEN": "Tuy Phong",
+    "fullName": "Huyện Tuy Phong",
+    "fullNameEN": "Tuy Phong District",
+    "codeName": "tuy_phong",
+    "provinceId": "60",
+    "administrativeUnitId": 7
+  },
+  {
+    "id": "596",
+    "name": "Bắc Bình",
+    "nameEN": "Bac Binh",
+    "fullName": "Huyện Bắc Bình",
+    "fullNameEN": "Bac Binh District",
+    "codeName": "bac_binh",
+    "provinceId": "60",
+    "administrativeUnitId": 7
+  },
+  {
+    "id": "597",
+    "name": "Hàm Thuận Bắc",
+    "nameEN": "Ham Thuan Bac",
+    "fullName": "Huyện Hàm Thuận Bắc",
+    "fullNameEN": "Ham Thuan Bac District",
+    "codeName": "ham_thuan_bac",
+    "provinceId": "60",
+    "administrativeUnitId": 7
+  },
+  {
+    "id": "598",
+    "name": "Hàm Thuận Nam",
+    "nameEN": "Ham Thuan Nam",
+    "fullName": "Huyện Hàm Thuận Nam",
+    "fullNameEN": "Ham Thuan Nam District",
+    "codeName": "ham_thuan_nam",
+    "provinceId": "60",
+    "administrativeUnitId": 7
+  },
+  {
+    "id": "599",
+    "name": "Tánh Linh",
+    "nameEN": "Tanh Linh",
+    "fullName": "Huyện Tánh Linh",
+    "fullNameEN": "Tanh Linh District",
+    "codeName": "tanh_linh",
+    "provinceId": "60",
+    "administrativeUnitId": 7
+  },
+  {
+    "id": "600",
+    "name": "Đức Linh",
+    "nameEN": "Duc Linh",
+    "fullName": "Huyện Đức Linh",
+    "fullNameEN": "Duc Linh District",
+    "codeName": "duc_linh",
+    "provinceId": "60",
+    "administrativeUnitId": 7
+  },
+  {
+    "id": "601",
+    "name": "Hàm Tân",
+    "nameEN": "Ham Tan",
+    "fullName": "Huyện Hàm Tân",
+    "fullNameEN": "Ham Tan District",
+    "codeName": "ham_tan",
+    "provinceId": "60",
+    "administrativeUnitId": 7
+  },
+  {
+    "id": "602",
+    "name": "Phú Quí",
+    "nameEN": "Phu Qui",
+    "fullName": "Huyện Phú Quí",
+    "fullNameEN": "Phu Qui District",
+    "codeName": "phu_qui",
+    "provinceId": "60",
+    "administrativeUnitId": 7
+  },
+  {
+    "id": "608",
+    "name": "Kon Tum",
+    "nameEN": "Kon Tum",
+    "fullName": "Thành phố Kon Tum",
+    "fullNameEN": "Kon Tum City",
+    "codeName": "kon_tum",
+    "provinceId": "62",
+    "administrativeUnitId": 4
+  },
+  {
+    "id": "610",
+    "name": "Đắk Glei",
+    "nameEN": "Dak Glei",
+    "fullName": "Huyện Đắk Glei",
+    "fullNameEN": "Dak Glei District",
+    "codeName": "dak_glei",
+    "provinceId": "62",
+    "administrativeUnitId": 7
+  },
+  {
+    "id": "611",
+    "name": "Ngọc Hồi",
+    "nameEN": "Ngoc Hoi",
+    "fullName": "Huyện Ngọc Hồi",
+    "fullNameEN": "Ngoc Hoi District",
+    "codeName": "ngoc_hoi",
+    "provinceId": "62",
+    "administrativeUnitId": 7
+  },
+  {
+    "id": "612",
+    "name": "Đắk Tô",
+    "nameEN": "Dak To",
+    "fullName": "Huyện Đắk Tô",
+    "fullNameEN": "Dak To District",
+    "codeName": "dak_to",
+    "provinceId": "62",
+    "administrativeUnitId": 7
+  },
+  {
+    "id": "613",
+    "name": "Kon Plông",
+    "nameEN": "Kon Plong",
+    "fullName": "Huyện Kon Plông",
+    "fullNameEN": "Kon Plong District",
+    "codeName": "kon_plong",
+    "provinceId": "62",
+    "administrativeUnitId": 7
+  },
+  {
+    "id": "614",
+    "name": "Kon Rẫy",
+    "nameEN": "Kon Ray",
+    "fullName": "Huyện Kon Rẫy",
+    "fullNameEN": "Kon Ray District",
+    "codeName": "kon_ray",
+    "provinceId": "62",
+    "administrativeUnitId": 7
+  },
+  {
+    "id": "615",
+    "name": "Đắk Hà",
+    "nameEN": "Dak Ha",
+    "fullName": "Huyện Đắk Hà",
+    "fullNameEN": "Dak Ha District",
+    "codeName": "dak_ha",
+    "provinceId": "62",
+    "administrativeUnitId": 7
+  },
+  {
+    "id": "616",
+    "name": "Sa Thầy",
+    "nameEN": "Sa Thay",
+    "fullName": "Huyện Sa Thầy",
+    "fullNameEN": "Sa Thay District",
+    "codeName": "sa_thay",
+    "provinceId": "62",
+    "administrativeUnitId": 7
+  },
+  {
+    "id": "617",
+    "name": "Tu Mơ Rông",
+    "nameEN": "Tu Mo Rong",
+    "fullName": "Huyện Tu Mơ Rông",
+    "fullNameEN": "Tu Mo Rong District",
+    "codeName": "tu_mo_rong",
+    "provinceId": "62",
+    "administrativeUnitId": 7
+  },
+  {
+    "id": "618",
+    "name": "Ia H' Drai",
+    "nameEN": "Ia H' Drai",
+    "fullName": "Huyện Ia H' Drai",
+    "fullNameEN": "Ia H' Drai District",
+    "codeName": "ia_h'_drai",
+    "provinceId": "62",
+    "administrativeUnitId": 7
+  },
+  {
+    "id": "622",
+    "name": "Pleiku",
+    "nameEN": "Pleiku",
+    "fullName": "Thành phố Pleiku",
+    "fullNameEN": "Pleiku City",
+    "codeName": "pleiku",
+    "provinceId": "64",
+    "administrativeUnitId": 4
+  },
+  {
+    "id": "623",
+    "name": "An Khê",
+    "nameEN": "An Khe",
+    "fullName": "Thị xã An Khê",
+    "fullNameEN": "An Khe Town",
+    "codeName": "an_khe",
+    "provinceId": "64",
+    "administrativeUnitId": 6
+  },
+  {
+    "id": "624",
+    "name": "Ayun Pa",
+    "nameEN": "Ayun Pa",
+    "fullName": "Thị xã Ayun Pa",
+    "fullNameEN": "Ayun Pa Town",
+    "codeName": "ayun_pa",
+    "provinceId": "64",
+    "administrativeUnitId": 6
+  },
+  {
+    "id": "625",
+    "name": "KBang",
+    "nameEN": "KBang",
+    "fullName": "Huyện KBang",
+    "fullNameEN": "KBang District",
+    "codeName": "kbang",
+    "provinceId": "64",
+    "administrativeUnitId": 7
+  },
+  {
+    "id": "626",
+    "name": "Đăk Đoa",
+    "nameEN": "Dak Doa",
+    "fullName": "Huyện Đăk Đoa",
+    "fullNameEN": "Dak Doa District",
+    "codeName": "dak_doa",
+    "provinceId": "64",
+    "administrativeUnitId": 7
+  },
+  {
+    "id": "627",
+    "name": "Chư Păh",
+    "nameEN": "Chu Pah",
+    "fullName": "Huyện Chư Păh",
+    "fullNameEN": "Chu Pah District",
+    "codeName": "chu_pah",
+    "provinceId": "64",
+    "administrativeUnitId": 7
+  },
+  {
+    "id": "628",
+    "name": "Ia Grai",
+    "nameEN": "Ia Grai",
+    "fullName": "Huyện Ia Grai",
+    "fullNameEN": "Ia Grai District",
+    "codeName": "ia_grai",
+    "provinceId": "64",
+    "administrativeUnitId": 7
+  },
+  {
+    "id": "629",
+    "name": "Mang Yang",
+    "nameEN": "Mang Yang",
+    "fullName": "Huyện Mang Yang",
+    "fullNameEN": "Mang Yang District",
+    "codeName": "mang_yang",
+    "provinceId": "64",
+    "administrativeUnitId": 7
+  },
+  {
+    "id": "630",
+    "name": "Kông Chro",
+    "nameEN": "Kong Chro",
+    "fullName": "Huyện Kông Chro",
+    "fullNameEN": "Kong Chro District",
+    "codeName": "kong_chro",
+    "provinceId": "64",
+    "administrativeUnitId": 7
+  },
+  {
+    "id": "631",
+    "name": "Đức Cơ",
+    "nameEN": "Duc Co",
+    "fullName": "Huyện Đức Cơ",
+    "fullNameEN": "Duc Co District",
+    "codeName": "duc_co",
+    "provinceId": "64",
+    "administrativeUnitId": 7
+  },
+  {
+    "id": "632",
+    "name": "Chư Prông",
+    "nameEN": "Chu Prong",
+    "fullName": "Huyện Chư Prông",
+    "fullNameEN": "Chu Prong District",
+    "codeName": "chu_prong",
+    "provinceId": "64",
+    "administrativeUnitId": 7
+  },
+  {
+    "id": "633",
+    "name": "Chư Sê",
+    "nameEN": "Chu Se",
+    "fullName": "Huyện Chư Sê",
+    "fullNameEN": "Chu Se District",
+    "codeName": "chu_se",
+    "provinceId": "64",
+    "administrativeUnitId": 7
+  },
+  {
+    "id": "634",
+    "name": "Đăk Pơ",
+    "nameEN": "Dak Po",
+    "fullName": "Huyện Đăk Pơ",
+    "fullNameEN": "Dak Po District",
+    "codeName": "dak_po",
+    "provinceId": "64",
+    "administrativeUnitId": 7
+  },
+  {
+    "id": "635",
+    "name": "Ia Pa",
+    "nameEN": "Ia Pa",
+    "fullName": "Huyện Ia Pa",
+    "fullNameEN": "Ia Pa District",
+    "codeName": "ia_pa",
+    "provinceId": "64",
+    "administrativeUnitId": 7
+  },
+  {
+    "id": "637",
+    "name": "Krông Pa",
+    "nameEN": "Krong Pa",
+    "fullName": "Huyện Krông Pa",
+    "fullNameEN": "Krong Pa District",
+    "codeName": "krong_pa",
+    "provinceId": "64",
+    "administrativeUnitId": 7
+  },
+  {
+    "id": "638",
+    "name": "Phú Thiện",
+    "nameEN": "Phu Thien",
+    "fullName": "Huyện Phú Thiện",
+    "fullNameEN": "Phu Thien District",
+    "codeName": "phu_thien",
+    "provinceId": "64",
+    "administrativeUnitId": 7
+  },
+  {
+    "id": "639",
+    "name": "Chư Pưh",
+    "nameEN": "Chu Puh",
+    "fullName": "Huyện Chư Pưh",
+    "fullNameEN": "Chu Puh District",
+    "codeName": "chu_puh",
+    "provinceId": "64",
+    "administrativeUnitId": 7
+  },
+  {
+    "id": "643",
+    "name": "Buôn Ma Thuột",
+    "nameEN": "Buon Ma Thuot",
+    "fullName": "Thành phố Buôn Ma Thuột",
+    "fullNameEN": "Buon Ma Thuot City",
+    "codeName": "buon_ma_thuot",
+    "provinceId": "66",
+    "administrativeUnitId": 4
+  },
+  {
+    "id": "644",
+    "name": "Buôn Hồ",
+    "nameEN": "Buon Ho",
+    "fullName": "Thị xã Buôn Hồ",
+    "fullNameEN": "Buon Ho Town",
+    "codeName": "buon_ho",
+    "provinceId": "66",
+    "administrativeUnitId": 6
+  },
+  {
+    "id": "645",
+    "name": "Ea H'leo",
+    "nameEN": "Ea H'leo",
+    "fullName": "Huyện Ea H'leo",
+    "fullNameEN": "Ea H'leo District",
+    "codeName": "ea_h'leo",
+    "provinceId": "66",
+    "administrativeUnitId": 7
+  },
+  {
+    "id": "646",
+    "name": "Ea Súp",
+    "nameEN": "Ea Sup",
+    "fullName": "Huyện Ea Súp",
+    "fullNameEN": "Ea Sup District",
+    "codeName": "ea_sup",
+    "provinceId": "66",
+    "administrativeUnitId": 7
+  },
+  {
+    "id": "647",
+    "name": "Buôn Đôn",
+    "nameEN": "Buon Don",
+    "fullName": "Huyện Buôn Đôn",
+    "fullNameEN": "Buon Don District",
+    "codeName": "buon_don",
+    "provinceId": "66",
+    "administrativeUnitId": 7
+  },
+  {
+    "id": "648",
+    "name": "Cư M'gar",
+    "nameEN": "Cu M'gar",
+    "fullName": "Huyện Cư M'gar",
+    "fullNameEN": "Cu M'gar District",
+    "codeName": "cu_m'gar",
+    "provinceId": "66",
+    "administrativeUnitId": 7
+  },
+  {
+    "id": "649",
+    "name": "Krông Búk",
+    "nameEN": "Krong Buk",
+    "fullName": "Huyện Krông Búk",
+    "fullNameEN": "Krong Buk District",
+    "codeName": "krong_buk",
+    "provinceId": "66",
+    "administrativeUnitId": 7
+  },
+  {
+    "id": "650",
+    "name": "Krông Năng",
+    "nameEN": "Krong Nang",
+    "fullName": "Huyện Krông Năng",
+    "fullNameEN": "Krong Nang District",
+    "codeName": "krong_nang",
+    "provinceId": "66",
+    "administrativeUnitId": 7
+  },
+  {
+    "id": "651",
+    "name": "Ea Kar",
+    "nameEN": "Ea Kar",
+    "fullName": "Huyện Ea Kar",
+    "fullNameEN": "Ea Kar District",
+    "codeName": "ea_kar",
+    "provinceId": "66",
+    "administrativeUnitId": 7
+  },
+  {
+    "id": "652",
+    "name": "M'Đrắk",
+    "nameEN": "M'Drak",
+    "fullName": "Huyện M'Đrắk",
+    "fullNameEN": "M'Drak District",
+    "codeName": "m'drak",
+    "provinceId": "66",
+    "administrativeUnitId": 7
+  },
+  {
+    "id": "653",
+    "name": "Krông Bông",
+    "nameEN": "Krong Bong",
+    "fullName": "Huyện Krông Bông",
+    "fullNameEN": "Krong Bong District",
+    "codeName": "krong_bong",
+    "provinceId": "66",
+    "administrativeUnitId": 7
+  },
+  {
+    "id": "654",
+    "name": "Krông Pắc",
+    "nameEN": "Krong Pac",
+    "fullName": "Huyện Krông Pắc",
+    "fullNameEN": "Krong Pac District",
+    "codeName": "krong_pac",
+    "provinceId": "66",
+    "administrativeUnitId": 7
+  },
+  {
+    "id": "655",
+    "name": "Krông A Na",
+    "nameEN": "Krong A Na",
+    "fullName": "Huyện Krông A Na",
+    "fullNameEN": "Krong A Na District",
+    "codeName": "krong_a_na",
+    "provinceId": "66",
+    "administrativeUnitId": 7
+  },
+  {
+    "id": "656",
+    "name": "Lắk",
+    "nameEN": "Lak",
+    "fullName": "Huyện Lắk",
+    "fullNameEN": "Lak District",
+    "codeName": "lak",
+    "provinceId": "66",
+    "administrativeUnitId": 7
+  },
+  {
+    "id": "657",
+    "name": "Cư Kuin",
+    "nameEN": "Cu Kuin",
+    "fullName": "Huyện Cư Kuin",
+    "fullNameEN": "Cu Kuin District",
+    "codeName": "cu_kuin",
+    "provinceId": "66",
+    "administrativeUnitId": 7
+  },
+  {
+    "id": "660",
+    "name": "Gia Nghĩa",
+    "nameEN": "Gia Nghia",
+    "fullName": "Thành phố Gia Nghĩa",
+    "fullNameEN": "Gia Nghia City",
+    "codeName": "gia_nghia",
+    "provinceId": "67",
+    "administrativeUnitId": 4
+  },
+  {
+    "id": "661",
+    "name": "Đăk Glong",
+    "nameEN": "Dak Glong",
+    "fullName": "Huyện Đăk Glong",
+    "fullNameEN": "Dak Glong District",
+    "codeName": "dak_glong",
+    "provinceId": "67",
+    "administrativeUnitId": 7
+  },
+  {
+    "id": "662",
+    "name": "Cư Jút",
+    "nameEN": "Cu Jut",
+    "fullName": "Huyện Cư Jút",
+    "fullNameEN": "Cu Jut District",
+    "codeName": "cu_jut",
+    "provinceId": "67",
+    "administrativeUnitId": 7
+  },
+  {
+    "id": "663",
+    "name": "Đắk Mil",
+    "nameEN": "Dak Mil",
+    "fullName": "Huyện Đắk Mil",
+    "fullNameEN": "Dak Mil District",
+    "codeName": "dak_mil",
+    "provinceId": "67",
+    "administrativeUnitId": 7
+  },
+  {
+    "id": "664",
+    "name": "Krông Nô",
+    "nameEN": "Krong No",
+    "fullName": "Huyện Krông Nô",
+    "fullNameEN": "Krong No District",
+    "codeName": "krong_no",
+    "provinceId": "67",
+    "administrativeUnitId": 7
+  },
+  {
+    "id": "665",
+    "name": "Đắk Song",
+    "nameEN": "Dak Song",
+    "fullName": "Huyện Đắk Song",
+    "fullNameEN": "Dak Song District",
+    "codeName": "dak_song",
+    "provinceId": "67",
+    "administrativeUnitId": 7
+  },
+  {
+    "id": "666",
+    "name": "Đắk R'Lấp",
+    "nameEN": "Dak R'Lap",
+    "fullName": "Huyện Đắk R'Lấp",
+    "fullNameEN": "Dak R'Lap District",
+    "codeName": "dak_r'lap",
+    "provinceId": "67",
+    "administrativeUnitId": 7
+  },
+  {
+    "id": "667",
+    "name": "Tuy Đức",
+    "nameEN": "Tuy Duc",
+    "fullName": "Huyện Tuy Đức",
+    "fullNameEN": "Tuy Duc District",
+    "codeName": "tuy_duc",
+    "provinceId": "67",
+    "administrativeUnitId": 7
+  },
+  {
+    "id": "672",
+    "name": "Đà Lạt",
+    "nameEN": "Da Lat",
+    "fullName": "Thành phố Đà Lạt",
+    "fullNameEN": "Da Lat City",
+    "codeName": "da_lat",
+    "provinceId": "68",
+    "administrativeUnitId": 4
+  },
+  {
+    "id": "673",
+    "name": "Bảo Lộc",
+    "nameEN": "Bao Loc",
+    "fullName": "Thành phố Bảo Lộc",
+    "fullNameEN": "Bao Loc City",
+    "codeName": "bao_loc",
+    "provinceId": "68",
+    "administrativeUnitId": 4
+  },
+  {
+    "id": "674",
+    "name": "Đam Rông",
+    "nameEN": "Dam Rong",
+    "fullName": "Huyện Đam Rông",
+    "fullNameEN": "Dam Rong District",
+    "codeName": "dam_rong",
+    "provinceId": "68",
+    "administrativeUnitId": 7
+  },
+  {
+    "id": "675",
+    "name": "Lạc Dương",
+    "nameEN": "Lac Duong",
+    "fullName": "Huyện Lạc Dương",
+    "fullNameEN": "Lac Duong District",
+    "codeName": "lac_duong",
+    "provinceId": "68",
+    "administrativeUnitId": 7
+  },
+  {
+    "id": "676",
+    "name": "Lâm Hà",
+    "nameEN": "Lam Ha",
+    "fullName": "Huyện Lâm Hà",
+    "fullNameEN": "Lam Ha District",
+    "codeName": "lam_ha",
+    "provinceId": "68",
+    "administrativeUnitId": 7
+  },
+  {
+    "id": "677",
+    "name": "Đơn Dương",
+    "nameEN": "Don Duong",
+    "fullName": "Huyện Đơn Dương",
+    "fullNameEN": "Don Duong District",
+    "codeName": "don_duong",
+    "provinceId": "68",
+    "administrativeUnitId": 7
+  },
+  {
+    "id": "678",
+    "name": "Đức Trọng",
+    "nameEN": "Duc Trong",
+    "fullName": "Huyện Đức Trọng",
+    "fullNameEN": "Duc Trong District",
+    "codeName": "duc_trong",
+    "provinceId": "68",
+    "administrativeUnitId": 7
+  },
+  {
+    "id": "679",
+    "name": "Di Linh",
+    "nameEN": "Di Linh",
+    "fullName": "Huyện Di Linh",
+    "fullNameEN": "Di Linh District",
+    "codeName": "di_linh",
+    "provinceId": "68",
+    "administrativeUnitId": 7
+  },
+  {
+    "id": "680",
+    "name": "Bảo Lâm",
+    "nameEN": "Bao Lam",
+    "fullName": "Huyện Bảo Lâm",
+    "fullNameEN": "Bao Lam District",
+    "codeName": "bao_lam",
+    "provinceId": "68",
+    "administrativeUnitId": 7
+  },
+  {
+    "id": "681",
+    "name": "Đạ Huoai",
+    "nameEN": "Da Huoai",
+    "fullName": "Huyện Đạ Huoai",
+    "fullNameEN": "Da Huoai District",
+    "codeName": "da_huoai",
+    "provinceId": "68",
+    "administrativeUnitId": 7
+  },
+  {
+    "id": "682",
+    "name": "Đạ Tẻh",
+    "nameEN": "Da Teh",
+    "fullName": "Huyện Đạ Tẻh",
+    "fullNameEN": "Da Teh District",
+    "codeName": "da_teh",
+    "provinceId": "68",
+    "administrativeUnitId": 7
+  },
+  {
+    "id": "683",
+    "name": "Cát Tiên",
+    "nameEN": "Cat Tien",
+    "fullName": "Huyện Cát Tiên",
+    "fullNameEN": "Cat Tien District",
+    "codeName": "cat_tien",
+    "provinceId": "68",
+    "administrativeUnitId": 7
+  },
+  {
+    "id": "688",
+    "name": "Phước Long",
+    "nameEN": "Phuoc Long",
+    "fullName": "Thị xã Phước Long",
+    "fullNameEN": "Phuoc Long Town",
+    "codeName": "phuoc_long",
+    "provinceId": "70",
+    "administrativeUnitId": 6
+  },
+  {
+    "id": "689",
+    "name": "Đồng Xoài",
+    "nameEN": "Dong Xoai",
+    "fullName": "Thành phố Đồng Xoài",
+    "fullNameEN": "Dong Xoai City",
+    "codeName": "dong_xoai",
+    "provinceId": "70",
+    "administrativeUnitId": 4
+  },
+  {
+    "id": "690",
+    "name": "Bình Long",
+    "nameEN": "Binh Long",
+    "fullName": "Thị xã Bình Long",
+    "fullNameEN": "Binh Long Town",
+    "codeName": "binh_long",
+    "provinceId": "70",
+    "administrativeUnitId": 6
+  },
+  {
+    "id": "691",
+    "name": "Bù Gia Mập",
+    "nameEN": "Bu Gia Map",
+    "fullName": "Huyện Bù Gia Mập",
+    "fullNameEN": "Bu Gia Map District",
+    "codeName": "bu_gia_map",
+    "provinceId": "70",
+    "administrativeUnitId": 7
+  },
+  {
+    "id": "692",
+    "name": "Lộc Ninh",
+    "nameEN": "Loc Ninh",
+    "fullName": "Huyện Lộc Ninh",
+    "fullNameEN": "Loc Ninh District",
+    "codeName": "loc_ninh",
+    "provinceId": "70",
+    "administrativeUnitId": 7
+  },
+  {
+    "id": "693",
+    "name": "Bù Đốp",
+    "nameEN": "Bu Dop",
+    "fullName": "Huyện Bù Đốp",
+    "fullNameEN": "Bu Dop District",
+    "codeName": "bu_dop",
+    "provinceId": "70",
+    "administrativeUnitId": 7
+  },
+  {
+    "id": "694",
+    "name": "Hớn Quản",
+    "nameEN": "Hon Quan",
+    "fullName": "Huyện Hớn Quản",
+    "fullNameEN": "Hon Quan District",
+    "codeName": "hon_quan",
+    "provinceId": "70",
+    "administrativeUnitId": 7
+  },
+  {
+    "id": "695",
+    "name": "Đồng Phú",
+    "nameEN": "Dong Phu",
+    "fullName": "Huyện Đồng Phú",
+    "fullNameEN": "Dong Phu District",
+    "codeName": "dong_phu",
+    "provinceId": "70",
+    "administrativeUnitId": 7
+  },
+  {
+    "id": "696",
+    "name": "Bù Đăng",
+    "nameEN": "Bu Dang",
+    "fullName": "Huyện Bù Đăng",
+    "fullNameEN": "Bu Dang District",
+    "codeName": "bu_dang",
+    "provinceId": "70",
+    "administrativeUnitId": 7
+  },
+  {
+    "id": "697",
+    "name": "Chơn Thành",
+    "nameEN": "Chon Thanh",
+    "fullName": "Thị xã Chơn Thành",
+    "fullNameEN": "Chon Thanh Town",
+    "codeName": "chon_thanh",
+    "provinceId": "70",
+    "administrativeUnitId": 6
+  },
+  {
+    "id": "698",
+    "name": "Phú Riềng",
+    "nameEN": "Phu Rieng",
+    "fullName": "Huyện Phú Riềng",
+    "fullNameEN": "Phu Rieng District",
+    "codeName": "phu_rieng",
+    "provinceId": "70",
+    "administrativeUnitId": 7
+  },
+  {
+    "id": "703",
+    "name": "Tây Ninh",
+    "nameEN": "Tay Ninh",
+    "fullName": "Thành phố Tây Ninh",
+    "fullNameEN": "Tay Ninh City",
+    "codeName": "tay_ninh",
+    "provinceId": "72",
+    "administrativeUnitId": 4
+  },
+  {
+    "id": "705",
+    "name": "Tân Biên",
+    "nameEN": "Tan Bien",
+    "fullName": "Huyện Tân Biên",
+    "fullNameEN": "Tan Bien District",
+    "codeName": "tan_bien",
+    "provinceId": "72",
+    "administrativeUnitId": 7
+  },
+  {
+    "id": "706",
+    "name": "Tân Châu",
+    "nameEN": "Tan Chau",
+    "fullName": "Huyện Tân Châu",
+    "fullNameEN": "Tan Chau District",
+    "codeName": "tan_chau",
+    "provinceId": "72",
+    "administrativeUnitId": 7
+  },
+  {
+    "id": "707",
+    "name": "Dương Minh Châu",
+    "nameEN": "Duong Minh Chau",
+    "fullName": "Huyện Dương Minh Châu",
+    "fullNameEN": "Duong Minh Chau District",
+    "codeName": "duong_minh_chau",
+    "provinceId": "72",
+    "administrativeUnitId": 7
+  },
+  {
+    "id": "708",
+    "name": "Châu Thành",
+    "nameEN": "Chau Thanh",
+    "fullName": "Huyện Châu Thành",
+    "fullNameEN": "Chau Thanh District",
+    "codeName": "chau_thanh",
+    "provinceId": "72",
+    "administrativeUnitId": 7
+  },
+  {
+    "id": "709",
+    "name": "Hòa Thành",
+    "nameEN": "Hoa Thanh",
+    "fullName": "Thị xã Hòa Thành",
+    "fullNameEN": "Hoa Thanh Town",
+    "codeName": "hoa_thanh",
+    "provinceId": "72",
+    "administrativeUnitId": 6
+  },
+  {
+    "id": "710",
+    "name": "Gò Dầu",
+    "nameEN": "Go Dau",
+    "fullName": "Huyện Gò Dầu",
+    "fullNameEN": "Go Dau District",
+    "codeName": "go_dau",
+    "provinceId": "72",
+    "administrativeUnitId": 7
+  },
+  {
+    "id": "711",
+    "name": "Bến Cầu",
+    "nameEN": "Ben Cau",
+    "fullName": "Huyện Bến Cầu",
+    "fullNameEN": "Ben Cau District",
+    "codeName": "ben_cau",
+    "provinceId": "72",
+    "administrativeUnitId": 7
+  },
+  {
+    "id": "712",
+    "name": "Trảng Bàng",
+    "nameEN": "Trang Bang",
+    "fullName": "Thị xã Trảng Bàng",
+    "fullNameEN": "Trang Bang Town",
+    "codeName": "trang_bang",
+    "provinceId": "72",
+    "administrativeUnitId": 6
+  },
+  {
+    "id": "718",
+    "name": "Thủ Dầu Một",
+    "nameEN": "Thu Dau Mot",
+    "fullName": "Thành phố Thủ Dầu Một",
+    "fullNameEN": "Thu Dau Mot City",
+    "codeName": "thu_dau_mot",
+    "provinceId": "74",
+    "administrativeUnitId": 4
+  },
+  {
+    "id": "719",
+    "name": "Bàu Bàng",
+    "nameEN": "Bau Bang",
+    "fullName": "Huyện Bàu Bàng",
+    "fullNameEN": "Bau Bang District",
+    "codeName": "bau_bang",
+    "provinceId": "74",
+    "administrativeUnitId": 7
+  },
+  {
+    "id": "720",
+    "name": "Dầu Tiếng",
+    "nameEN": "Dau Tieng",
+    "fullName": "Huyện Dầu Tiếng",
+    "fullNameEN": "Dau Tieng District",
+    "codeName": "dau_tieng",
+    "provinceId": "74",
+    "administrativeUnitId": 7
+  },
+  {
+    "id": "721",
+    "name": "Bến Cát",
+    "nameEN": "Ben Cat",
+    "fullName": "Thị xã Bến Cát",
+    "fullNameEN": "Ben Cat Town",
+    "codeName": "ben_cat",
+    "provinceId": "74",
+    "administrativeUnitId": 6
+  },
+  {
+    "id": "722",
+    "name": "Phú Giáo",
+    "nameEN": "Phu Giao",
+    "fullName": "Huyện Phú Giáo",
+    "fullNameEN": "Phu Giao District",
+    "codeName": "phu_giao",
+    "provinceId": "74",
+    "administrativeUnitId": 7
+  },
+  {
+    "id": "723",
+    "name": "Tân Uyên",
+    "nameEN": "Tan Uyen",
+    "fullName": "Thành phố Tân Uyên",
+    "fullNameEN": "Tan Uyen City",
+    "codeName": "tan_uyen",
+    "provinceId": "74",
+    "administrativeUnitId": 4
+  },
+  {
+    "id": "724",
+    "name": "Dĩ An",
+    "nameEN": "Di An",
+    "fullName": "Thành phố Dĩ An",
+    "fullNameEN": "Di An City",
+    "codeName": "di_an",
+    "provinceId": "74",
+    "administrativeUnitId": 4
+  },
+  {
+    "id": "725",
+    "name": "Thuận An",
+    "nameEN": "Thuan An",
+    "fullName": "Thành phố Thuận An",
+    "fullNameEN": "Thuan An City",
+    "codeName": "thuan_an",
+    "provinceId": "74",
+    "administrativeUnitId": 4
+  },
+  {
+    "id": "726",
+    "name": "Bắc Tân Uyên",
+    "nameEN": "Bac Tan Uyen",
+    "fullName": "Huyện Bắc Tân Uyên",
+    "fullNameEN": "Bac Tan Uyen District",
+    "codeName": "bac_tan_uyen",
+    "provinceId": "74",
+    "administrativeUnitId": 7
+  },
+  {
+    "id": "731",
+    "name": "Biên Hòa",
+    "nameEN": "Bien Hoa",
+    "fullName": "Thành phố Biên Hòa",
+    "fullNameEN": "Bien Hoa City",
+    "codeName": "bien_hoa",
+    "provinceId": "75",
+    "administrativeUnitId": 4
+  },
+  {
+    "id": "732",
+    "name": "Long Khánh",
+    "nameEN": "Long Khanh",
+    "fullName": "Thành phố Long Khánh",
+    "fullNameEN": "Long Khanh City",
+    "codeName": "long_khanh",
+    "provinceId": "75",
+    "administrativeUnitId": 4
+  },
+  {
+    "id": "734",
+    "name": "Tân Phú",
+    "nameEN": "Tan Phu",
+    "fullName": "Huyện Tân Phú",
+    "fullNameEN": "Tan Phu District",
+    "codeName": "tan_phu",
+    "provinceId": "75",
+    "administrativeUnitId": 7
+  },
+  {
+    "id": "735",
+    "name": "Vĩnh Cửu",
+    "nameEN": "Vinh Cuu",
+    "fullName": "Huyện Vĩnh Cửu",
+    "fullNameEN": "Vinh Cuu District",
+    "codeName": "vinh_cuu",
+    "provinceId": "75",
+    "administrativeUnitId": 7
+  },
+  {
+    "id": "736",
+    "name": "Định Quán",
+    "nameEN": "Dinh Quan",
+    "fullName": "Huyện Định Quán",
+    "fullNameEN": "Dinh Quan District",
+    "codeName": "dinh_quan",
+    "provinceId": "75",
+    "administrativeUnitId": 7
+  },
+  {
+    "id": "737",
+    "name": "Trảng Bom",
+    "nameEN": "Trang Bom",
+    "fullName": "Huyện Trảng Bom",
+    "fullNameEN": "Trang Bom District",
+    "codeName": "trang_bom",
+    "provinceId": "75",
+    "administrativeUnitId": 7
+  },
+  {
+    "id": "738",
+    "name": "Thống Nhất",
+    "nameEN": "Thong Nhat",
+    "fullName": "Huyện Thống Nhất",
+    "fullNameEN": "Thong Nhat District",
+    "codeName": "thong_nhat",
+    "provinceId": "75",
+    "administrativeUnitId": 7
+  },
+  {
+    "id": "739",
+    "name": "Cẩm Mỹ",
+    "nameEN": "Cam My",
+    "fullName": "Huyện Cẩm Mỹ",
+    "fullNameEN": "Cam My District",
+    "codeName": "cam_my",
+    "provinceId": "75",
+    "administrativeUnitId": 7
+  },
+  {
+    "id": "740",
+    "name": "Long Thành",
+    "nameEN": "Long Thanh",
+    "fullName": "Huyện Long Thành",
+    "fullNameEN": "Long Thanh District",
+    "codeName": "long_thanh",
+    "provinceId": "75",
+    "administrativeUnitId": 7
+  },
+  {
+    "id": "741",
+    "name": "Xuân Lộc",
+    "nameEN": "Xuan Loc",
+    "fullName": "Huyện Xuân Lộc",
+    "fullNameEN": "Xuan Loc District",
+    "codeName": "xuan_loc",
+    "provinceId": "75",
+    "administrativeUnitId": 7
+  },
+  {
+    "id": "742",
+    "name": "Nhơn Trạch",
+    "nameEN": "Nhon Trach",
+    "fullName": "Huyện Nhơn Trạch",
+    "fullNameEN": "Nhon Trach District",
+    "codeName": "nhon_trach",
+    "provinceId": "75",
+    "administrativeUnitId": 7
+  },
+  {
+    "id": "747",
+    "name": "Vũng Tàu",
+    "nameEN": "Vung Tau",
+    "fullName": "Thành phố Vũng Tàu",
+    "fullNameEN": "Vung Tau City",
+    "codeName": "vung_tau",
+    "provinceId": "77",
+    "administrativeUnitId": 4
+  },
+  {
+    "id": "748",
+    "name": "Bà Rịa",
+    "nameEN": "Ba Ria",
+    "fullName": "Thành phố Bà Rịa",
+    "fullNameEN": "Ba Ria City",
+    "codeName": "ba_ria",
+    "provinceId": "77",
+    "administrativeUnitId": 4
+  },
+  {
+    "id": "750",
+    "name": "Châu Đức",
+    "nameEN": "Chau Duc",
+    "fullName": "Huyện Châu Đức",
+    "fullNameEN": "Chau Duc District",
+    "codeName": "chau_duc",
+    "provinceId": "77",
+    "administrativeUnitId": 7
+  },
+  {
+    "id": "751",
+    "name": "Xuyên Mộc",
+    "nameEN": "Xuyen Moc",
+    "fullName": "Huyện Xuyên Mộc",
+    "fullNameEN": "Xuyen Moc District",
+    "codeName": "xuyen_moc",
+    "provinceId": "77",
+    "administrativeUnitId": 7
+  },
+  {
+    "id": "752",
+    "name": "Long Điền",
+    "nameEN": "Long Dien",
+    "fullName": "Huyện Long Điền",
+    "fullNameEN": "Long Dien District",
+    "codeName": "long_dien",
+    "provinceId": "77",
+    "administrativeUnitId": 7
+  },
+  {
+    "id": "753",
+    "name": "Đất Đỏ",
+    "nameEN": "Dat Do",
+    "fullName": "Huyện Đất Đỏ",
+    "fullNameEN": "Dat Do District",
+    "codeName": "dat_do",
+    "provinceId": "77",
+    "administrativeUnitId": 7
+  },
+  {
+    "id": "754",
+    "name": "Phú Mỹ",
+    "nameEN": "Phu My",
+    "fullName": "Thị xã Phú Mỹ",
+    "fullNameEN": "Phu My Town",
+    "codeName": "phu_my",
+    "provinceId": "77",
+    "administrativeUnitId": 6
+  },
+  {
+    "id": "755",
+    "name": "Côn Đảo",
+    "nameEN": "Con Dao",
+    "fullName": "Huyện Côn Đảo",
+    "fullNameEN": "Con Dao District",
+    "codeName": "con_dao",
+    "provinceId": "77",
+    "administrativeUnitId": 7
+  },
+  {
+    "id": "760",
+    "name": "1",
+    "nameEN": "1",
+    "fullName": "Quận 1",
+    "fullNameEN": "District 1",
+    "codeName": "1",
+    "provinceId": "79",
+    "administrativeUnitId": 5
+  },
+  {
+    "id": "761",
+    "name": "12",
+    "nameEN": "12",
+    "fullName": "Quận 12",
+    "fullNameEN": "District 12",
+    "codeName": "12",
+    "provinceId": "79",
+    "administrativeUnitId": 5
+  },
+  {
+    "id": "764",
+    "name": "Gò Vấp",
+    "nameEN": "Go Vap",
+    "fullName": "Quận Gò Vấp",
+    "fullNameEN": "Go Vap District",
+    "codeName": "go_vap",
+    "provinceId": "79",
+    "administrativeUnitId": 5
+  },
+  {
+    "id": "765",
+    "name": "Bình Thạnh",
+    "nameEN": "Binh Thanh",
+    "fullName": "Quận Bình Thạnh",
+    "fullNameEN": "Binh Thanh District",
+    "codeName": "binh_thanh",
+    "provinceId": "79",
+    "administrativeUnitId": 5
+  },
+  {
+    "id": "766",
+    "name": "Tân Bình",
+    "nameEN": "Tan Binh",
+    "fullName": "Quận Tân Bình",
+    "fullNameEN": "Tan Binh District",
+    "codeName": "tan_binh",
+    "provinceId": "79",
+    "administrativeUnitId": 5
+  },
+  {
+    "id": "767",
+    "name": "Tân Phú",
+    "nameEN": "Tan Phu",
+    "fullName": "Quận Tân Phú",
+    "fullNameEN": "Tan Phu District",
+    "codeName": "tan_phu",
+    "provinceId": "79",
+    "administrativeUnitId": 5
+  },
+  {
+    "id": "768",
+    "name": "Phú Nhuận",
+    "nameEN": "Phu Nhuan",
+    "fullName": "Quận Phú Nhuận",
+    "fullNameEN": "Phu Nhuan District",
+    "codeName": "phu_nhuan",
+    "provinceId": "79",
+    "administrativeUnitId": 5
+  },
+  {
+    "id": "769",
+    "name": "Thủ Đức",
+    "nameEN": "Thu Duc",
+    "fullName": "Thành phố Thủ Đức",
+    "fullNameEN": "Thu Duc City",
+    "codeName": "thu_duc",
+    "provinceId": "79",
+    "administrativeUnitId": 3
+  },
+  {
+    "id": "770",
+    "name": "3",
+    "nameEN": "3",
+    "fullName": "Quận 3",
+    "fullNameEN": "District 3",
+    "codeName": "3",
+    "provinceId": "79",
+    "administrativeUnitId": 5
+  },
+  {
+    "id": "771",
+    "name": "10",
+    "nameEN": "10",
+    "fullName": "Quận 10",
+    "fullNameEN": "District 10",
+    "codeName": "10",
+    "provinceId": "79",
+    "administrativeUnitId": 5
+  },
+  {
+    "id": "772",
+    "name": "11",
+    "nameEN": "11",
+    "fullName": "Quận 11",
+    "fullNameEN": "District 11",
+    "codeName": "11",
+    "provinceId": "79",
+    "administrativeUnitId": 5
+  },
+  {
+    "id": "773",
+    "name": "4",
+    "nameEN": "4",
+    "fullName": "Quận 4",
+    "fullNameEN": "District 4",
+    "codeName": "4",
+    "provinceId": "79",
+    "administrativeUnitId": 5
+  },
+  {
+    "id": "774",
+    "name": "5",
+    "nameEN": "5",
+    "fullName": "Quận 5",
+    "fullNameEN": "District 5",
+    "codeName": "5",
+    "provinceId": "79",
+    "administrativeUnitId": 5
+  },
+  {
+    "id": "775",
+    "name": "6",
+    "nameEN": "6",
+    "fullName": "Quận 6",
+    "fullNameEN": "District 6",
+    "codeName": "6",
+    "provinceId": "79",
+    "administrativeUnitId": 5
+  },
+  {
+    "id": "776",
+    "name": "8",
+    "nameEN": "8",
+    "fullName": "Quận 8",
+    "fullNameEN": "District 8",
+    "codeName": "8",
+    "provinceId": "79",
+    "administrativeUnitId": 5
+  },
+  {
+    "id": "777",
+    "name": "Bình Tân",
+    "nameEN": "Binh Tan",
+    "fullName": "Quận Bình Tân",
+    "fullNameEN": "Binh Tan District",
+    "codeName": "binh_tan",
+    "provinceId": "79",
+    "administrativeUnitId": 5
+  },
+  {
+    "id": "778",
+    "name": "7",
+    "nameEN": "7",
+    "fullName": "Quận 7",
+    "fullNameEN": "District 7",
+    "codeName": "7",
+    "provinceId": "79",
+    "administrativeUnitId": 5
+  },
+  {
+    "id": "783",
+    "name": "Củ Chi",
+    "nameEN": "Cu Chi",
+    "fullName": "Huyện Củ Chi",
+    "fullNameEN": "Cu Chi District",
+    "codeName": "cu_chi",
+    "provinceId": "79",
+    "administrativeUnitId": 7
+  },
+  {
+    "id": "784",
+    "name": "Hóc Môn",
+    "nameEN": "Hoc Mon",
+    "fullName": "Huyện Hóc Môn",
+    "fullNameEN": "Hoc Mon District",
+    "codeName": "hoc_mon",
+    "provinceId": "79",
+    "administrativeUnitId": 7
+  },
+  {
+    "id": "785",
+    "name": "Bình Chánh",
+    "nameEN": "Binh Chanh",
+    "fullName": "Huyện Bình Chánh",
+    "fullNameEN": "Binh Chanh District",
+    "codeName": "binh_chanh",
+    "provinceId": "79",
+    "administrativeUnitId": 7
+  },
+  {
+    "id": "786",
+    "name": "Nhà Bè",
+    "nameEN": "Nha Be",
+    "fullName": "Huyện Nhà Bè",
+    "fullNameEN": "Nha Be District",
+    "codeName": "nha_be",
+    "provinceId": "79",
+    "administrativeUnitId": 7
+  },
+  {
+    "id": "787",
+    "name": "Cần Giờ",
+    "nameEN": "Can Gio",
+    "fullName": "Huyện Cần Giờ",
+    "fullNameEN": "Can Gio District",
+    "codeName": "can_gio",
+    "provinceId": "79",
+    "administrativeUnitId": 7
+  },
+  {
+    "id": "794",
+    "name": "Tân An",
+    "nameEN": "Tan An",
+    "fullName": "Thành phố Tân An",
+    "fullNameEN": "Tan An City",
+    "codeName": "tan_an",
+    "provinceId": "80",
+    "administrativeUnitId": 4
+  },
+  {
+    "id": "795",
+    "name": "Kiến Tường",
+    "nameEN": "Kien Tuong",
+    "fullName": "Thị xã Kiến Tường",
+    "fullNameEN": "Kien Tuong Town",
+    "codeName": "kien_tuong",
+    "provinceId": "80",
+    "administrativeUnitId": 6
+  },
+  {
+    "id": "796",
+    "name": "Tân Hưng",
+    "nameEN": "Tan Hung",
+    "fullName": "Huyện Tân Hưng",
+    "fullNameEN": "Tan Hung District",
+    "codeName": "tan_hung",
+    "provinceId": "80",
+    "administrativeUnitId": 7
+  },
+  {
+    "id": "797",
+    "name": "Vĩnh Hưng",
+    "nameEN": "Vinh Hung",
+    "fullName": "Huyện Vĩnh Hưng",
+    "fullNameEN": "Vinh Hung District",
+    "codeName": "vinh_hung",
+    "provinceId": "80",
+    "administrativeUnitId": 7
+  },
+  {
+    "id": "798",
+    "name": "Mộc Hóa",
+    "nameEN": "Moc Hoa",
+    "fullName": "Huyện Mộc Hóa",
+    "fullNameEN": "Moc Hoa District",
+    "codeName": "moc_hoa",
+    "provinceId": "80",
+    "administrativeUnitId": 7
+  },
+  {
+    "id": "799",
+    "name": "Tân Thạnh",
+    "nameEN": "Tan Thanh",
+    "fullName": "Huyện Tân Thạnh",
+    "fullNameEN": "Tan Thanh District",
+    "codeName": "tan_thanh",
+    "provinceId": "80",
+    "administrativeUnitId": 7
+  },
+  {
+    "id": "800",
+    "name": "Thạnh Hóa",
+    "nameEN": "Thanh Hoa",
+    "fullName": "Huyện Thạnh Hóa",
+    "fullNameEN": "Thanh Hoa District",
+    "codeName": "thanh_hoa",
+    "provinceId": "80",
+    "administrativeUnitId": 7
+  },
+  {
+    "id": "801",
+    "name": "Đức Huệ",
+    "nameEN": "Duc Hue",
+    "fullName": "Huyện Đức Huệ",
+    "fullNameEN": "Duc Hue District",
+    "codeName": "duc_hue",
+    "provinceId": "80",
+    "administrativeUnitId": 7
+  },
+  {
+    "id": "802",
+    "name": "Đức Hòa",
+    "nameEN": "Duc Hoa",
+    "fullName": "Huyện Đức Hòa",
+    "fullNameEN": "Duc Hoa District",
+    "codeName": "duc_hoa",
+    "provinceId": "80",
+    "administrativeUnitId": 7
+  },
+  {
+    "id": "803",
+    "name": "Bến Lức",
+    "nameEN": "Ben Luc",
+    "fullName": "Huyện Bến Lức",
+    "fullNameEN": "Ben Luc District",
+    "codeName": "ben_luc",
+    "provinceId": "80",
+    "administrativeUnitId": 7
+  },
+  {
+    "id": "804",
+    "name": "Thủ Thừa",
+    "nameEN": "Thu Thua",
+    "fullName": "Huyện Thủ Thừa",
+    "fullNameEN": "Thu Thua District",
+    "codeName": "thu_thua",
+    "provinceId": "80",
+    "administrativeUnitId": 7
+  },
+  {
+    "id": "805",
+    "name": "Tân Trụ",
+    "nameEN": "Tan Tru",
+    "fullName": "Huyện Tân Trụ",
+    "fullNameEN": "Tan Tru District",
+    "codeName": "tan_tru",
+    "provinceId": "80",
+    "administrativeUnitId": 7
+  },
+  {
+    "id": "806",
+    "name": "Cần Đước",
+    "nameEN": "Can Duoc",
+    "fullName": "Huyện Cần Đước",
+    "fullNameEN": "Can Duoc District",
+    "codeName": "can_duoc",
+    "provinceId": "80",
+    "administrativeUnitId": 7
+  },
+  {
+    "id": "807",
+    "name": "Cần Giuộc",
+    "nameEN": "Can Giuoc",
+    "fullName": "Huyện Cần Giuộc",
+    "fullNameEN": "Can Giuoc District",
+    "codeName": "can_giuoc",
+    "provinceId": "80",
+    "administrativeUnitId": 7
+  },
+  {
+    "id": "808",
+    "name": "Châu Thành",
+    "nameEN": "Chau Thanh",
+    "fullName": "Huyện Châu Thành",
+    "fullNameEN": "Chau Thanh District",
+    "codeName": "chau_thanh",
+    "provinceId": "80",
+    "administrativeUnitId": 7
+  },
+  {
+    "id": "815",
+    "name": "Mỹ Tho",
+    "nameEN": "My Tho",
+    "fullName": "Thành phố Mỹ Tho",
+    "fullNameEN": "My Tho City",
+    "codeName": "my_tho",
+    "provinceId": "82",
+    "administrativeUnitId": 4
+  },
+  {
+    "id": "816",
+    "name": "Gò Công",
+    "nameEN": "Go Cong",
+    "fullName": "Thị xã Gò Công",
+    "fullNameEN": "Go Cong Town",
+    "codeName": "go_cong",
+    "provinceId": "82",
+    "administrativeUnitId": 6
+  },
+  {
+    "id": "817",
+    "name": "Cai Lậy",
+    "nameEN": "Cai Lay",
+    "fullName": "Thị xã Cai Lậy",
+    "fullNameEN": "Cai Lay Town",
+    "codeName": "cai_lay",
+    "provinceId": "82",
+    "administrativeUnitId": 6
+  },
+  {
+    "id": "818",
+    "name": "Tân Phước",
+    "nameEN": "Tan Phuoc",
+    "fullName": "Huyện Tân Phước",
+    "fullNameEN": "Tan Phuoc District",
+    "codeName": "tan_phuoc",
+    "provinceId": "82",
+    "administrativeUnitId": 7
+  },
+  {
+    "id": "819",
+    "name": "Cái Bè",
+    "nameEN": "Cai Be",
+    "fullName": "Huyện Cái Bè",
+    "fullNameEN": "Cai Be District",
+    "codeName": "cai_be",
+    "provinceId": "82",
+    "administrativeUnitId": 7
+  },
+  {
+    "id": "820",
+    "name": "Cai Lậy",
+    "nameEN": "Cai Lay",
+    "fullName": "Huyện Cai Lậy",
+    "fullNameEN": "Cai Lay District",
+    "codeName": "cai_lay",
+    "provinceId": "82",
+    "administrativeUnitId": 7
+  },
+  {
+    "id": "821",
+    "name": "Châu Thành",
+    "nameEN": "Chau Thanh",
+    "fullName": "Huyện Châu Thành",
+    "fullNameEN": "Chau Thanh District",
+    "codeName": "chau_thanh",
+    "provinceId": "82",
+    "administrativeUnitId": 7
+  },
+  {
+    "id": "822",
+    "name": "Chợ Gạo",
+    "nameEN": "Cho Gao",
+    "fullName": "Huyện Chợ Gạo",
+    "fullNameEN": "Cho Gao District",
+    "codeName": "cho_gao",
+    "provinceId": "82",
+    "administrativeUnitId": 7
+  },
+  {
+    "id": "823",
+    "name": "Gò Công Tây",
+    "nameEN": "Go Cong Tay",
+    "fullName": "Huyện Gò Công Tây",
+    "fullNameEN": "Go Cong Tay District",
+    "codeName": "go_cong_tay",
+    "provinceId": "82",
+    "administrativeUnitId": 7
+  },
+  {
+    "id": "824",
+    "name": "Gò Công Đông",
+    "nameEN": "Go Cong Dong",
+    "fullName": "Huyện Gò Công Đông",
+    "fullNameEN": "Go Cong Dong District",
+    "codeName": "go_cong_dong",
+    "provinceId": "82",
+    "administrativeUnitId": 7
+  },
+  {
+    "id": "825",
+    "name": "Tân Phú Đông",
+    "nameEN": "Tan Phu Dong",
+    "fullName": "Huyện Tân Phú Đông",
+    "fullNameEN": "Tan Phu Dong District",
+    "codeName": "tan_phu_dong",
+    "provinceId": "82",
+    "administrativeUnitId": 7
+  },
+  {
+    "id": "829",
+    "name": "Bến Tre",
+    "nameEN": "Ben Tre",
+    "fullName": "Thành phố Bến Tre",
+    "fullNameEN": "Ben Tre City",
+    "codeName": "ben_tre",
+    "provinceId": "83",
+    "administrativeUnitId": 4
+  },
+  {
+    "id": "831",
+    "name": "Châu Thành",
+    "nameEN": "Chau Thanh",
+    "fullName": "Huyện Châu Thành",
+    "fullNameEN": "Chau Thanh District",
+    "codeName": "chau_thanh",
+    "provinceId": "83",
+    "administrativeUnitId": 7
+  },
+  {
+    "id": "832",
+    "name": "Chợ Lách",
+    "nameEN": "Cho Lach",
+    "fullName": "Huyện Chợ Lách",
+    "fullNameEN": "Cho Lach District",
+    "codeName": "cho_lach",
+    "provinceId": "83",
+    "administrativeUnitId": 7
+  },
+  {
+    "id": "833",
+    "name": "Mỏ Cày Nam",
+    "nameEN": "Mo Cay Nam",
+    "fullName": "Huyện Mỏ Cày Nam",
+    "fullNameEN": "Mo Cay Nam District",
+    "codeName": "mo_cay_nam",
+    "provinceId": "83",
+    "administrativeUnitId": 7
+  },
+  {
+    "id": "834",
+    "name": "Giồng Trôm",
+    "nameEN": "Giong Trom",
+    "fullName": "Huyện Giồng Trôm",
+    "fullNameEN": "Giong Trom District",
+    "codeName": "giong_trom",
+    "provinceId": "83",
+    "administrativeUnitId": 7
+  },
+  {
+    "id": "835",
+    "name": "Bình Đại",
+    "nameEN": "Binh Dai",
+    "fullName": "Huyện Bình Đại",
+    "fullNameEN": "Binh Dai District",
+    "codeName": "binh_dai",
+    "provinceId": "83",
+    "administrativeUnitId": 7
+  },
+  {
+    "id": "836",
+    "name": "Ba Tri",
+    "nameEN": "Ba Tri",
+    "fullName": "Huyện Ba Tri",
+    "fullNameEN": "Ba Tri District",
+    "codeName": "ba_tri",
+    "provinceId": "83",
+    "administrativeUnitId": 7
+  },
+  {
+    "id": "837",
+    "name": "Thạnh Phú",
+    "nameEN": "Thanh Phu",
+    "fullName": "Huyện Thạnh Phú",
+    "fullNameEN": "Thanh Phu District",
+    "codeName": "thanh_phu",
+    "provinceId": "83",
+    "administrativeUnitId": 7
+  },
+  {
+    "id": "838",
+    "name": "Mỏ Cày Bắc",
+    "nameEN": "Mo Cay Bac",
+    "fullName": "Huyện Mỏ Cày Bắc",
+    "fullNameEN": "Mo Cay Bac District",
+    "codeName": "mo_cay_bac",
+    "provinceId": "83",
+    "administrativeUnitId": 7
+  },
+  {
+    "id": "842",
+    "name": "Trà Vinh",
+    "nameEN": "Tra Vinh",
+    "fullName": "Thành phố Trà Vinh",
+    "fullNameEN": "Tra Vinh City",
+    "codeName": "tra_vinh",
+    "provinceId": "84",
+    "administrativeUnitId": 4
+  },
+  {
+    "id": "844",
+    "name": "Càng Long",
+    "nameEN": "Cang Long",
+    "fullName": "Huyện Càng Long",
+    "fullNameEN": "Cang Long District",
+    "codeName": "cang_long",
+    "provinceId": "84",
+    "administrativeUnitId": 7
+  },
+  {
+    "id": "845",
+    "name": "Cầu Kè",
+    "nameEN": "Cau Ke",
+    "fullName": "Huyện Cầu Kè",
+    "fullNameEN": "Cau Ke District",
+    "codeName": "cau_ke",
+    "provinceId": "84",
+    "administrativeUnitId": 7
+  },
+  {
+    "id": "846",
+    "name": "Tiểu Cần",
+    "nameEN": "Tieu Can",
+    "fullName": "Huyện Tiểu Cần",
+    "fullNameEN": "Tieu Can District",
+    "codeName": "tieu_can",
+    "provinceId": "84",
+    "administrativeUnitId": 7
+  },
+  {
+    "id": "847",
+    "name": "Châu Thành",
+    "nameEN": "Chau Thanh",
+    "fullName": "Huyện Châu Thành",
+    "fullNameEN": "Chau Thanh District",
+    "codeName": "chau_thanh",
+    "provinceId": "84",
+    "administrativeUnitId": 7
+  },
+  {
+    "id": "848",
+    "name": "Cầu Ngang",
+    "nameEN": "Cau Ngang",
+    "fullName": "Huyện Cầu Ngang",
+    "fullNameEN": "Cau Ngang District",
+    "codeName": "cau_ngang",
+    "provinceId": "84",
+    "administrativeUnitId": 7
+  },
+  {
+    "id": "849",
+    "name": "Trà Cú",
+    "nameEN": "Tra Cu",
+    "fullName": "Huyện Trà Cú",
+    "fullNameEN": "Tra Cu District",
+    "codeName": "tra_cu",
+    "provinceId": "84",
+    "administrativeUnitId": 7
+  },
+  {
+    "id": "850",
+    "name": "Duyên Hải",
+    "nameEN": "Duyen Hai",
+    "fullName": "Huyện Duyên Hải",
+    "fullNameEN": "Duyen Hai District",
+    "codeName": "duyen_hai",
+    "provinceId": "84",
+    "administrativeUnitId": 7
+  },
+  {
+    "id": "851",
+    "name": "Duyên Hải",
+    "nameEN": "Duyen Hai",
+    "fullName": "Thị xã Duyên Hải",
+    "fullNameEN": "Duyen Hai Town",
+    "codeName": "duyen_hai",
+    "provinceId": "84",
+    "administrativeUnitId": 6
+  },
+  {
+    "id": "855",
+    "name": "Vĩnh Long",
+    "nameEN": "Vinh Long",
+    "fullName": "Thành phố Vĩnh Long",
+    "fullNameEN": "Vinh Long City",
+    "codeName": "vinh_long",
+    "provinceId": "86",
+    "administrativeUnitId": 4
+  },
+  {
+    "id": "857",
+    "name": "Long Hồ",
+    "nameEN": "Long Ho",
+    "fullName": "Huyện Long Hồ",
+    "fullNameEN": "Long Ho District",
+    "codeName": "long_ho",
+    "provinceId": "86",
+    "administrativeUnitId": 7
+  },
+  {
+    "id": "858",
+    "name": "Mang Thít",
+    "nameEN": "Mang Thit",
+    "fullName": "Huyện Mang Thít",
+    "fullNameEN": "Mang Thit District",
+    "codeName": "mang_thit",
+    "provinceId": "86",
+    "administrativeUnitId": 7
+  },
+  {
+    "id": "859",
+    "name": "Vũng Liêm",
+    "nameEN": "Vung Liem",
+    "fullName": "Huyện Vũng Liêm",
+    "fullNameEN": "Vung Liem District",
+    "codeName": "vung_liem",
+    "provinceId": "86",
+    "administrativeUnitId": 7
+  },
+  {
+    "id": "860",
+    "name": "Tam Bình",
+    "nameEN": "Tam Binh",
+    "fullName": "Huyện Tam Bình",
+    "fullNameEN": "Tam Binh District",
+    "codeName": "tam_binh",
+    "provinceId": "86",
+    "administrativeUnitId": 7
+  },
+  {
+    "id": "861",
+    "name": "Bình Minh",
+    "nameEN": "Binh Minh",
+    "fullName": "Thị xã Bình Minh",
+    "fullNameEN": "Binh Minh Town",
+    "codeName": "binh_minh",
+    "provinceId": "86",
+    "administrativeUnitId": 6
+  },
+  {
+    "id": "862",
+    "name": "Trà Ôn",
+    "nameEN": "Tra On",
+    "fullName": "Huyện Trà Ôn",
+    "fullNameEN": "Tra On District",
+    "codeName": "tra_on",
+    "provinceId": "86",
+    "administrativeUnitId": 7
+  },
+  {
+    "id": "863",
+    "name": "Bình Tân",
+    "nameEN": "Binh Tan",
+    "fullName": "Huyện Bình Tân",
+    "fullNameEN": "Binh Tan District",
+    "codeName": "binh_tan",
+    "provinceId": "86",
+    "administrativeUnitId": 7
+  },
+  {
+    "id": "866",
+    "name": "Cao Lãnh",
+    "nameEN": "Cao Lanh",
+    "fullName": "Thành phố Cao Lãnh",
+    "fullNameEN": "Cao Lanh City",
+    "codeName": "cao_lanh",
+    "provinceId": "87",
+    "administrativeUnitId": 4
+  },
+  {
+    "id": "867",
+    "name": "Sa Đéc",
+    "nameEN": "Sa Dec",
+    "fullName": "Thành phố Sa Đéc",
+    "fullNameEN": "Sa Dec City",
+    "codeName": "sa_dec",
+    "provinceId": "87",
+    "administrativeUnitId": 4
+  },
+  {
+    "id": "868",
+    "name": "Hồng Ngự",
+    "nameEN": "Hong Ngu",
+    "fullName": "Thành phố Hồng Ngự",
+    "fullNameEN": "Hong Ngu City",
+    "codeName": "hong_ngu",
+    "provinceId": "87",
+    "administrativeUnitId": 4
+  },
+  {
+    "id": "869",
+    "name": "Tân Hồng",
+    "nameEN": "Tan Hong",
+    "fullName": "Huyện Tân Hồng",
+    "fullNameEN": "Tan Hong District",
+    "codeName": "tan_hong",
+    "provinceId": "87",
+    "administrativeUnitId": 7
+  },
+  {
+    "id": "870",
+    "name": "Hồng Ngự",
+    "nameEN": "Hong Ngu",
+    "fullName": "Huyện Hồng Ngự",
+    "fullNameEN": "Hong Ngu District",
+    "codeName": "hong_ngu",
+    "provinceId": "87",
+    "administrativeUnitId": 7
+  },
+  {
+    "id": "871",
+    "name": "Tam Nông",
+    "nameEN": "Tam Nong",
+    "fullName": "Huyện Tam Nông",
+    "fullNameEN": "Tam Nong District",
+    "codeName": "tam_nong",
+    "provinceId": "87",
+    "administrativeUnitId": 7
+  },
+  {
+    "id": "872",
+    "name": "Tháp Mười",
+    "nameEN": "Thap Muoi",
+    "fullName": "Huyện Tháp Mười",
+    "fullNameEN": "Thap Muoi District",
+    "codeName": "thap_muoi",
+    "provinceId": "87",
+    "administrativeUnitId": 7
+  },
+  {
+    "id": "873",
+    "name": "Cao Lãnh",
+    "nameEN": "Cao Lanh",
+    "fullName": "Huyện Cao Lãnh",
+    "fullNameEN": "Cao Lanh District",
+    "codeName": "cao_lanh",
+    "provinceId": "87",
+    "administrativeUnitId": 7
+  },
+  {
+    "id": "874",
+    "name": "Thanh Bình",
+    "nameEN": "Thanh Binh",
+    "fullName": "Huyện Thanh Bình",
+    "fullNameEN": "Thanh Binh District",
+    "codeName": "thanh_binh",
+    "provinceId": "87",
+    "administrativeUnitId": 7
+  },
+  {
+    "id": "875",
+    "name": "Lấp Vò",
+    "nameEN": "Lap Vo",
+    "fullName": "Huyện Lấp Vò",
+    "fullNameEN": "Lap Vo District",
+    "codeName": "lap_vo",
+    "provinceId": "87",
+    "administrativeUnitId": 7
+  },
+  {
+    "id": "876",
+    "name": "Lai Vung",
+    "nameEN": "Lai Vung",
+    "fullName": "Huyện Lai Vung",
+    "fullNameEN": "Lai Vung District",
+    "codeName": "lai_vung",
+    "provinceId": "87",
+    "administrativeUnitId": 7
+  },
+  {
+    "id": "877",
+    "name": "Châu Thành",
+    "nameEN": "Chau Thanh",
+    "fullName": "Huyện Châu Thành",
+    "fullNameEN": "Chau Thanh District",
+    "codeName": "chau_thanh",
+    "provinceId": "87",
+    "administrativeUnitId": 7
+  },
+  {
+    "id": "883",
+    "name": "Long Xuyên",
+    "nameEN": "Long Xuyen",
+    "fullName": "Thành phố Long Xuyên",
+    "fullNameEN": "Long Xuyen City",
+    "codeName": "long_xuyen",
+    "provinceId": "89",
+    "administrativeUnitId": 4
+  },
+  {
+    "id": "884",
+    "name": "Châu Đốc",
+    "nameEN": "Chau Doc",
+    "fullName": "Thành phố Châu Đốc",
+    "fullNameEN": "Chau Doc City",
+    "codeName": "chau_doc",
+    "provinceId": "89",
+    "administrativeUnitId": 4
+  },
+  {
+    "id": "886",
+    "name": "An Phú",
+    "nameEN": "An Phu",
+    "fullName": "Huyện An Phú",
+    "fullNameEN": "An Phu District",
+    "codeName": "an_phu",
+    "provinceId": "89",
+    "administrativeUnitId": 7
+  },
+  {
+    "id": "887",
+    "name": "Tân Châu",
+    "nameEN": "Tan Chau",
+    "fullName": "Thị xã Tân Châu",
+    "fullNameEN": "Tan Chau Town",
+    "codeName": "tan_chau",
+    "provinceId": "89",
+    "administrativeUnitId": 6
+  },
+  {
+    "id": "888",
+    "name": "Phú Tân",
+    "nameEN": "Phu Tan",
+    "fullName": "Huyện Phú Tân",
+    "fullNameEN": "Phu Tan District",
+    "codeName": "phu_tan",
+    "provinceId": "89",
+    "administrativeUnitId": 7
+  },
+  {
+    "id": "889",
+    "name": "Châu Phú",
+    "nameEN": "Chau Phu",
+    "fullName": "Huyện Châu Phú",
+    "fullNameEN": "Chau Phu District",
+    "codeName": "chau_phu",
+    "provinceId": "89",
+    "administrativeUnitId": 7
+  },
+  {
+    "id": "890",
+    "name": "Tịnh Biên",
+    "nameEN": "Tinh Bien",
+    "fullName": "Thị xã Tịnh Biên",
+    "fullNameEN": "Tinh Bien Town",
+    "codeName": "tinh_bien",
+    "provinceId": "89",
+    "administrativeUnitId": 6
+  },
+  {
+    "id": "891",
+    "name": "Tri Tôn",
+    "nameEN": "Tri Ton",
+    "fullName": "Huyện Tri Tôn",
+    "fullNameEN": "Tri Ton District",
+    "codeName": "tri_ton",
+    "provinceId": "89",
+    "administrativeUnitId": 7
+  },
+  {
+    "id": "892",
+    "name": "Châu Thành",
+    "nameEN": "Chau Thanh",
+    "fullName": "Huyện Châu Thành",
+    "fullNameEN": "Chau Thanh District",
+    "codeName": "chau_thanh",
+    "provinceId": "89",
+    "administrativeUnitId": 7
+  },
+  {
+    "id": "893",
+    "name": "Chợ Mới",
+    "nameEN": "Cho Moi",
+    "fullName": "Huyện Chợ Mới",
+    "fullNameEN": "Cho Moi District",
+    "codeName": "cho_moi",
+    "provinceId": "89",
+    "administrativeUnitId": 7
+  },
+  {
+    "id": "894",
+    "name": "Thoại Sơn",
+    "nameEN": "Thoai Son",
+    "fullName": "Huyện Thoại Sơn",
+    "fullNameEN": "Thoai Son District",
+    "codeName": "thoai_son",
+    "provinceId": "89",
+    "administrativeUnitId": 7
+  },
+  {
+    "id": "899",
+    "name": "Rạch Giá",
+    "nameEN": "Rach Gia",
+    "fullName": "Thành phố Rạch Giá",
+    "fullNameEN": "Rach Gia City",
+    "codeName": "rach_gia",
+    "provinceId": "91",
+    "administrativeUnitId": 4
+  },
+  {
+    "id": "900",
+    "name": "Hà Tiên",
+    "nameEN": "Ha Tien",
+    "fullName": "Thành phố Hà Tiên",
+    "fullNameEN": "Ha Tien City",
+    "codeName": "ha_tien",
+    "provinceId": "91",
+    "administrativeUnitId": 4
+  },
+  {
+    "id": "902",
+    "name": "Kiên Lương",
+    "nameEN": "Kien Luong",
+    "fullName": "Huyện Kiên Lương",
+    "fullNameEN": "Kien Luong District",
+    "codeName": "kien_luong",
+    "provinceId": "91",
+    "administrativeUnitId": 7
+  },
+  {
+    "id": "903",
+    "name": "Hòn Đất",
+    "nameEN": "Hon Dat",
+    "fullName": "Huyện Hòn Đất",
+    "fullNameEN": "Hon Dat District",
+    "codeName": "hon_dat",
+    "provinceId": "91",
+    "administrativeUnitId": 7
+  },
+  {
+    "id": "904",
+    "name": "Tân Hiệp",
+    "nameEN": "Tan Hiep",
+    "fullName": "Huyện Tân Hiệp",
+    "fullNameEN": "Tan Hiep District",
+    "codeName": "tan_hiep",
+    "provinceId": "91",
+    "administrativeUnitId": 7
+  },
+  {
+    "id": "905",
+    "name": "Châu Thành",
+    "nameEN": "Chau Thanh",
+    "fullName": "Huyện Châu Thành",
+    "fullNameEN": "Chau Thanh District",
+    "codeName": "chau_thanh",
+    "provinceId": "91",
+    "administrativeUnitId": 7
+  },
+  {
+    "id": "906",
+    "name": "Giồng Riềng",
+    "nameEN": "Giong Rieng",
+    "fullName": "Huyện Giồng Riềng",
+    "fullNameEN": "Giong Rieng District",
+    "codeName": "giong_rieng",
+    "provinceId": "91",
+    "administrativeUnitId": 7
+  },
+  {
+    "id": "907",
+    "name": "Gò Quao",
+    "nameEN": "Go Quao",
+    "fullName": "Huyện Gò Quao",
+    "fullNameEN": "Go Quao District",
+    "codeName": "go_quao",
+    "provinceId": "91",
+    "administrativeUnitId": 7
+  },
+  {
+    "id": "908",
+    "name": "An Biên",
+    "nameEN": "An Bien",
+    "fullName": "Huyện An Biên",
+    "fullNameEN": "An Bien District",
+    "codeName": "an_bien",
+    "provinceId": "91",
+    "administrativeUnitId": 7
+  },
+  {
+    "id": "909",
+    "name": "An Minh",
+    "nameEN": "An Minh",
+    "fullName": "Huyện An Minh",
+    "fullNameEN": "An Minh District",
+    "codeName": "an_minh",
+    "provinceId": "91",
+    "administrativeUnitId": 7
+  },
+  {
+    "id": "910",
+    "name": "Vĩnh Thuận",
+    "nameEN": "Vinh Thuan",
+    "fullName": "Huyện Vĩnh Thuận",
+    "fullNameEN": "Vinh Thuan District",
+    "codeName": "vinh_thuan",
+    "provinceId": "91",
+    "administrativeUnitId": 7
+  },
+  {
+    "id": "911",
+    "name": "Phú Quốc",
+    "nameEN": "Phu Quoc",
+    "fullName": "Thành phố Phú Quốc",
+    "fullNameEN": "Phu Quoc City",
+    "codeName": "phu_quoc",
+    "provinceId": "91",
+    "administrativeUnitId": 4
+  },
+  {
+    "id": "912",
+    "name": "Kiên Hải",
+    "nameEN": "Kien Hai",
+    "fullName": "Huyện Kiên Hải",
+    "fullNameEN": "Kien Hai District",
+    "codeName": "kien_hai",
+    "provinceId": "91",
+    "administrativeUnitId": 7
+  },
+  {
+    "id": "913",
+    "name": "U Minh Thượng",
+    "nameEN": "U Minh Thuong",
+    "fullName": "Huyện U Minh Thượng",
+    "fullNameEN": "U Minh Thuong District",
+    "codeName": "u_minh_thuong",
+    "provinceId": "91",
+    "administrativeUnitId": 7
+  },
+  {
+    "id": "914",
+    "name": "Giang Thành",
+    "nameEN": "Giang Thanh",
+    "fullName": "Huyện Giang Thành",
+    "fullNameEN": "Giang Thanh District",
+    "codeName": "giang_thanh",
+    "provinceId": "91",
+    "administrativeUnitId": 7
+  },
+  {
+    "id": "916",
+    "name": "Ninh Kiều",
+    "nameEN": "Ninh Kieu",
+    "fullName": "Quận Ninh Kiều",
+    "fullNameEN": "Ninh Kieu District",
+    "codeName": "ninh_kieu",
+    "provinceId": "92",
+    "administrativeUnitId": 5
+  },
+  {
+    "id": "917",
+    "name": "Ô Môn",
+    "nameEN": "O Mon",
+    "fullName": "Quận Ô Môn",
+    "fullNameEN": "O Mon District",
+    "codeName": "o_mon",
+    "provinceId": "92",
+    "administrativeUnitId": 5
+  },
+  {
+    "id": "918",
+    "name": "Bình Thuỷ",
+    "nameEN": "Binh Thuy",
+    "fullName": "Quận Bình Thuỷ",
+    "fullNameEN": "Binh Thuy District",
+    "codeName": "binh_thuy",
+    "provinceId": "92",
+    "administrativeUnitId": 5
+  },
+  {
+    "id": "919",
+    "name": "Cái Răng",
+    "nameEN": "Cai Rang",
+    "fullName": "Quận Cái Răng",
+    "fullNameEN": "Cai Rang District",
+    "codeName": "cai_rang",
+    "provinceId": "92",
+    "administrativeUnitId": 5
+  },
+  {
+    "id": "923",
+    "name": "Thốt Nốt",
+    "nameEN": "Thot Not",
+    "fullName": "Quận Thốt Nốt",
+    "fullNameEN": "Thot Not District",
+    "codeName": "thot_not",
+    "provinceId": "92",
+    "administrativeUnitId": 5
+  },
+  {
+    "id": "924",
+    "name": "Vĩnh Thạnh",
+    "nameEN": "Vinh Thanh",
+    "fullName": "Huyện Vĩnh Thạnh",
+    "fullNameEN": "Vinh Thanh District",
+    "codeName": "vinh_thanh",
+    "provinceId": "92",
+    "administrativeUnitId": 7
+  },
+  {
+    "id": "925",
+    "name": "Cờ Đỏ",
+    "nameEN": "Co Do",
+    "fullName": "Huyện Cờ Đỏ",
+    "fullNameEN": "Co Do District",
+    "codeName": "co_do",
+    "provinceId": "92",
+    "administrativeUnitId": 7
+  },
+  {
+    "id": "926",
+    "name": "Phong Điền",
+    "nameEN": "Phong Dien",
+    "fullName": "Huyện Phong Điền",
+    "fullNameEN": "Phong Dien District",
+    "codeName": "phong_dien",
+    "provinceId": "92",
+    "administrativeUnitId": 7
+  },
+  {
+    "id": "927",
+    "name": "Thới Lai",
+    "nameEN": "Thoi Lai",
+    "fullName": "Huyện Thới Lai",
+    "fullNameEN": "Thoi Lai District",
+    "codeName": "thoi_lai",
+    "provinceId": "92",
+    "administrativeUnitId": 7
+  },
+  {
+    "id": "930",
+    "name": "Vị Thanh",
+    "nameEN": "Vi Thanh",
+    "fullName": "Thành phố Vị Thanh",
+    "fullNameEN": "Vi Thanh City",
+    "codeName": "vi_thanh",
+    "provinceId": "93",
+    "administrativeUnitId": 4
+  },
+  {
+    "id": "931",
+    "name": "Ngã Bảy",
+    "nameEN": "Nga Bay",
+    "fullName": "Thành phố Ngã Bảy",
+    "fullNameEN": "Nga Bay City",
+    "codeName": "nga_bay",
+    "provinceId": "93",
+    "administrativeUnitId": 4
+  },
+  {
+    "id": "932",
+    "name": "Châu Thành A",
+    "nameEN": "Chau Thanh A",
+    "fullName": "Huyện Châu Thành A",
+    "fullNameEN": "Chau Thanh A District",
+    "codeName": "chau_thanh_a",
+    "provinceId": "93",
+    "administrativeUnitId": 7
+  },
+  {
+    "id": "933",
+    "name": "Châu Thành",
+    "nameEN": "Chau Thanh",
+    "fullName": "Huyện Châu Thành",
+    "fullNameEN": "Chau Thanh District",
+    "codeName": "chau_thanh",
+    "provinceId": "93",
+    "administrativeUnitId": 7
+  },
+  {
+    "id": "934",
+    "name": "Phụng Hiệp",
+    "nameEN": "Phung Hiep",
+    "fullName": "Huyện Phụng Hiệp",
+    "fullNameEN": "Phung Hiep District",
+    "codeName": "phung_hiep",
+    "provinceId": "93",
+    "administrativeUnitId": 7
+  },
+  {
+    "id": "935",
+    "name": "Vị Thuỷ",
+    "nameEN": "Vi Thuy",
+    "fullName": "Huyện Vị Thuỷ",
+    "fullNameEN": "Vi Thuy District",
+    "codeName": "vi_thuy",
+    "provinceId": "93",
+    "administrativeUnitId": 7
+  },
+  {
+    "id": "936",
+    "name": "Long Mỹ",
+    "nameEN": "Long My",
+    "fullName": "Huyện Long Mỹ",
+    "fullNameEN": "Long My District",
+    "codeName": "long_my",
+    "provinceId": "93",
+    "administrativeUnitId": 7
+  },
+  {
+    "id": "937",
+    "name": "Long Mỹ",
+    "nameEN": "Long My",
+    "fullName": "Thị xã Long Mỹ",
+    "fullNameEN": "Long My Town",
+    "codeName": "long_my",
+    "provinceId": "93",
+    "administrativeUnitId": 6
+  },
+  {
+    "id": "941",
+    "name": "Sóc Trăng",
+    "nameEN": "Soc Trang",
+    "fullName": "Thành phố Sóc Trăng",
+    "fullNameEN": "Soc Trang City",
+    "codeName": "soc_trang",
+    "provinceId": "94",
+    "administrativeUnitId": 4
+  },
+  {
+    "id": "942",
+    "name": "Châu Thành",
+    "nameEN": "Chau Thanh",
+    "fullName": "Huyện Châu Thành",
+    "fullNameEN": "Chau Thanh District",
+    "codeName": "chau_thanh",
+    "provinceId": "94",
+    "administrativeUnitId": 7
+  },
+  {
+    "id": "943",
+    "name": "Kế Sách",
+    "nameEN": "Ke Sach",
+    "fullName": "Huyện Kế Sách",
+    "fullNameEN": "Ke Sach District",
+    "codeName": "ke_sach",
+    "provinceId": "94",
+    "administrativeUnitId": 7
+  },
+  {
+    "id": "944",
+    "name": "Mỹ Tú",
+    "nameEN": "My Tu",
+    "fullName": "Huyện Mỹ Tú",
+    "fullNameEN": "My Tu District",
+    "codeName": "my_tu",
+    "provinceId": "94",
+    "administrativeUnitId": 7
+  },
+  {
+    "id": "945",
+    "name": "Cù Lao Dung",
+    "nameEN": "Cu Lao Dung",
+    "fullName": "Huyện Cù Lao Dung",
+    "fullNameEN": "Cu Lao Dung District",
+    "codeName": "cu_lao_dung",
+    "provinceId": "94",
+    "administrativeUnitId": 7
+  },
+  {
+    "id": "946",
+    "name": "Long Phú",
+    "nameEN": "Long Phu",
+    "fullName": "Huyện Long Phú",
+    "fullNameEN": "Long Phu District",
+    "codeName": "long_phu",
+    "provinceId": "94",
+    "administrativeUnitId": 7
+  },
+  {
+    "id": "947",
+    "name": "Mỹ Xuyên",
+    "nameEN": "My Xuyen",
+    "fullName": "Huyện Mỹ Xuyên",
+    "fullNameEN": "My Xuyen District",
+    "codeName": "my_xuyen",
+    "provinceId": "94",
+    "administrativeUnitId": 7
+  },
+  {
+    "id": "948",
+    "name": "Ngã Năm",
+    "nameEN": "Nga Nam",
+    "fullName": "Thị xã Ngã Năm",
+    "fullNameEN": "Nga Nam Town",
+    "codeName": "nga_nam",
+    "provinceId": "94",
+    "administrativeUnitId": 6
+  },
+  {
+    "id": "949",
+    "name": "Thạnh Trị",
+    "nameEN": "Thanh Tri",
+    "fullName": "Huyện Thạnh Trị",
+    "fullNameEN": "Thanh Tri District",
+    "codeName": "thanh_tri",
+    "provinceId": "94",
+    "administrativeUnitId": 7
+  },
+  {
+    "id": "950",
+    "name": "Vĩnh Châu",
+    "nameEN": "Vinh Chau",
+    "fullName": "Thị xã Vĩnh Châu",
+    "fullNameEN": "Vinh Chau Town",
+    "codeName": "vinh_chau",
+    "provinceId": "94",
+    "administrativeUnitId": 6
+  },
+  {
+    "id": "951",
+    "name": "Trần Đề",
+    "nameEN": "Tran De",
+    "fullName": "Huyện Trần Đề",
+    "fullNameEN": "Tran De District",
+    "codeName": "tran_de",
+    "provinceId": "94",
+    "administrativeUnitId": 7
+  },
+  {
+    "id": "954",
+    "name": "Bạc Liêu",
+    "nameEN": "Bac Lieu",
+    "fullName": "Thành phố Bạc Liêu",
+    "fullNameEN": "Bac Lieu City",
+    "codeName": "bac_lieu",
+    "provinceId": "95",
+    "administrativeUnitId": 4
+  },
+  {
+    "id": "956",
+    "name": "Hồng Dân",
+    "nameEN": "Hong Dan",
+    "fullName": "Huyện Hồng Dân",
+    "fullNameEN": "Hong Dan District",
+    "codeName": "hong_dan",
+    "provinceId": "95",
+    "administrativeUnitId": 7
+  },
+  {
+    "id": "957",
+    "name": "Phước Long",
+    "nameEN": "Phuoc Long",
+    "fullName": "Huyện Phước Long",
+    "fullNameEN": "Phuoc Long District",
+    "codeName": "phuoc_long",
+    "provinceId": "95",
+    "administrativeUnitId": 7
+  },
+  {
+    "id": "958",
+    "name": "Vĩnh Lợi",
+    "nameEN": "Vinh Loi",
+    "fullName": "Huyện Vĩnh Lợi",
+    "fullNameEN": "Vinh Loi District",
+    "codeName": "vinh_loi",
+    "provinceId": "95",
+    "administrativeUnitId": 7
+  },
+  {
+    "id": "959",
+    "name": "Giá Rai",
+    "nameEN": "Gia Rai",
+    "fullName": "Thị xã Giá Rai",
+    "fullNameEN": "Gia Rai Town",
+    "codeName": "gia_rai",
+    "provinceId": "95",
+    "administrativeUnitId": 6
+  },
+  {
+    "id": "960",
+    "name": "Đông Hải",
+    "nameEN": "Dong Hai",
+    "fullName": "Huyện Đông Hải",
+    "fullNameEN": "Dong Hai District",
+    "codeName": "dong_hai",
+    "provinceId": "95",
+    "administrativeUnitId": 7
+  },
+  {
+    "id": "961",
+    "name": "Hoà Bình",
+    "nameEN": "Hoa Binh",
+    "fullName": "Huyện Hoà Bình",
+    "fullNameEN": "Hoa Binh District",
+    "codeName": "hoa_binh",
+    "provinceId": "95",
+    "administrativeUnitId": 7
+  },
+  {
+    "id": "964",
+    "name": "Cà Mau",
+    "nameEN": "Ca Mau",
+    "fullName": "Thành phố Cà Mau",
+    "fullNameEN": "Ca Mau City",
+    "codeName": "ca_mau",
+    "provinceId": "96",
+    "administrativeUnitId": 4
+  },
+  {
+    "id": "966",
+    "name": "U Minh",
+    "nameEN": "U Minh",
+    "fullName": "Huyện U Minh",
+    "fullNameEN": "U Minh District",
+    "codeName": "u_minh",
+    "provinceId": "96",
+    "administrativeUnitId": 7
+  },
+  {
+    "id": "967",
+    "name": "Thới Bình",
+    "nameEN": "Thoi Binh",
+    "fullName": "Huyện Thới Bình",
+    "fullNameEN": "Thoi Binh District",
+    "codeName": "thoi_binh",
+    "provinceId": "96",
+    "administrativeUnitId": 7
+  },
+  {
+    "id": "968",
+    "name": "Trần Văn Thời",
+    "nameEN": "Tran Van Thoi",
+    "fullName": "Huyện Trần Văn Thời",
+    "fullNameEN": "Tran Van Thoi District",
+    "codeName": "tran_van_thoi",
+    "provinceId": "96",
+    "administrativeUnitId": 7
+  },
+  {
+    "id": "969",
+    "name": "Cái Nước",
+    "nameEN": "Cai Nuoc",
+    "fullName": "Huyện Cái Nước",
+    "fullNameEN": "Cai Nuoc District",
+    "codeName": "cai_nuoc",
+    "provinceId": "96",
+    "administrativeUnitId": 7
+  },
+  {
+    "id": "970",
+    "name": "Đầm Dơi",
+    "nameEN": "Dam Doi",
+    "fullName": "Huyện Đầm Dơi",
+    "fullNameEN": "Dam Doi District",
+    "codeName": "dam_doi",
+    "provinceId": "96",
+    "administrativeUnitId": 7
+  },
+  {
+    "id": "971",
+    "name": "Năm Căn",
+    "nameEN": "Nam Can",
+    "fullName": "Huyện Năm Căn",
+    "fullNameEN": "Nam Can District",
+    "codeName": "nam_can",
+    "provinceId": "96",
+    "administrativeUnitId": 7
+  },
+  {
+    "id": "972",
+    "name": "Phú Tân",
+    "nameEN": "Phu Tan",
+    "fullName": "Huyện Phú Tân",
+    "fullNameEN": "Phu Tan District",
+    "codeName": "phu_tan",
+    "provinceId": "96",
+    "administrativeUnitId": 7
+  },
+  {
+    "id": "973",
+    "name": "Ngọc Hiển",
+    "nameEN": "Ngoc Hien",
+    "fullName": "Huyện Ngọc Hiển",
+    "fullNameEN": "Ngoc Hien District",
+    "codeName": "ngoc_hien",
+    "provinceId": "96",
+    "administrativeUnitId": 7
+  }
+]

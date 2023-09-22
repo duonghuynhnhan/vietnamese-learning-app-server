@@ -1,0 +1,92 @@
+[
+  {
+    "id": 1,
+    "fullName": "Thành phố trực thuộc trung ương",
+    "fullNameEN": "Municipality",
+    "shortName": "Thành phố",
+    "shortNameEN": "City",
+    "codeName": "thanh_pho_truc_thuoc_trung_uong",
+    "codeNameEN": "municipality"
+  },
+  {
+    "id": 2,
+    "fullName": "Tỉnh",
+    "fullNameEN": "Province",
+    "shortName": "Tỉnh",
+    "shortNameEN": "Province",
+    "codeName": "tinh",
+    "codeNameEN": "province"
+  },
+  {
+    "id": 3,
+    "fullName": "Thành phố thuộc thành phố trực thuộc trung ương",
+    "fullNameEN": "Municipal city",
+    "shortName": "Thành phố",
+    "shortNameEN": "City",
+    "codeName": "thanh_pho_thuoc_thanh_pho_truc_thuoc_trung_uong",
+    "codeNameEN": "municipal_city"
+  },
+  {
+    "id": 4,
+    "fullName": "Thành phố thuộc tỉnh",
+    "fullNameEN": "Provincial city",
+    "shortName": "Thành phố",
+    "shortNameEN": "City",
+    "codeName": "thanh_pho_thuoc_tinh",
+    "codeNameEN": "provincial_city"
+  },
+  {
+    "id": 5,
+    "fullName": "Quận",
+    "fullNameEN": "Urban district",
+    "shortName": "Quận",
+    "shortNameEN": "District",
+    "codeName": "quan",
+    "codeNameEN": "urban_district"
+  },
+  {
+    "id": 6,
+    "fullName": "Thị xã",
+    "fullNameEN": "District-level town",
+    "shortName": "Thị xã",
+    "shortNameEN": "Town",
+    "codeName": "thi_xa",
+    "codeNameEN": "district_level_town"
+  },
+  {
+    "id": 7,
+    "fullName": "Huyện",
+    "fullNameEN": "District",
+    "shortName": "Huyện",
+    "shortNameEN": "District",
+    "codeName": "huyen",
+    "codeNameEN": "district"
+  },
+  {
+    "id": 8,
+    "fullName": "Phường",
+    "fullNameEN": "Ward",
+    "shortName": "Phường",
+    "shortNameEN": "Ward",
+    "codeName": "phuong",
+    "codeNameEN": "ward"
+  },
+  {
+    "id": 9,
+    "fullName": "Thị trấn",
+    "fullNameEN": "Commune-level town",
+    "shortName": "Thị trấn",
+    "shortNameEN": "Township",
+    "codeName": "thi_tran",
+    "codeNameEN": "commune_level_town"
+  },
+  {
+    "id": 10,
+    "fullName": "Xã",
+    "fullNameEN": "Commune",
+    "shortName": "Xã",
+    "shortNameEN": "Commune",
+    "codeName": "xa",
+    "codeNameEN": "commune"
+  }
+]
