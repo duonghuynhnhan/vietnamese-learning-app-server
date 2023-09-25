@@ -10,15 +10,16 @@ datasource db {
 }
 
 model account {
-  id       String @id() @default(uuid())
-  username String @unique
-  fullName String @db.VarChar(255)
-  email    String @db.VarChar(255)
-  dob      String @db.VarChar(25)
-  gender   String @db.VarChar(10)
-  phone    String @db.VarChar(20)
-  password String @db.VarChar(255)
-  role     String @db.VarChar(10)
+  id       String  @id() @default(uuid())
+  username String  @unique
+  fullName String  @db.VarChar(255)
+  email    String  @db.VarChar(255)
+  dob      String? @db.VarChar(25)
+  gender   String? @db.VarChar(10)
+  phone    String? @db.VarChar(20)
+  password String  @db.VarChar(255)
+  role     String  @db.VarChar(10)
+  avatar   String? @db.VarChar(255)
 
   createdAt String  @db.VarChar(30)
   updatedAt String? @db.VarChar(30)
@@ -26,8 +27,8 @@ model account {
 
   topicProgresses topic_progress[]
 
-  country   country @relation(fields: [countryId], references: [id])
-  countryId String  @db.VarChar(20)
+  nationality country @relation(fields: [countryId], references: [id])
+  countryId   String  @db.VarChar(20)
 }
 
 model country {

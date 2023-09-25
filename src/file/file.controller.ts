@@ -9,11 +9,9 @@ import { FileService } from './file.service';
 import { storage } from './config';
 import { FileDto, UpdateFileDto, UploadFileDto } from './dto';
 
-@Controller('api/v1/file')
+@Controller('file')
 @ApiTags('File')
 @ApiExtraModels(UploadFileDto, FileDto, UpdateFileDto, ApiSuccess)
-@UseGuards(AuthGuard())
-@ApiBearerAuth()
 export class FileController {
   constructor(
     private fileService: FileService,
@@ -101,6 +99,8 @@ export class FileController {
   }
 
   @Get('/:id')
+  @UseGuards(AuthGuard())
+  @ApiBearerAuth()
   @ApiOperation({ summary: 'Lấy thông tin một file' })
   @ApiOkResponse({
     schema: {
@@ -131,6 +131,8 @@ export class FileController {
   }
 
   @Put('/:id')
+  @UseGuards(AuthGuard())
+  @ApiBearerAuth()
   @ApiOperation({ summary: 'Cập nhật thông tin một file' })
   @ApiOkResponse({
     schema: {
@@ -161,6 +163,8 @@ export class FileController {
   }
 
   @Delete('/:id')
+  @UseGuards(AuthGuard())
+  @ApiBearerAuth()
   @ApiOperation({ summary: 'Xóa một file' })
   @ApiOkResponse({
     schema: {

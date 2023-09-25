@@ -1,6 +1,4 @@
 const ERROR = {
-  '200': '',
-  '201': '',
   '300': 'Multiple Choices',
   '302': 'Found(Redirect)',
   '304': 'Not Modified',
@@ -17,8 +15,9 @@ const ERROR = {
 export class ApiError extends Error {
   constructor(
     private readonly statusCode: number,
+    private readonly customMessage?: string
   ) {
-    super(ERROR[statusCode]);
+    super(customMessage || ERROR[statusCode]);
     this.name = this.constructor.name;
     Error.captureStackTrace(this, this.constructor);
   }

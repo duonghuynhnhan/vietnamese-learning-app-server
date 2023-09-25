@@ -6,6 +6,7 @@ import { configValidationSchema } from '../config/config.schema';
 import { AccountModule } from './account/account.module';
 import { AuthModule } from './auth/auth.module';
 import { FileModule } from './file/file.module';
+import { CountryModule } from './country/country.module';
 
 @Module({
   imports: [
@@ -19,6 +20,7 @@ import { FileModule } from './file/file.module';
     AuthModule,
     AccountModule,
     FileModule,
+    CountryModule,
   ],
   controllers: [],
   providers: [],

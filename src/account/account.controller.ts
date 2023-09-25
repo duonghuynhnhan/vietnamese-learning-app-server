@@ -1,426 +1,144 @@
-import { Controller, UseGuards } from '@nestjs/common';
+import { Body, Controller, Get, Post, Put, UseGuards } from '@nestjs/common';
 import { AuthGuard } from '@nestjs/passport';
-import { ApiBearerAuth, ApiExtraModels, ApiTags } from '@nestjs/swagger';
+import { ApiBearerAuth, ApiExtraModels, ApiOkResponse, ApiOperation, ApiTags, getSchemaPath } from '@nestjs/swagger';
+import { account } from '@prisma/client';
+import { plainToClass } from 'class-transformer';
+import { GetCurrentAccount } from 'src/auth/decorators';
+import { ApiError } from 'src/api-responses';
+import { FileService } from 'src/file/file.service';
+import { FileDto } from 'src/file/dto';
+import { CountryService } from 'src/country/country.service';
+import { CountryDto } from 'src/country/dto';
 import { AccountService } from './account.service';
+import { AccountDto, CreateAccountDto, UpdateAccountDto } from './dto';
 
 @Controller('account')
 @ApiTags('Account')
-@ApiExtraModels()
-@UseGuards(AuthGuard())
-@ApiBearerAuth()
+@ApiExtraModels(AccountDto, UpdateAccountDto)
 export class AccountController {
   constructor(
     private accountService: AccountService,
+    private fileService: FileService,
+    private countryService: CountryService,
   ) { }
 
-  // @Post()
-  // @UseGuards(AuthGuard())
-  // @ApiBearerAuth()
-  // @ApiOperation({ summary: 'Tạo tài khoản' })
-  // @ApiOkResponse({
-  //   schema: {
-  //     title: 'CREATE',
-  //     type: 'object',
-  //     $ref: getSchemaPath(AccountDto)
-  //   },
-  // })
-  // async createAccount(@Body() createAccountDto: CreateAccountDto): Promise<AccountDto> {
-  //   try {
-  //     const { departmentId, username } = createAccountDto;
-  //     const isExist = await this.accountService.getAccountByUsername(username);
+  @Post()
+  @ApiOperation({ summary: 'Đăng ký tài khoản' })
+  @ApiOkResponse({
+    schema: {
+      title: 'SIGN UP',
+      type: 'object',
+      $ref: getSchemaPath(AccountDto),
+    },
+  })
+  async signUpAccount(@Body() createAccountDto: CreateAccountDto): Promise<AccountDto> {
+    try {
+      const { email } = createAccountDto;
+      const isExist = await this.accountService.getAccountByUsername(email);
 
-  //     if (isExist) {
-  //       throw new ApiError(400);
-  //     }
+      if (isExist) {
+        throw new ApiError(400);
+      }
 
-  //     const password = this.configService.get('ACCOUNT_DEFAULT_PASSWORD');
-  //     const department = await this.departmentService.getDepartmentById(+departmentId);
+      const account = await this.accountService.createAccount(createAccountDto);
 
-  //     if (!department) {
-  //       throw new ApiError(400);
-  //     }
+      return plainToClass(AccountDto, await this.accountService.getAccountById(account.id));
+    } catch (error) {
+      if (error instanceof ApiError) {
+        console.log(error);
+        throw error;
+      }
 
-  //     const account = await this.accountService.createAccount(createAccountDto, password);
+      console.log(error);
+      throw new ApiError(500);
+    }
+  }
 
-  //     return plainToClass(GetAccountDto, await this.accountService.getAccountById(+account.id));
-  //   } catch (error) {
-  //     if (error instanceof ApiError) {
-  //       console.log(error);
-  //       throw error;
-  //     }
+  @Get('/me/info')
+  @UseGuards(AuthGuard())
+  @ApiBearerAuth()
+  @ApiOperation({ summary: 'Lấy thông tin account hiện tại' })
+  @ApiOkResponse({
+    schema: {
+      title: 'GET CURRENT ACCOUNT',
+      type: 'object',
+      $ref: getSchemaPath(AccountDto)
+    },
+  })
+  async getMe(@GetCurrentAccount() account: account): Promise<AccountDto> {
+    try {
+      const currentAccount = await this.accountService.getAccountById(account.id);
+      let avatar;
 
-  //     console.log(error);
-  //     throw new ApiError(500);
-  //   }
-  // }
+      if (account.avatar) {
+        avatar = plainToClass(FileDto, await this.fileService.getFileById(account.avatar));
+      }
 
-  // @Get()
-  // @ApiOperation({ summary: 'Lấy danh sách account' })
-  // @ApiOkResponse({
-  //   schema: {
-  //     title: 'GET ALL ACCOUNTS',
-  //     type: 'array',
-  //     items: { $ref: getSchemaPath(AccountDto) },
-  //   },
-  // })
-  // async getAllAccounts(): Promise<AccountDto[]> {
-  //   try {
-  //     const data: AccountDto[] = [];
-  //     const result = await this.accountService.getAllAccounts();
+      const nationality = plainToClass(CountryDto, await this.countryService.getCountryById(account.countryId));
 
-  //     for (const item of result) {
-  //       const profilePictureId = item.profilePicture;
+      return plainToClass(AccountDto, { ...currentAccount, avatar, nationality });
+    } catch (error) {
+      if (error instanceof ApiError) {
+        console.log(error);
+        throw error;
+      }
 
-  //       const profilePicture = await this.fileService.getFileById(+profilePictureId);
-  //       data.push({
-  //         ...item,
-  //         profilePicture,
-  //       })
-  //     }
+      console.log(error);
+      throw new ApiError(500);
+    }
+  }
 
-  //     return data;
-  //   } catch (error) {
-  //     console.log(error);
-  //     throw new ApiError(500);
-  //   }
-  // }
+  @Put('/me/info')
+  @UseGuards(AuthGuard())
+  @ApiBearerAuth()
+  @ApiOperation({ summary: 'Cập nhật thông tin account hiện tại' })
+  @ApiOkResponse({
+    schema: {
+      title: 'UPDATE CURRENT ACCOUNT',
+      type: 'object',
+      $ref: getSchemaPath(AccountDto)
+    },
+  })
+  async updateCurrentAccount(@GetCurrentAccount() account: account, @Body() updateAccountDto: UpdateAccountDto): Promise<AccountDto> {
+    try {
+      const currentAccount = await this.accountService.getAccountById(account.id);
 
-  // @Get('pagination')
-  // @ApiOperation({ summary: 'Lấy danh sách account pagination' })
-  // @ApiOkResponse({
-  //   schema: {
-  //     title: 'GET ALL ACCOUNTS PAGINATION',
-  //     type: 'object',
-  //     $ref: getSchemaPath(GetListAccountDto),
-  //   },
-  // })
-  // async getAllAccountsPagination(@Query() query: QueryAccountDto): Promise<GetListAccountDto> {
-  //   try {
-  //     const { page, pageSize } = query;
-  //     const skip = (page - 1) * pageSize;
-  //     const take = pageSize;
+      if (updateAccountDto.avatar) {
+        const avatar = plainToClass(FileDto, await this.fileService.getFileById(account.avatar));
 
-  //     const data: AccountDto[] = [];
-  //     const result = await this.accountService.getAllAccountsPagination(+skip, +take);
-  //     const total = await this.accountService.getTotal();
+        if (!avatar || !avatar.mimeType.startsWith('image/')) {
+          throw new ApiError(400, 'Must input an image file');
+        }
+      }
 
-  //     for (const item of result) {
-  //       const profilePictureId = item.profilePicture;
+      if (updateAccountDto.nationality) {
+        const country = plainToClass(CountryDto, await this.countryService.getCountryById(account.countryId));
 
-  //       const profilePicture = await this.fileService.getFileById(+profilePictureId);
-  //       data.push({
-  //         ...item,
-  //         profilePicture,
-  //       })
-  //     }
+        if (!country) {
+          throw new ApiError(404, 'Country not found');
+        }
+      }
 
-  //     return { data, total };
-  //   } catch (error) {
-  //     console.log(error);
-  //     throw new ApiError(500);
-  //   }
-  // }
+      await this.accountService.updateAccountById(currentAccount.id, updateAccountDto);
 
-  // @Get('/username/:username/info')
-  // @ApiOperation({ summary: 'Lấy thông tin một account bằng username' })
-  // @ApiOkResponse({
-  //   schema: {
-  //     title: 'GET ACCOUNT BY USERNAME',
-  //     type: 'object',
-  //     $ref: getSchemaPath(AccountDto)
-  //   },
-  // })
-  // async getAccountByUsername(@Param('username') username: string): Promise<AccountDto> {
-  //   try {
-  //     const account = await this.accountService.getAccountByUsername(username);
+      const updateAccount = await this.accountService.getAccountById(account.id);
+      let avatar;
 
-  //     if (!account) {
-  //       throw new ApiError(404);
-  //     }
+      if (account.avatar) {
+        avatar = plainToClass(FileDto, await this.fileService.getFileById(updateAccount.avatar));
+      }
 
-  //     const profilePicture = await this.fileService.getFileById(+account.profilePicture);
+      const nationality = plainToClass(CountryDto, await this.countryService.getCountryById(updateAccount.countryId));
 
-  //     return plainToClass(AccountDto, { ...account, profilePicture });
-  //   } catch (error) {
-  //     if (error instanceof ApiError) {
-  //       console.log(error);
-  //       throw error;
-  //     }
+      return plainToClass(AccountDto, { ...updateAccount, avatar, nationality });
+    } catch (error) {
+      if (error instanceof ApiError) {
+        console.log(error);
+        throw error;
+      }
 
-  //     console.log(error);
-  //     throw new ApiError(500);
-  //   }
-  // }
-
-  // @Get('/department/:id')
-  // @ApiOperation({ summary: 'Lấy danh sách account của department' })
-  // @ApiOkResponse({
-  //   schema: {
-  //     title: 'GET ACCOUNT BY DEPARTMENT ID',
-  //     type: 'array',
-  //     items: {
-  //       $ref: getSchemaPath(AccountDto),
-  //     },
-  //   },
-  // })
-  // async getAccountOfDepartment(@Param('id') id: number): Promise<AccountDto[]> {
-  //   try {
-  //     const department = await this.departmentService.getDepartmentById(+id);
-
-  //     if (!department) {
-  //       throw new ApiError(404);
-  //     }
-
-  //     const data: AccountDto[] = [];
-  //     const result = await this.accountService.getAccountOfDepartment(+id);
-
-  //     for (const item of result) {
-  //       const profilePictureId = item.profilePicture;
-
-  //       const profilePicture = await this.fileService.getFileById(+profilePictureId);
-  //       data.push({
-  //         ...item,
-  //         profilePicture,
-  //       })
-  //     }
-
-  //     return data;
-  //   } catch (error) {
-  //     if (error instanceof ApiError) {
-  //       console.log(error);
-  //       throw error;
-  //     }
-
-  //     console.log(error);
-  //     throw new ApiError(500);
-  //   }
-  // }
-
-  // @Get('/id/:id/info')
-  // @ApiOperation({ summary: 'Lấy thông tin một account bằng id' })
-  // @ApiOkResponse({
-  //   schema: {
-  //     title: 'GET ACCOUNT BY ID',
-  //     type: 'object',
-  //     $ref: getSchemaPath(AccountDto)
-  //   },
-  // })
-  // async getAccountById(@Param('id') id: number): Promise<AccountDto> {
-  //   try {
-  //     const account = await this.accountService.getAccountById(+id);
-
-  //     if (!account) {
-  //       throw new ApiError(404);
-  //     }
-
-  //     const profilePicture = await this.fileService.getFileById(+account.profilePicture);
-
-  //     return plainToClass(AccountDto, { ...account, profilePicture });
-  //   } catch (error) {
-  //     if (error instanceof ApiError) {
-  //       console.log(error);
-  //       throw error;
-  //     }
-
-  //     console.log(error);
-  //     throw new ApiError(500);
-  //   }
-  // }
-
-  // @Get('/me/info')
-  // @ApiOperation({ summary: 'Lấy thông tin account hiện tại' })
-  // @ApiOkResponse({
-  //   schema: {
-  //     title: 'GET ACCOUNT',
-  //     type: 'object',
-  //     $ref: getSchemaPath(AccountDto)
-  //   },
-  // })
-  // async getMe(@GetAccount() account: account): Promise<AccountDto> {
-  //   try {
-  //     const currentAccount = await this.accountService.getAccountById(+account.id);
-  //     const profilePicture = await this.fileService.getFileById(+account.profilePicture);
-
-  //     return plainToClass(AccountDto, { ...currentAccount, profilePicture });
-  //   } catch (error) {
-  //     if (error instanceof ApiError) {
-  //       console.log(error);
-  //       throw error;
-  //     }
-
-  //     console.log(error);
-  //     throw new ApiError(500);
-  //   }
-  // }
-
-  // @Get('/me/pic')
-  // @ApiOperation({ summary: 'Lấy pic của account hiện tại' })
-  // @ApiOkResponse({
-  //   schema: {
-  //     title: 'GET PIC',
-  //     type: 'array',
-  //     items: { $ref: getSchemaPath(GetPicDto) },
-  //   }
-  // })
-  // async getMyPic(@GetAccount() account: account): Promise<pic[]> {
-  //   try {
-  //     return this.picService.getPicByAccountId(+account.id);
-  //   } catch (error) {
-  //     if (error instanceof ApiError) {
-  //       console.log(error);
-  //       throw error;
-  //     }
-
-  //     console.log(error);
-  //     throw new ApiError(500);
-  //   }
-  // }
-
-  // @Put('me/info')
-  // @ApiOperation({ summary: 'Cập nhật thông tin account hiện tại' })
-  // @ApiOkResponse({
-  //   schema: {
-  //     title: 'UPDATE ACCOUNT',
-  //     type: 'object',
-  //     $ref: getSchemaPath(AccountDto)
-  //   },
-  // })
-  // async updateMyAccount(@GetAccount() account: account, @Body() updateAccountDto: UpdateAccountDto): Promise<AccountDto> {
-  //   try {
-  //     const profilePictureId = updateAccountDto.profilePicture;
-  //     const profilePicture = await this.fileService.getFileById(+profilePictureId);
-
-  //     if (!profilePicture) {
-  //       throw new ApiError(400);
-  //     }
-
-  //     return plainToClass(AccountDto, this.accountService.updateAccount(+account.id, updateAccountDto));
-  //   } catch (error) {
-  //     if (error instanceof ApiError) {
-  //       console.log(error);
-  //       throw error;
-  //     }
-
-  //     console.log(error);
-  //     throw new ApiError(500);
-  //   }
-  // }
-
-  // @Put('/:username/password/reset')
-  // @ApiOperation({ summary: 'Reset password một account' })
-  // @ApiOkResponse({
-  //   schema: {
-  //     title: 'RESET PERSONNEL PASSWORD BY USERNAME',
-  //     type: 'object',
-  //     $ref: getSchemaPath(ApiSuccess)
-  //   },
-  // })
-  // async resetPassword(@Param('username') username: string): Promise<ApiSuccess> {
-  //   try {
-  //     const account = await this.accountService.getAccountByUsername(username);
-
-  //     if (!account) {
-  //       throw new ApiError(404);
-  //     }
-
-  //     const updatePasswordDto: UpdatePasswordDto = { password: this.configService.get('ACCOUNT_DEFAULT_PASSWORD') };
-
-  //     return this.accountService.updatePassword(+account.id, updatePasswordDto);
-  //   } catch (error) {
-  //     if (error instanceof ApiError) {
-  //       console.log(error);
-  //       throw error;
-  //     }
-  //     console.log(error);
-  //     throw new ApiError(500);
-  //   }
-  // }
-
-  // @Patch('/me/password')
-  // @ApiOperation({ summary: 'Cập nhật password account hiện tại' })
-  // @ApiOkResponse({
-  //   schema: {
-  //     title: 'UPDATE ACCOUNT PASSWORD',
-  //     type: 'object',
-  //     $ref: getSchemaPath(ApiSuccess)
-  //   },
-  // })
-  // async updateMyPassword(@GetAccount() account: account, @Body() updatePasswordDto: UpdatePasswordDto): Promise<ApiSuccess> {
-  //   try {
-  //     return this.accountService.updatePassword(+account.id, updatePasswordDto);
-  //   } catch (error) {
-  //     if (error instanceof ApiError) {
-  //       console.log(error);
-  //       throw error;
-  //     }
-
-  //     console.log(error);
-  //     throw new ApiError(500);
-  //   }
-  // }
-
-  // @Patch('/:username/department')
-  // @ApiOperation({ summary: 'Cập nhật department cho account' })
-  // @ApiOkResponse({
-  //   schema: {
-  //     title: 'UPDATE ACCOUNT DEPARTMENT',
-  //     type: 'object',
-  //     $ref: getSchemaPath(ApiSuccess)
-  //   },
-  // })
-  // async updateDepartment(@Param('username') username: string, @Body() updateDepartmentDto: UpdateAccountDepartmentDto): Promise<ApiSuccess> {
-  //   try {
-  //     const account = await this.accountService.getAccountByUsername(username);
-
-  //     if (!account) {
-  //       throw new ApiError(400);
-  //     }
-
-  //     const { departmentId } = updateDepartmentDto;
-  //     const department = await this.departmentService.getDepartmentById(+departmentId);
-
-  //     if (!department) {
-  //       throw new ApiError(400);
-  //     }
-
-  //     return this.accountService.updateDepartment(+account.id, updateDepartmentDto);
-  //   } catch (error) {
-  //     if (error instanceof ApiError) {
-  //       console.log(error);
-  //       throw error;
-  //     }
-
-  //     console.log(error);
-  //     throw new ApiError(500);
-  //   }
-  // }
-
-  // @Delete('/:username')
-  // @ApiOperation({ summary: 'Xóa một account' })
-  // @ApiOkResponse({
-  //   schema: {
-  //     title: 'DELETE ACCOUNT BY USERNAME',
-  //     type: 'object',
-  //     $ref: getSchemaPath(ApiSuccess)
-  //   },
-  // })
-  // async deleteAccount(@Param('username') username: string): Promise<ApiSuccess> {
-  //   try {
-  //     const account = await this.accountService.getAccountByUsername(username);
-
-  //     if (!account) {
-  //       throw new ApiError(404);
-  //     }
-
-  //     return this.accountService.deleteAccount(+account.id);
-  //   } catch (error) {
-  //     if (error instanceof ApiError) {
-  //       console.log(error);
-  //       throw error;
-  //     }
-
-  //     console.log(error);
-  //     throw new ApiError(500);
-  //   }
-  // }
+      console.log(error);
+      throw new ApiError(500);
+    }
+  }
 }

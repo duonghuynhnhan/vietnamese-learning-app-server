@@ -1,7 +1,10 @@
 import { Injectable } from '@nestjs/common';
 import { account } from '@prisma/client';
-// import * as bcrypt from 'bcrypt';
+import * as bcrypt from 'bcrypt';
 import { PrismaService } from 'prisma/prisma.service';
+import { CreateAccountDto, UpdateAccountDto } from './dto';
+import { AccountRole } from './enum';
+import { ApiSuccess } from 'src/api-responses';
 
 @Injectable()
 export class AccountService {
@@ -9,83 +12,40 @@ export class AccountService {
     private readonly prismaService: PrismaService,
   ) { }
 
-  // async createAccount(createAccountDto: CreateAccountDto): Promise<account> {
-  //   const salt = await bcrypt.genSalt();
-  //   const hashedPassword = await bcrypt.hash(password, salt);
-  //   const createdAt = new Date().toISOString();
+  async createAccount(createAccountDto: CreateAccountDto): Promise<account> {
+    const salt = await bcrypt.genSalt();
+    const hashedPassword = await bcrypt.hash(createAccountDto.password, salt);
+    const createdAt = new Date().toISOString();
 
-  //   return this.prismaService.account.create({
-  //     data: {
-  //       username: createAccountDto.username,
-  //       fullName: createAccountDto.fullName,
-  //       dob: createAccountDto.dob,
-  //       gender: createAccountDto.gender,
-  //       idNo: createAccountDto.idNo,
-  //       issuedAt: createAccountDto.issuedAt,
-  //       issuedBy: createAccountDto.issuedBy,
-  //       profilePicture: 1,
-  //       email: createAccountDto.email,
-  //       phoneNumber: createAccountDto.phoneNumber,
-  //       address: createAccountDto.address,
-  //       password: hashedPassword,
-  //       role: 'Accounting',
-  //       createdAt,
-  //       department: { connect: { id: +createAccountDto.departmentId } },
-  //     },
-  //   });
-  // }
+    return this.prismaService.account.create({
+      data: {
+        username: createAccountDto.email,
+        fullName: createAccountDto.fullName,
+        dob: createAccountDto.dob,
+        gender: createAccountDto.gender,
+        email: createAccountDto.email,
+        phone: createAccountDto.phone,
+        avatar: createAccountDto.avatar,
+        password: hashedPassword,
+        role: AccountRole.User,
+        createdAt,
+        nationality: {
+          connect: {
+            id: createAccountDto.nationality,
+          },
+        },
+      },
+    });
+  }
 
-  // getTotal(): Promise<number> {
-  //   return this.prismaService.account.count({
-  //     where: {
-  //       deletedAt: null,
-  //     },
-  //   });
-  // }
-
-  // getAllAccountsPagination(skip: number, take: number): Promise<account[]> {
-  //   return this.prismaService.account.findMany({
-  //     where: {
-  //       deletedAt: null,
-  //     },
-  //     include: {
-  //       department: true,
-  //     },
-  //     skip,
-  //     take,
-  //   });
-  // }
-
-  // getAllAccounts(): Promise<account[]> {
-  //   return this.prismaService.account.findMany({
-  //     where: {
-  //       deletedAt: null,
-  //     },
-  //     include: {
-  //       department: {
-  //         include: {
-  //           accounts: false,
-  //         },
-  //       },
-  //     },
-  //   });
-  // }
-
-  // getAccountById(id: number): Promise<account> {
-  //   return this.prismaService.account.findUnique({
-  //     where: {
-  //       id,
-  //       deletedAt: null,
-  //     },
-  //     include: {
-  //       department: {
-  //         include: {
-  //           accounts: false,
-  //         },
-  //       },
-  //     },
-  //   });
-  // }
+  getAccountById(id: string): Promise<account> {
+    return this.prismaService.account.findUnique({
+      where: {
+        id,
+        deletedAt: null,
+      },
+    });
+  }
 
   getAccountByUsername(username: string): Promise<account> {
     return this.prismaService.account.findUnique({
@@ -97,57 +57,64 @@ export class AccountService {
   }
 
 
-  // async updateAccount(id: number, updateAccountDto: UpdateAccountDto): Promise<account> {
-  //   const updatedAt = new Date().toISOString();
+  async updateAccountById(id: string, updateAccountDto: UpdateAccountDto): Promise<account> {
+    const updatedAt = new Date().toISOString();
 
-  //   return this.prismaService.account.update({
-  //     where: { id },
-  //     data: {
-  //       fullName: updateAccountDto?.fullName,
-  //       dob: updateAccountDto?.dob,
-  //       gender: updateAccountDto?.gender,
-  //       idNo: updateAccountDto?.idNo,
-  //       issuedAt: updateAccountDto?.issuedAt,
-  //       issuedBy: updateAccountDto?.issuedBy,
-  //       email: updateAccountDto?.email,
-  //       phoneNumber: updateAccountDto?.phoneNumber,
-  //       address: updateAccountDto?.address,
-  //       profilePicture: updateAccountDto?.profilePicture,
-  //       deletedAt: null,
-  //       updatedAt,
-  //     }
-  //   });
-  // }
+    const { password, nationality } = updateAccountDto;
+    if (password) {
+      const salt = await bcrypt.genSalt();
+      const hashedPassword = await bcrypt.hash(password, salt);
 
-  // async updatePassword(id: number, updatePasswordDto: UpdatePasswordDto): Promise<ApiSuccess> {
-  //   const { password } = updatePasswordDto;
-  //   const salt = await bcrypt.genSalt();
-  //   const hashedPassword = await bcrypt.hash(password, salt);
-  //   const updatedAt = new Date().toISOString();
+      await this.prismaService.account.update({
+        where: {
+          id
+        },
+        data: {
+          password: hashedPassword,
+          updatedAt,
+        }
+      });
+    }
 
+    if (nationality) {
+      await this.prismaService.account.update({
+        where: {
+          id
+        },
+        data: {
+          countryId: nationality,
+          updatedAt,
+        }
+      });
+    }
 
-  //   await this.prismaService.account.update({
-  //     where: { id },
-  //     data: {
-  //       password: hashedPassword,
-  //       deletedAt: null,
-  //       updatedAt,
-  //     }
-  //   });
+    return this.prismaService.account.update({
+      where: {
+        id
+      },
+      data: {
+        fullName: updateAccountDto?.fullName,
+        dob: updateAccountDto?.dob,
+        gender: updateAccountDto?.gender,
+        phone: updateAccountDto?.phone,
+        avatar: updateAccountDto?.avatar,
+        updatedAt,
+      }
+    });
+  }
 
-  //   return { statusCode: 200, message: 'Update password successfully' };
-  // }
+  async deleteAccountById(id: string): Promise<ApiSuccess> {
+    const deletedAt = new Date().toISOString();
 
-  // async deleteAccount(id: number): Promise<ApiSuccess> {
-  //   const deletedAt = new Date().toISOString();
+    await this.prismaService.account.update({
+      where: {
+        id
+      },
+      data: {
+        deletedAt,
+      }
+    });
 
-  //   await this.prismaService.account.update({
-  //     where: { id },
-  //     data: {
-  //       deletedAt,
-  //     }
-  //   });
-
-  //   return { statusCode: 200, message: 'Delete personnel successfully' };
-  // }
+    return { statusCode: 200, message: 'Delete personnel successfully' };
+  }
 }

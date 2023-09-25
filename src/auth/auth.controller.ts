@@ -7,7 +7,7 @@ import { AccountService } from 'src/account/account.service';
 import { JwtPayload } from './interface';
 import { SignInDto, SignInResponseDto } from './dto';
 
-@Controller('api/v1/auth')
+@Controller('auth')
 @ApiTags('Authentication')
 @ApiExtraModels(SignInDto, SignInResponseDto)
 export class AuthController {

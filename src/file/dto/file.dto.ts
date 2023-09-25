@@ -1,39 +1,63 @@
 import { ApiProperty } from '@nestjs/swagger';
 
 export class FileDto {
-  @ApiProperty({ type: "string", description: "This is file's id" })
+  @ApiProperty({
+    type: "string",
+    description: "This is file's id"
+  })
   id: string;
 
-  @ApiProperty({ type: "string", description: "This is file's field name" })
+  @ApiProperty({
+    type: "string",
+    description: "This is file's field name"
+  })
   fieldName: string;
 
-  @ApiProperty({ type: "string", description: "This is file's field name" })
+  @ApiProperty({
+    type: "string",
+    description: "This is file's field name"
+  })
   originalName: string;
 
-  @ApiProperty({ type: "string", description: "This is file's encoding" })
+  @ApiProperty({
+    type: "string",
+    description: "This is file's encoding"
+  })
   encoding: string;
 
-  @ApiProperty({ type: "string", description: "This is file's mimetype" })
+  @ApiProperty({
+    type: "string",
+    description: "This is file's mimetype"
+  })
   mimeType: string;
 
-  @ApiProperty({ type: "string", description: "This is file's file name" })
+  @ApiProperty({
+    type: "string",
+    description: "This is file's file name"
+  })
   fileName: string;
 
-  @ApiProperty({ type: "string", description: "This is file's url" })
+  @ApiProperty({
+    type: "string",
+    description: "This is file's url"
+  })
   url: string;
 
-  @ApiProperty({ type: "number", description: "This is file's size" })
+  @ApiProperty({
+    type: "number",
+    description: "This is file's size"
+  })
   size: number;
 
-  @ApiProperty({ type: "string", description: "This is object's id" })
+  @ApiProperty({
+    type: "string",
+    description: "This is object's id"
+  })
   objectId: string;
 
-  @ApiProperty({ type: "string", description: "This is object's type" })
+  @ApiProperty({
+    type: "string",
+    description: "This is object's type"
+  })
   objectType: string;
-
-  @ApiProperty({ type: "string", description: "This is file's created at" })
-  createdAt: string;
-
-  @ApiProperty({ type: "string", description: "This is file's deleted at" })
-  deletedAt: string;
 }
