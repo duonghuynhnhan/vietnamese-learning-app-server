@@ -5,6 +5,12 @@ import { FileDto } from "src/file/dto";
 export class AccountDto {
   @ApiProperty({
     type: 'string',
+    description: 'This is id'
+  })
+  id: string;
+
+  @ApiProperty({
+    type: 'string',
     description: 'This is full name'
   })
   fullName: string;
