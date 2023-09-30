@@ -1,4 +1,5 @@
 import { ApiProperty } from "@nestjs/swagger";
+import { FileDto } from "src/file/dto";
 
 export class TopicDto {
   @ApiProperty({
@@ -14,8 +15,8 @@ export class TopicDto {
   name: string;
 
   @ApiProperty({
-    type: 'string',
+    type: () => FileDto,
     description: 'This is avatar',
   })
-  avatar: string;
+  avatar: FileDto;
 }

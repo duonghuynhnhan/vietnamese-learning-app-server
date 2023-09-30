@@ -1,3 +1,3 @@
-// export * from './create-lesson.dto';
-// export * from './update-lesson.dto';
-// export * from './lesson.dto';
+export * from './create-lesson.dto';
+export * from './update-lesson.dto';
+export * from './lesson.dto';
