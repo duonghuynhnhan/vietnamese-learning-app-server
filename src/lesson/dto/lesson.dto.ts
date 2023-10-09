@@ -10,9 +10,9 @@ export class LessonDto {
 
   @ApiProperty({
     type: () => FileDto,
-    description: 'This is attachment',
+    description: 'This is attachment question',
   })
-  attachment: FileDto;
+  attachmentQuestion: FileDto;
 
   @ApiProperty({
     type: 'string',
@@ -27,10 +27,22 @@ export class LessonDto {
   rightAnswer: string;
 
   @ApiProperty({
+    type: () => FileDto,
+    description: 'This is attachment 0',
+  })
+  attachment0: FileDto;
+
+  @ApiProperty({
     type: 'string',
     description: 'This is wrong answer 1',
   })
   wrongAnswer1: string;
+
+  @ApiProperty({
+    type: () => FileDto,
+    description: 'This is attachment 1',
+  })
+  attachment1: FileDto;
 
   @ApiProperty({
     type: 'string',
@@ -39,8 +51,20 @@ export class LessonDto {
   wrongAnswer2: string;
 
   @ApiProperty({
+    type: () => FileDto,
+    description: 'This is attachment 2',
+  })
+  attachment2: FileDto;
+
+  @ApiProperty({
     type: 'string',
     description: 'This is wrong answer 3',
   })
   wrongAnswer3: string;
+
+  @ApiProperty({
+    type: () => FileDto,
+    description: 'This is attachment 3',
+  })
+  attachment3: FileDto;
 }
