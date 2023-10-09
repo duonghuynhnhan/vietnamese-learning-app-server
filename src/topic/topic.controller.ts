@@ -13,8 +13,8 @@ import { CreateTopicDto, TopicDto, UpdateTopicDto } from './dto';
 @Controller('topic')
 @ApiTags('Topic')
 @ApiExtraModels(TopicDto, CreateTopicDto, UpdateTopicDto)
-@ApiBearerAuth()
-@UseGuards(AuthGuard())
+// @ApiBearerAuth()
+// @UseGuards(AuthGuard())
 export class TopicController {
   constructor(
     private topicService: TopicService,
@@ -23,7 +23,7 @@ export class TopicController {
 
   @Post()
   @ApiOperation({ summary: 'Tạo mới topic' })
-  @Role(AccountRole.Admin)
+  // @Role(AccountRole.Admin)
   @ApiBody({
     schema: {
       title: 'Create new a topic',
@@ -38,8 +38,9 @@ export class TopicController {
       $ref: getSchemaPath(TopicDto),
     },
   })
-  async createTopic(createTopicDto: CreateTopicDto): Promise<TopicDto> {
+  async createTopic(@Body() createTopicDto: CreateTopicDto): Promise<TopicDto> {
     try {
+      console.log(createTopicDto);
       const { avatar } = createTopicDto;
 
       const file = await this.fileService.getFileById(avatar);

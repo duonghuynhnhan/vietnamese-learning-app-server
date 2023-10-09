@@ -4,19 +4,19 @@ import { IsOptional, MaxLength } from "class-validator";
 export class UpdateLessonDto {
   @ApiProperty({
     type: 'string',
-    description: 'Input name',
+    description: 'Input type',
   })
   @IsOptional()
   @MaxLength(255)
-  name: string;
+  type: string;
 
   @ApiProperty({
     type: 'string',
-    description: 'Input avatar',
+    description: 'Input attachment',
   })
   @IsOptional()
   @MaxLength(255)
-  avatar: string;
+  attachment: string;
 
   @ApiProperty({
     type: 'string',

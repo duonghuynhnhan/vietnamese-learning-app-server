@@ -4,15 +4,15 @@ import { FileDto } from "src/file/dto";
 export class LessonDto {
   @ApiProperty({
     type: 'string',
-    description: 'This is name',
+    description: 'This is type',
   })
-  name: string;
+  type: string;
 
   @ApiProperty({
     type: () => FileDto,
-    description: 'This is avatar',
+    description: 'This is attachment',
   })
-  avatar: FileDto;
+  attachment: FileDto;
 
   @ApiProperty({
     type: 'string',

@@ -14,8 +14,8 @@ import { CreateLessonDto, LessonDto, UpdateLessonDto } from './dto';
 @Controller('lesson')
 @ApiTags('Lesson')
 @ApiExtraModels(LessonDto, CreateLessonDto, UpdateLessonDto)
-@ApiBearerAuth()
-@UseGuards(AuthGuard())
+// @ApiBearerAuth()
+// @UseGuards(AuthGuard())
 export class LessonController {
   constructor(
     private lessonService: LessonService,
@@ -42,16 +42,16 @@ export class LessonController {
   })
   async createLesson(createLessonDto: CreateLessonDto): Promise<LessonDto> {
     try {
-      const { avatar, topicId } = createLessonDto;
+      const { attachment, topicId } = createLessonDto;
 
       const topic = await this.topicService.getTopicById(topicId);
       if (!topic) {
         throw new ApiError(400, 'Invalid topic');
       }
 
-      const file = await this.fileService.getFileById(avatar);
-      if (!file || !file.mimeType.startsWith('image/')) {
-        throw new ApiError(400, 'Must input image file');
+      const file = await this.fileService.getFileById(attachment);
+      if (!file) {
+        throw new ApiError(400, 'Must input attachment');
       }
 
       return plainToClass(LessonDto, await this.lessonService.createLesson(createLessonDto));
@@ -89,9 +89,9 @@ export class LessonController {
 
       const lessons = await this.lessonService.getAllLessonsByTopicId(id);
       for (const lesson of lessons) {
-        const avatar = await this.fileService.getFileById(lesson.avatar);
+        const attachment = await this.fileService.getFileById(lesson.attachment);
 
-        data.push(plainToClass(LessonDto, { ...lesson, avatar: plainToClass(FileDto, avatar) }));
+        data.push(plainToClass(LessonDto, { ...lesson, attachment: plainToClass(FileDto, attachment) }));
       }
 
       return data;
@@ -124,9 +124,9 @@ export class LessonController {
         throw new ApiError(404, 'Lesson not found');
       }
 
-      const avatar = plainToClass(FileDto, await this.fileService.getFileById(lesson.avatar));
+      const attachment = plainToClass(FileDto, await this.fileService.getFileById(lesson.attachment));
 
-      return plainToClass(LessonDto, { ...lesson, avatar });
+      return plainToClass(LessonDto, { ...lesson, attachment });
     }
     catch (error) {
       console.log(error);
@@ -163,17 +163,17 @@ export class LessonController {
         throw new ApiError(404, 'Lesson not found');
       }
 
-      const avatar = await this.fileService.getFileById(updateLessonDto.avatar);
-      if (!avatar || !avatar.mimeType.startsWith('image/')) {
+      const attachment = await this.fileService.getFileById(updateLessonDto.attachment);
+      if (!attachment || !attachment.mimeType.startsWith('image/')) {
         throw new ApiError(400, 'Input image file');
       }
 
       await this.lessonService.updateLessonById(id, updateLessonDto);
 
       const updatedLesson = await this.lessonService.getLessonById(id);
-      const updatedAvatar = plainToClass(FileDto, await this.fileService.getFileById(updatedLesson.avatar));
+      const updatedAvatar = plainToClass(FileDto, await this.fileService.getFileById(updatedLesson.attachment));
 
-      return plainToClass(LessonDto, { ...updatedLesson, avatar: updatedAvatar });
+      return plainToClass(LessonDto, { ...updatedLesson, attachment: updatedAvatar });
     }
     catch (error) {
       console.log(error);

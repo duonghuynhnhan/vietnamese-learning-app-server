@@ -15,8 +15,8 @@ export class LessonService {
 
     return this.prismaService.lesson.create({
       data: {
-        name: createLessonDto.name,
-        avatar: createLessonDto.avatar,
+        type: createLessonDto.type,
+        attachment: createLessonDto.attachment,
         question: createLessonDto.question,
         rightAnswer: createLessonDto.rightAnswer,
         wrongAnswer1: createLessonDto.wrongAnswer1,
@@ -61,8 +61,8 @@ export class LessonService {
         id,
       },
       data: {
-        name: updateLessonDto?.name,
-        avatar: updateLessonDto?.avatar,
+        type: updateLessonDto?.type,
+        attachment: updateLessonDto?.attachment,
         question: updateLessonDto?.question,
         rightAnswer: updateLessonDto?.rightAnswer,
         wrongAnswer1: updateLessonDto?.wrongAnswer1,

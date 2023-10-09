@@ -4,19 +4,19 @@ import { IsNotEmpty, MaxLength } from "class-validator";
 export class CreateLessonDto {
   @ApiProperty({
     type: 'string',
-    description: 'Input name',
+    description: 'Input type',
   })
   @IsNotEmpty()
   @MaxLength(255)
-  name: string;
+  type: string;
 
   @ApiProperty({
     type: 'string',
-    description: 'Input avatar',
+    description: 'Input attachment',
   })
   @IsNotEmpty()
   @MaxLength(255)
-  avatar: string;
+  attachment: string;
 
   @ApiProperty({
     type: 'string',

@@ -59,14 +59,14 @@ model topic {
 }
 
 model lesson {
-  id           String @id() @default(uuid())
-  name         String @db.VarChar(255)
-  avatar       String @db.VarChar(255)
-  question     String @db.VarChar(255)
-  rightAnswer  String @db.VarChar(255)
-  wrongAnswer1 String @db.VarChar(255)
-  wrongAnswer2 String @db.VarChar(255)
-  wrongAnswer3 String @db.VarChar(255)
+  id           String  @id() @default(uuid())
+  type         String  @db.VarChar(255)
+  question     String  @db.VarChar(255)
+  attachment   String? @db.VarChar(255)
+  rightAnswer  String  @db.VarChar(255)
+  wrongAnswer1 String  @db.VarChar(255)
+  wrongAnswer2 String  @db.VarChar(255)
+  wrongAnswer3 String  @db.VarChar(255)
 
   createdAt String  @db.VarChar(30)
   updatedAt String? @db.VarChar(30)

@@ -1,7 +1,7 @@
 import { Module } from '@nestjs/common';
 import { ConfigModule } from '@nestjs/config';
 import { ServeStaticModule } from '@nestjs/serve-static';
-import { APP_GUARD } from '@nestjs/core';
+import { APP_GUARD, APP_INTERCEPTOR } from '@nestjs/core';
 import { join } from 'path';
 import { configValidationSchema } from '../config/config.schema';
 import { AccountModule } from './account/account.module';
@@ -13,6 +13,7 @@ import { LessonModule } from './lesson/lesson.module';
 import { LessonProgressModule } from './lesson-progress/lesson-progress.module';
 import { TopicProgressModule } from './topic-progress/topic-progress.module';
 import { RoleGuard } from './auth/guard';
+import { BigintInterceptor } from './interceptors/bigint-interceptor';
 
 @Module({
   imports: [
@@ -37,6 +38,10 @@ import { RoleGuard } from './auth/guard';
     {
       provide: APP_GUARD,
       useClass: RoleGuard,
+    },
+    {
+      provide: APP_INTERCEPTOR,
+      useClass: BigintInterceptor,
     },
   ],
 })
