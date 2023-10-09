@@ -25,7 +25,7 @@ export class LessonController {
 
   @Post()
   @ApiOperation({ summary: 'Tạo mới lesson' })
-  @Role(AccountRole.Admin)
+  // @Role(AccountRole.Admin)
   @ApiBody({
     schema: {
       title: 'Create new a lesson',
@@ -40,7 +40,7 @@ export class LessonController {
       $ref: getSchemaPath(LessonDto),
     },
   })
-  async createLesson(createLessonDto: CreateLessonDto): Promise<LessonDto> {
+  async createLesson(@Body() createLessonDto: CreateLessonDto): Promise<LessonDto> {
     try {
       const { attachment, topicId } = createLessonDto;
 

@@ -40,7 +40,6 @@ export class TopicController {
   })
   async createTopic(@Body() createTopicDto: CreateTopicDto): Promise<TopicDto> {
     try {
-      console.log(createTopicDto);
       const { avatar } = createTopicDto;
 
       const file = await this.fileService.getFileById(avatar);

@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="./vietnamese-learning-app-logo.png">
+  <title>Create Lesson</title>
+</head>
+
+<body>
+  <h1>Tạo lesson</h1>
+
+  <form enctype="multipart/form-data" id="uploadForm">
+    <label for="type">Type:</label>
+    <select id="type">
+      <option value="Image">Image</option>
+      <option value="Audio">Audio</option>
+      <option value="Multiple">Multiple</option>
+    </select><br><br>
+
+    <label for="topic">Topic:</label>
+    <select id="topic">
+    </select><br><br>
+
+    <label for="question">Question:</label>
+    <input type="text" id="question" name="question" required><br><br>
+
+    <label for="rightAnswer">Right Answer:</label>
+    <input type="text" id="rightAnswer" name="rightAnswer" required><br><br>
+
+    <label for="wrongAnswer1">Wrong Answer 1:</label>
+    <input type="text" id="wrongAnswer1" name="wrongAnswer1" required><br><br>
+
+    <label for="wrongAnswer2">Wrong Answer 2:</label>
+    <input type="text" id="wrongAnswer2" name="wrongAnswer2" required><br><br>
+
+    <label for="wrongAnswer3">Wrong Answer 3:</label>
+    <input type="text" id="wrongAnswer3" name="wrongAnswer3" required><br><br>
+
+    <label for="attachment">Attachment:</label>
+    <input type="file" id="attachment" name="attachment" required><br><br>
+
+    <input type="submit" value="Tải lên" onclick="uploadData(event)">
+  </form>
+
+  <script>
+    var topic = document.getElementById("topic");
+    fetch('http://localhost:4000/api/v1/topic', {
+      method: 'GET',
+    })
+      .then(response => response.json())
+      .then(data => {
+        data.forEach(function (item) {
+          var option = document.createElement("option");
+          option.value = item.id;
+          option.text = item.name;
+          topic.appendChild(option);
+        });
+      })
+      .catch(error => {
+        console.error('Lỗi:', error);
+      });
+
+    function uploadData(event) {
+      event.preventDefault();
+
+      var type = document.getElementById('type').value;
+      var topicId = document.getElementById('topic').value;
+      var question = document.getElementById('question').value;
+      var rightAnswer = document.getElementById('rightAnswer').value;
+      var wrongAnswer1 = document.getElementById('wrongAnswer1').value;
+      var wrongAnswer2 = document.getElementById('wrongAnswer2').value;
+      var wrongAnswer3 = document.getElementById('wrongAnswer3').value;
+      var attachment = document.getElementById('attachment').files[0];
+
+      var formDataImage = new FormData();
+      formDataImage.append('file', attachment);
+
+      fetch('http://localhost:4000/api/v1/file/upload/single', {
+        method: 'POST',
+        body: formDataImage,
+      })
+        .then(response => response.json())
+        .then(data => {
+          fetch('http://localhost:4000/api/v1/lesson', {
+            method: 'POST',
+            headers: {
+              'Content-Type': 'application/json'
+            },
+            body: JSON.stringify({
+              type,
+              attachment: data.id,
+              question,
+              rightAnswer,
+              wrongAnswer1,
+              wrongAnswer2,
+              wrongAnswer3,
+              topicId: topic.value,
+            }),
+          })
+            .then(response => response.json())
+            .then(data => {
+              console.log(data);
+            })
+            .catch(error => {
+              console.error('Lỗi:', error);
+            });
+        })
+        .catch(error => {
+          console.error('Lỗi:', error);
+        });
+    }
+  </script>
+</body>
+
+</html>

@@ -1,5 +1,6 @@
 import { ApiProperty } from "@nestjs/swagger";
 import { IsOptional, MaxLength } from "class-validator";
+import { IsLessonType } from "src/custom-validators";
 
 export class UpdateLessonDto {
   @ApiProperty({
@@ -7,6 +8,7 @@ export class UpdateLessonDto {
     description: 'Input type',
   })
   @IsOptional()
+  @IsLessonType()
   @MaxLength(255)
   type: string;
 

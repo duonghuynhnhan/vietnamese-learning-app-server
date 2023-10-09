@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="./vietnamese-learning-app-logo.png">
+  <title>Create Topic</title>
+</head>
+
+<body>
+  <h1>Tạo topic</h1>
+
+  <form enctype="multipart/form-data" id="uploadForm">
+    <label for="name">Tên:</label>
+    <input type="text" id="name" name="name" required><br><br>
+
+    <label for="image">Chọn ảnh:</label>
+    <input type="file" id="image" name="image" accept="image/*" required><br><br>
+
+    <input type="submit" value="Tải lên" onclick="uploadData(event)">
+  </form>
+
+  <script>
+    function uploadData(event) {
+      event.preventDefault();
+
+      var name = document.getElementById('name').value;
+      var image = document.getElementById('image').files[0];
+
+      var formDataImage = new FormData();
+      formDataImage.append('file', image);
+
+      fetch('http://localhost:4000/api/v1/file/upload/single', {
+        method: 'POST',
+        body: formDataImage,
+      })
+        .then(response => response.json())
+        .then(data => {
+          fetch('http://localhost:4000/api/v1/topic', {
+            method: 'POST',
+            headers: {
+              'Content-Type': 'application/json'
+            },
+            body: JSON.stringify({
+              "name": name,
+              "avatar": data.id
+            }),
+          })
+            .then(response => response.json())
+            .then(data => {
+              console.log(data);
+            })
+            .catch(error => {
+              console.error('Lỗi:', error);
+            });
+        })
+        .catch(error => {
+          console.error('Lỗi:', error);
+        });
+    }
+  </script>
+</body>
+
+</html>

@@ -1,5 +1,6 @@
 import { ApiProperty } from "@nestjs/swagger";
 import { IsNotEmpty, MaxLength } from "class-validator";
+import { IsLessonType } from "src/custom-validators";
 
 export class CreateLessonDto {
   @ApiProperty({
@@ -7,6 +8,7 @@ export class CreateLessonDto {
     description: 'Input type',
   })
   @IsNotEmpty()
+  @IsLessonType()
   @MaxLength(255)
   type: string;
 
