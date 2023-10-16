@@ -14,6 +14,7 @@ import { LessonProgressModule } from './lesson-progress/lesson-progress.module';
 import { TopicProgressModule } from './topic-progress/topic-progress.module';
 import { RoleGuard } from './auth/guard';
 import { BigintInterceptor } from './interceptors/bigint-interceptor';
+import { AdminModule } from './admin/admin.module';
 
 @Module({
   imports: [
@@ -26,6 +27,7 @@ import { BigintInterceptor } from './interceptors/bigint-interceptor';
     }),
     AuthModule,
     AccountModule,
+    AdminModule,
     TopicModule,
     LessonModule,
     LessonProgressModule,

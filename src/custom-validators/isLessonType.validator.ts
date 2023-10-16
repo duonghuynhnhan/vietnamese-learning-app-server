@@ -1,4 +1,5 @@
 import { registerDecorator, ValidationOptions } from 'class-validator';
+import { LessonType } from 'src/lesson/enum';
 
 export function IsLessonType(validationOptions?: ValidationOptions) {
   return function (object: object, propertyName: string): void {
@@ -9,7 +10,7 @@ export function IsLessonType(validationOptions?: ValidationOptions) {
       options: validationOptions,
       validator: {
         validate(value: any): boolean {
-          const type = ['Image', 'Audio', 'Multiple'];
+          const type = Object.values(LessonType);
 
           return type.includes(value);
         },

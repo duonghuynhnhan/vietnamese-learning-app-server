@@ -26,20 +26,32 @@
     <label for="question">Question:</label>
     <input type="text" id="question" name="question" required><br><br>
 
+    <label for="attachmentQuestion">Attachment Question:</label>
+    <input type="file" id="attachmentQuestion" name="attachmentQuestion" required><br><br>
+
     <label for="rightAnswer">Right Answer:</label>
     <input type="text" id="rightAnswer" name="rightAnswer" required><br><br>
+
+    <label for="attachment0">Attachment 0:</label>
+    <input type="file" id="attachment0" name="attachment0" required><br><br>
 
     <label for="wrongAnswer1">Wrong Answer 1:</label>
     <input type="text" id="wrongAnswer1" name="wrongAnswer1" required><br><br>
 
+    <label for="attachment1">Attachment 1:</label>
+    <input type="file" id="attachment1" name="attachment1" required><br><br>
+
     <label for="wrongAnswer2">Wrong Answer 2:</label>
     <input type="text" id="wrongAnswer2" name="wrongAnswer2" required><br><br>
+
+    <label for="attachment2">Attachment 2:</label>
+    <input type="file" id="attachment2" name="attachment2" required><br><br>
 
     <label for="wrongAnswer3">Wrong Answer 3:</label>
     <input type="text" id="wrongAnswer3" name="wrongAnswer3" required><br><br>
 
-    <label for="attachment">Attachment:</label>
-    <input type="file" id="attachment" name="attachment" required><br><br>
+    <label for="attachment3">Attachment 3:</label>
+    <input type="file" id="attachment3" name="attachment3" required><br><br>
 
     <input type="submit" value="Tải lên" onclick="uploadData(event)">
   </form>
@@ -68,21 +80,30 @@
       var type = document.getElementById('type').value;
       var topicId = document.getElementById('topic').value;
       var question = document.getElementById('question').value;
+      var attachmentQuestion = document.getElementById('attachmentQuestion').files[0];
       var rightAnswer = document.getElementById('rightAnswer').value;
+      var attachment0 = document.getElementById('attachment0').files[0];
       var wrongAnswer1 = document.getElementById('wrongAnswer1').value;
+      var attachment1 = document.getElementById('attachment1').files[0];
       var wrongAnswer2 = document.getElementById('wrongAnswer2').value;
+      var attachment2 = document.getElementById('attachment2').files[0];
       var wrongAnswer3 = document.getElementById('wrongAnswer3').value;
-      var attachment = document.getElementById('attachment').files[0];
+      var attachment3 = document.getElementById('attachment3').files[0];
 
-      var formDataImage = new FormData();
-      formDataImage.append('file', attachment);
+      var formDataImages = new FormData();
+      formDataImages.append('files', attachmentQuestion);
+      formDataImages.append('files', attachment0);
+      formDataImages.append('files', attachment1);
+      formDataImages.append('files', attachment2);
+      formDataImages.append('files', attachment3);
 
-      fetch('http://localhost:4000/api/v1/file/upload/single', {
+      fetch('http://localhost:4000/api/v1/file/upload/multiple', {
         method: 'POST',
-        body: formDataImage,
+        body: formDataImages,
       })
         .then(response => response.json())
         .then(data => {
+          console.log(data);
           fetch('http://localhost:4000/api/v1/lesson', {
             method: 'POST',
             headers: {
@@ -90,12 +111,16 @@
             },
             body: JSON.stringify({
               type,
-              attachment: data.id,
               question,
+              attachmentQuestion: data[0].id,
               rightAnswer,
+              attachment0: data[1].id,
               wrongAnswer1,
+              attachment1: data[2].id,
               wrongAnswer2,
+              attachment2: data[3].id,
               wrongAnswer3,
+              attachment3: data[4].id,
               topicId: topic.value,
             }),
           })

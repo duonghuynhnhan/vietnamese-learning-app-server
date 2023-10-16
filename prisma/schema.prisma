@@ -84,7 +84,7 @@ model lesson {
 
 model topic_progress {
   status   String @db.VarChar(255)
-  progress Int
+  progress Float
 
   lessonProgresses lesson_progress[]
 
@@ -93,18 +93,28 @@ model topic_progress {
   topic     topic   @relation(fields: [topicId], references: [id])
   topicId   String
 
+  createdAt      String  @db.VarChar(30)
+  deletedAt      String? @db.VarChar(30)
+  updatedAt      String? @db.VarChar(30)
+  lastModifiedAt String? @db.VarChar(30)
+
   @@id([accountId, topicId])
 }
 
 model lesson_progress {
   status   String @db.VarChar(255)
-  progress Int
+  progress Float
 
   lesson                  lesson         @relation(fields: [lessonId], references: [id])
   lessonId                String
   topic_progress          topic_progress @relation(fields: [topic_progressAccountId, topic_progressTopicId], references: [accountId, topicId])
   topic_progressAccountId String
   topic_progressTopicId   String
+
+  createdAt      String  @db.VarChar(30)
+  deletedAt      String? @db.VarChar(30)
+  updatedAt      String? @db.VarChar(30)
+  lastModifiedAt String? @db.VarChar(30)
 
   @@id([topic_progressAccountId, lessonId, topic_progressTopicId])
 }
