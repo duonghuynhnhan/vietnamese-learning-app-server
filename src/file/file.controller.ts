@@ -163,8 +163,6 @@ export class FileController {
   }
 
   @Delete('/:id')
-  @UseGuards(AuthGuard())
-  @ApiBearerAuth()
   @ApiOperation({ summary: 'Xóa một file' })
   @ApiOkResponse({
     schema: {
@@ -179,10 +177,6 @@ export class FileController {
 
       if (!file) {
         throw new ApiError(404);
-      }
-
-      if (file.mimeType.includes('image/')) {
-        throw new ApiError(400);
       }
 
       return this.fileService.deleteFile(id, file);

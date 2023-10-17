@@ -55,7 +55,7 @@ export class FileService {
   }
 
   async deleteFile(id: string, file: file): Promise<ApiSuccess> {
-    const filePath = join(__dirname, '../..', 'public', file.url);
+    const filePath = join(__dirname, '../../..', 'public', file.url);
 
     fs.unlink(filePath, async (error) => {
       if (error) {

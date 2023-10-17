@@ -15,9 +15,8 @@ import { TopicService } from 'src/topic/topic.service';
 @Controller('admin')
 @ApiTags('Admin')
 @ApiExtraModels(TopicDto, CreateTopicDto, UpdateTopicDto, LessonDto, CreateLessonDto, UpdateLessonDto)
-@ApiBearerAuth()
-@UseGuards(AuthGuard())
-@Role(AccountRole.Admin)
+// @ApiBearerAuth()
+// @UseGuards(AuthGuard())
 export class AdminController {
   constructor(
     private topicService: TopicService,
@@ -26,6 +25,7 @@ export class AdminController {
   ) { }
 
   @Post('topic/create')
+  // @Role(AccountRole.Admin)
   @ApiOperation({ summary: 'Tạo mới topic' })
   @ApiBody({
     schema: {
