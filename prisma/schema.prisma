@@ -9,6 +9,20 @@ datasource db {
   url      = env("DATABASE_URL")
 }
 
+model country {
+  id     String @id @db.VarChar(20)
+  name   String @db.VarChar(255)
+  nameEN String @db.VarChar(255)
+
+  createdAt String? @db.VarChar(30)
+  updatedAt String? @db.VarChar(30)
+  deletedAt String? @db.VarChar(30)
+
+  accounts account[]
+
+  @@fulltext([name, nameEN])
+}
+
 model account {
   id       String  @id() @default(uuid())
   username String  @unique
@@ -31,20 +45,6 @@ model account {
   countryId   String  @db.VarChar(20)
 }
 
-model country {
-  id     String @id @db.VarChar(20)
-  name   String @db.VarChar(255)
-  nameEN String @db.VarChar(255)
-
-  createdAt String? @db.VarChar(30)
-  updatedAt String? @db.VarChar(30)
-  deletedAt String? @db.VarChar(30)
-
-  accounts account[]
-
-  @@fulltext([name, nameEN])
-}
-
 model topic {
   id     String @id() @default(uuid())
   name   String @db.VarChar(255)
@@ -59,18 +59,18 @@ model topic {
 }
 
 model lesson {
-  id           String  @id() @default(uuid())
-  type         String  @db.VarChar(255)
-  question     String  @db.VarChar(255)
-  Question     String? @db.VarChar(255)
-  rightAnswer  String  @db.VarChar(255)
-  attachment0  String? @db.VarChar(255)
-  wrongAnswer1 String  @db.VarChar(255)
-  attachment1  String? @db.VarChar(255)
-  wrongAnswer2 String  @db.VarChar(255)
-  attachment2  String? @db.VarChar(255)
-  wrongAnswer3 String  @db.VarChar(255)
-  attachment3  String? @db.VarChar(255)
+  id                 String  @id() @default(uuid())
+  type               String  @db.VarChar(255)
+  question           String  @db.VarChar(255)
+  attachmentQuestion String? @db.VarChar(255)
+  rightAnswer        String? @db.VarChar(255)
+  attachment0        String? @db.VarChar(255)
+  wrongAnswer1       String? @db.VarChar(255)
+  attachment1        String? @db.VarChar(255)
+  wrongAnswer2       String? @db.VarChar(255)
+  attachment2        String? @db.VarChar(255)
+  wrongAnswer3       String? @db.VarChar(255)
+  attachment3        String? @db.VarChar(255)
 
   createdAt String  @db.VarChar(30)
   updatedAt String? @db.VarChar(30)

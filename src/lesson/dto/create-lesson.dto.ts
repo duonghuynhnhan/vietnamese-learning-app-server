@@ -32,8 +32,9 @@ export class CreateLessonDto {
   @ApiProperty({
     type: 'string',
     description: 'Input right answer',
+    required: false,
   })
-  @IsNotEmpty()
+  @IsOptional()
   @MaxLength(255)
   rightAnswer: string;
 
@@ -49,8 +50,9 @@ export class CreateLessonDto {
   @ApiProperty({
     type: 'string',
     description: 'Input wrong answer 1',
+    required: false,
   })
-  @IsNotEmpty()
+  @IsOptional()
   @MaxLength(255)
   wrongAnswer1: string;
 
@@ -66,8 +68,9 @@ export class CreateLessonDto {
   @ApiProperty({
     type: 'string',
     description: 'Input wrong answer 2',
+    required: false,
   })
-  @IsNotEmpty()
+  @IsOptional()
   @MaxLength(255)
   wrongAnswer2: string;
 
@@ -83,8 +86,9 @@ export class CreateLessonDto {
   @ApiProperty({
     type: 'string',
     description: 'Input wrong answer 3',
+    required: false,
   })
-  @IsNotEmpty()
+  @IsOptional()
   @MaxLength(255)
   wrongAnswer3: string;
 

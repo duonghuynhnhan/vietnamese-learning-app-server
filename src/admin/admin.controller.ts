@@ -226,34 +226,54 @@ export class AdminController {
   })
   async createLesson(@Body() createLessonDto: CreateLessonDto): Promise<LessonDto> {
     try {
-      // const { attachmentQuestion, attachment0, attachment1, attachment2, attachment3, topicId, type } = createLessonDto;
-      const { attachmentQuestion, topicId, type } = createLessonDto;
+      const { attachmentQuestion, attachment0, attachment1, attachment2, attachment3, topicId, type, rightAnswer, wrongAnswer1, wrongAnswer2, wrongAnswer3 } = createLessonDto;
 
       const topic = await this.topicService.getTopicById(topicId);
       if (!topic) {
         throw new ApiError(400, 'Invalid topic');
       }
 
-      const file = await this.fileService.getFileById(attachmentQuestion);
+      const attachmentQuestionFile = await this.fileService.getFileById(attachmentQuestion);
+      const attachment0File = await this.fileService.getFileById(attachment0);
+      const attachment1File = await this.fileService.getFileById(attachment1);
+      const attachment2File = await this.fileService.getFileById(attachment2);
+      const attachment3File = await this.fileService.getFileById(attachment3);
 
       if (type === LessonType.Audio || type === LessonType.Image) {
-        if (!file) {
-          throw new ApiError(400, 'Upload attachments');
-        }
-
         if (type === LessonType.Audio) {
-          if (!file.mimeType.startsWith('audio/')) {
+          if (!attachmentQuestionFile) {
+            throw new ApiError(400, 'Upload attachments');
+          }
+
+          if (!attachmentQuestionFile.mimeType.startsWith('audio/')) {
             throw new ApiError(400, 'Upload audio attachments');
           }
+
+          if (!rightAnswer || !wrongAnswer1 || !wrongAnswer2 || !wrongAnswer3) {
+            throw new ApiError(400, 'Input answer');
+          }
+
+          return plainToClass(LessonDto, await this.lessonService.createLesson({ ...createLessonDto, attachment0: null, attachment1: null, attachment2: null, attachment3: null }));
         }
+
         else {
-          if (!file.mimeType.startsWith('image/')) {
+          if (!attachment0File || !attachment1File || !attachment2File || !attachment3File) {
+            throw new ApiError(400, 'Upload attachments');
+          }
+
+          if (!attachment0File.mimeType.startsWith('image/') || !attachment1File.mimeType.startsWith('image/') || !attachment2File.mimeType.startsWith('image/') || !attachment3File.mimeType.startsWith('image/')) {
             throw new ApiError(400, 'Upload image attachments');
           }
+
+          return plainToClass(LessonDto, await this.lessonService.createLesson({ ...createLessonDto, attachmentQuestion: null, rightAnswer: null, wrongAnswer1: null, wrongAnswer2: null, wrongAnswer3: null }));
         }
       }
 
-      return plainToClass(LessonDto, await this.lessonService.createLesson(createLessonDto));
+      if (!rightAnswer || !wrongAnswer1 || !wrongAnswer2 || !wrongAnswer3) {
+        throw new ApiError(400, 'Input answer');
+      }
+
+      return plainToClass(LessonDto, await this.lessonService.createLesson({ ...createLessonDto, attachmentQuestion: null, attachment0: null, attachment1: null, attachment2: null, attachment3: null }));
     }
     catch (error) {
       console.log(error);
@@ -288,11 +308,19 @@ export class AdminController {
 
       const lessons = await this.lessonService.getAllLessonsByTopicId(id);
       for (const lesson of lessons) {
-        const attachmentQuestion = await this.fileService.getFileById(lesson.attachmentQuestion);
+        const attachmentQuestion = await this.fileService.getFileById(lesson.attachmentQuestion ? lesson.attachmentQuestion : '');
+        const attachment0 = await this.fileService.getFileById(lesson.attachment0 ? lesson.attachment0 : '');
+        const attachment1 = await this.fileService.getFileById(lesson.attachment1 ? lesson.attachment1 : '');
+        const attachment2 = await this.fileService.getFileById(lesson.attachment2 ? lesson.attachment2 : '');
+        const attachment3 = await this.fileService.getFileById(lesson.attachment3 ? lesson.attachment3 : '');
 
         data.push(plainToClass(LessonDto, {
           ...lesson,
           attachmentQuestion: plainToClass(FileDto, attachmentQuestion),
+          attachment0: attachment0 ? plainToClass(FileDto, attachment0) : null,
+          attachment1: attachment1 ? plainToClass(FileDto, attachment1) : null,
+          attachment2: attachment2 ? plainToClass(FileDto, attachment2) : null,
+          attachment3: attachment3 ? plainToClass(FileDto, attachment3) : null,
         }));
       }
 
@@ -326,11 +354,19 @@ export class AdminController {
         throw new ApiError(404, 'Lesson not found');
       }
 
-      const attachmentQuestion = await this.fileService.getFileById(lesson.attachmentQuestion);
+      const attachmentQuestion = await this.fileService.getFileById(lesson.attachmentQuestion ? lesson.attachmentQuestion : '');
+      const attachment0 = await this.fileService.getFileById(lesson.attachment0 ? lesson.attachment0 : '');
+      const attachment1 = await this.fileService.getFileById(lesson.attachment1 ? lesson.attachment1 : '');
+      const attachment2 = await this.fileService.getFileById(lesson.attachment2 ? lesson.attachment2 : '');
+      const attachment3 = await this.fileService.getFileById(lesson.attachment3 ? lesson.attachment3 : '');
 
       return plainToClass(LessonDto, {
         ...lesson,
         attachmentQuestion: plainToClass(FileDto, attachmentQuestion),
+        attachment0: attachment0 ? plainToClass(FileDto, attachment0) : null,
+        attachment1: attachment1 ? plainToClass(FileDto, attachment1) : null,
+        attachment2: attachment2 ? plainToClass(FileDto, attachment2) : null,
+        attachment3: attachment3 ? plainToClass(FileDto, attachment3) : null,
       });
     }
     catch (error) {
@@ -377,11 +413,19 @@ export class AdminController {
       await this.lessonService.updateLessonById(id, updateLessonDto);
 
       const updatedLesson = await this.lessonService.getLessonById(id);
-      const attachmentQuestion = await this.fileService.getFileById(updatedLesson.attachmentQuestion);
+      const attachmentQuestion = await this.fileService.getFileById(updatedLesson.attachmentQuestion ? updatedLesson.attachmentQuestion : '');
+      const attachment0 = await this.fileService.getFileById(updatedLesson.attachment0 ? updatedLesson.attachment0 : '');
+      const attachment1 = await this.fileService.getFileById(updatedLesson.attachment1 ? updatedLesson.attachment1 : '');
+      const attachment2 = await this.fileService.getFileById(updatedLesson.attachment2 ? updatedLesson.attachment2 : '');
+      const attachment3 = await this.fileService.getFileById(updatedLesson.attachment3 ? updatedLesson.attachment3 : '');
 
       return plainToClass(LessonDto, {
         ...lesson,
         attachmentQuestion: plainToClass(FileDto, attachmentQuestion),
+        attachment0: attachment0 ? plainToClass(FileDto, attachment0) : null,
+        attachment1: attachment1 ? plainToClass(FileDto, attachment1) : null,
+        attachment2: attachment2 ? plainToClass(FileDto, attachment2) : null,
+        attachment3: attachment3 ? plainToClass(FileDto, attachment3) : null,
       });
     }
     catch (error) {
