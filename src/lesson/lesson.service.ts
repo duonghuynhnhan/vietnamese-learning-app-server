@@ -19,13 +19,9 @@ export class LessonService {
         attachmentQuestion: createLessonDto.attachmentQuestion,
         question: createLessonDto.question,
         rightAnswer: createLessonDto.rightAnswer,
-        attachment0: createLessonDto.attachment0,
         wrongAnswer1: createLessonDto.wrongAnswer1,
-        attachment1: createLessonDto.attachment1,
         wrongAnswer2: createLessonDto.wrongAnswer2,
-        attachment2: createLessonDto.attachment2,
         wrongAnswer3: createLessonDto.wrongAnswer3,
-        attachment3: createLessonDto.attachment3,
         topic: {
           connect: {
             id: createLessonDto.topicId,
@@ -69,13 +65,9 @@ export class LessonService {
         attachmentQuestion: updateLessonDto.attachmentQuestion,
         question: updateLessonDto.question,
         rightAnswer: updateLessonDto.rightAnswer,
-        attachment0: updateLessonDto.attachment0,
         wrongAnswer1: updateLessonDto.wrongAnswer1,
-        attachment1: updateLessonDto.attachment1,
         wrongAnswer2: updateLessonDto.wrongAnswer2,
-        attachment2: updateLessonDto.attachment2,
         wrongAnswer3: updateLessonDto.wrongAnswer3,
-        attachment3: updateLessonDto.attachment3,
         updatedAt,
       },
     });

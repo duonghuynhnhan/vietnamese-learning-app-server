@@ -1,5 +1,5 @@
 import { ApiProperty } from "@nestjs/swagger";
-import { IsNotEmpty, MaxLength } from "class-validator";
+import { IsNotEmpty, IsOptional, MaxLength } from "class-validator";
 import { IsLessonType } from "src/custom-validators";
 
 export class CreateLessonDto {
@@ -15,8 +15,9 @@ export class CreateLessonDto {
   @ApiProperty({
     type: 'string',
     description: 'Input attachment question',
+    required: false,
   })
-  @IsNotEmpty()
+  @IsOptional()
   @MaxLength(255)
   attachmentQuestion: string;
 
@@ -39,8 +40,9 @@ export class CreateLessonDto {
   @ApiProperty({
     type: 'string',
     description: 'Input attachment 0',
+    required: false,
   })
-  @IsNotEmpty()
+  @IsOptional()
   @MaxLength(255)
   attachment0: string;
 
@@ -55,8 +57,9 @@ export class CreateLessonDto {
   @ApiProperty({
     type: 'string',
     description: 'Input attachment 1',
+    required: false,
   })
-  @IsNotEmpty()
+  @IsOptional()
   @MaxLength(255)
   attachment1: string;
 
@@ -71,8 +74,9 @@ export class CreateLessonDto {
   @ApiProperty({
     type: 'string',
     description: 'Input attachment 2',
+    required: false,
   })
-  @IsNotEmpty()
+  @IsOptional()
   @MaxLength(255)
   attachment2: string;
 
@@ -87,8 +91,9 @@ export class CreateLessonDto {
   @ApiProperty({
     type: 'string',
     description: 'Input attachment 3',
+    required: false,
   })
-  @IsNotEmpty()
+  @IsOptional()
   @MaxLength(255)
   attachment3: string;
 

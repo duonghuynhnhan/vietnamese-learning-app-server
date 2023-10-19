@@ -20,13 +20,13 @@ async function main() {
     await prisma.account.createMany({
       data: [
         {
-          username: 'kevinduong',
-          fullName: 'Kevin Duong',
+          username: 'admin',
+          fullName: 'Admin',
           email: 'duonghuynhnhan@outlook.com',
           dob: '2001-04-26T00:00:00.000Z',
           gender: 'Male',
           phone: '0354984001',
-          password: '$2a$12$1sdtGcx6Ss5OGprdCyuQpuJ5SUN34Mr42fB8WSaHSAS1n4HCoT1qy',
+          password: '$2a$12$H2q/2zRPJeIs71GvHnNd1OEnw2WXjNzT6WrVJ7Fr0/62u.uIT/Szu',
           role: 'Admin',
           countryId: 'VI',
           createdAt,

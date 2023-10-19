@@ -11,6 +11,7 @@ export class LessonDto {
   @ApiProperty({
     type: () => FileDto,
     description: 'This is attachment question',
+    nullable: true,
   })
   attachmentQuestion: FileDto;
 
@@ -26,11 +27,12 @@ export class LessonDto {
   })
   rightAnswer: string;
 
-  @ApiProperty({
-    type: () => FileDto,
-    description: 'This is attachment 0',
-  })
-  attachment0: FileDto;
+  // @ApiProperty({
+  //   type: () => FileDto,
+  //   description: 'This is attachment 0',
+  //   nullable: true,
+  // })
+  // attachment0: FileDto;
 
   @ApiProperty({
     type: 'string',
@@ -38,11 +40,12 @@ export class LessonDto {
   })
   wrongAnswer1: string;
 
-  @ApiProperty({
-    type: () => FileDto,
-    description: 'This is attachment 1',
-  })
-  attachment1: FileDto;
+  // @ApiProperty({
+  //   type: () => FileDto,
+  //   description: 'This is attachment 1',
+  //   nullable: true,
+  // })
+  // attachment1: FileDto;
 
   @ApiProperty({
     type: 'string',
@@ -50,11 +53,12 @@ export class LessonDto {
   })
   wrongAnswer2: string;
 
-  @ApiProperty({
-    type: () => FileDto,
-    description: 'This is attachment 2',
-  })
-  attachment2: FileDto;
+  // @ApiProperty({
+  //   type: () => FileDto,
+  //   description: 'This is attachment 2',
+  //   nullable: true,
+  // })
+  // attachment2: FileDto;
 
   @ApiProperty({
     type: 'string',
@@ -62,9 +66,10 @@ export class LessonDto {
   })
   wrongAnswer3: string;
 
-  @ApiProperty({
-    type: () => FileDto,
-    description: 'This is attachment 3',
-  })
-  attachment3: FileDto;
+  // @ApiProperty({
+  //   type: () => FileDto,
+  //   description: 'This is attachment 3',
+  //   nullable: true,
+  // })
+  // attachment3: FileDto;
 }

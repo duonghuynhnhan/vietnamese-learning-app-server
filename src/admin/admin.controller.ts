@@ -8,6 +8,7 @@ import { Role } from 'src/auth/decorators';
 import { FileDto } from 'src/file/dto';
 import { FileService } from 'src/file/file.service';
 import { CreateLessonDto, LessonDto, UpdateLessonDto } from 'src/lesson/dto';
+import { LessonType } from 'src/lesson/enum';
 import { LessonService } from 'src/lesson/lesson.service';
 import { CreateTopicDto, TopicDto, UpdateTopicDto } from 'src/topic/dto';
 import { TopicService } from 'src/topic/topic.service';
@@ -225,7 +226,8 @@ export class AdminController {
   })
   async createLesson(@Body() createLessonDto: CreateLessonDto): Promise<LessonDto> {
     try {
-      const { attachmentQuestion, attachment0, attachment1, attachment2, attachment3, topicId } = createLessonDto;
+      // const { attachmentQuestion, attachment0, attachment1, attachment2, attachment3, topicId, type } = createLessonDto;
+      const { attachmentQuestion, topicId, type } = createLessonDto;
 
       const topic = await this.topicService.getTopicById(topicId);
       if (!topic) {
@@ -233,13 +235,22 @@ export class AdminController {
       }
 
       const file = await this.fileService.getFileById(attachmentQuestion);
-      const file0 = await this.fileService.getFileById(attachment0);
-      const file1 = await this.fileService.getFileById(attachment1);
-      const file2 = await this.fileService.getFileById(attachment2);
-      const file3 = await this.fileService.getFileById(attachment3);
 
-      if (!file || !file0 || !file1 || !file2 || !file3) {
-        throw new ApiError(400, 'Must input attachment');
+      if (type === LessonType.Audio || type === LessonType.Image) {
+        if (!file) {
+          throw new ApiError(400, 'Upload attachments');
+        }
+
+        if (type === LessonType.Audio) {
+          if (!file.mimeType.startsWith('audio/')) {
+            throw new ApiError(400, 'Upload audio attachments');
+          }
+        }
+        else {
+          if (!file.mimeType.startsWith('image/')) {
+            throw new ApiError(400, 'Upload image attachments');
+          }
+        }
       }
 
       return plainToClass(LessonDto, await this.lessonService.createLesson(createLessonDto));
@@ -278,18 +289,10 @@ export class AdminController {
       const lessons = await this.lessonService.getAllLessonsByTopicId(id);
       for (const lesson of lessons) {
         const attachmentQuestion = await this.fileService.getFileById(lesson.attachmentQuestion);
-        const attachment0 = await this.fileService.getFileById(lesson.attachment0);
-        const attachment1 = await this.fileService.getFileById(lesson.attachment1);
-        const attachment2 = await this.fileService.getFileById(lesson.attachment2);
-        const attachment3 = await this.fileService.getFileById(lesson.attachment3);
 
         data.push(plainToClass(LessonDto, {
           ...lesson,
           attachmentQuestion: plainToClass(FileDto, attachmentQuestion),
-          attachment0: plainToClass(FileDto, attachment0),
-          attachment1: plainToClass(FileDto, attachment1),
-          attachment2: plainToClass(FileDto, attachment2),
-          attachment3: plainToClass(FileDto, attachment3),
         }));
       }
 
@@ -324,18 +327,10 @@ export class AdminController {
       }
 
       const attachmentQuestion = await this.fileService.getFileById(lesson.attachmentQuestion);
-      const attachment0 = await this.fileService.getFileById(lesson.attachment0);
-      const attachment1 = await this.fileService.getFileById(lesson.attachment1);
-      const attachment2 = await this.fileService.getFileById(lesson.attachment2);
-      const attachment3 = await this.fileService.getFileById(lesson.attachment3);
 
       return plainToClass(LessonDto, {
         ...lesson,
         attachmentQuestion: plainToClass(FileDto, attachmentQuestion),
-        attachment0: plainToClass(FileDto, attachment0),
-        attachment1: plainToClass(FileDto, attachment1),
-        attachment2: plainToClass(FileDto, attachment2),
-        attachment3: plainToClass(FileDto, attachment3),
       });
     }
     catch (error) {
@@ -374,12 +369,8 @@ export class AdminController {
       }
 
       const file = await this.fileService.getFileById(updateLessonDto.attachmentQuestion);
-      const file0 = await this.fileService.getFileById(updateLessonDto.attachment0);
-      const file1 = await this.fileService.getFileById(updateLessonDto.attachment1);
-      const file2 = await this.fileService.getFileById(updateLessonDto.attachment2);
-      const file3 = await this.fileService.getFileById(updateLessonDto.attachment3);
 
-      if (!file || !file0 || file1 || file2 || file3) {
+      if (!file) {
         throw new ApiError(400, 'Must input attachment');
       }
 
@@ -387,18 +378,10 @@ export class AdminController {
 
       const updatedLesson = await this.lessonService.getLessonById(id);
       const attachmentQuestion = await this.fileService.getFileById(updatedLesson.attachmentQuestion);
-      const attachment0 = await this.fileService.getFileById(updatedLesson.attachment0);
-      const attachment1 = await this.fileService.getFileById(updatedLesson.attachment1);
-      const attachment2 = await this.fileService.getFileById(updatedLesson.attachment2);
-      const attachment3 = await this.fileService.getFileById(updatedLesson.attachment3);
 
       return plainToClass(LessonDto, {
         ...lesson,
         attachmentQuestion: plainToClass(FileDto, attachmentQuestion),
-        attachment0: plainToClass(FileDto, attachment0),
-        attachment1: plainToClass(FileDto, attachment1),
-        attachment2: plainToClass(FileDto, attachment2),
-        attachment3: plainToClass(FileDto, attachment3),
       });
     }
     catch (error) {
