@@ -35,7 +35,6 @@ export class LessonProgressService {
       },
       orderBy: {
         createdAt: 'asc',
-        lastModifiedAt: 'asc',
       }
     });
   }

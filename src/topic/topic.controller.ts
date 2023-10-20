@@ -1,4 +1,4 @@
-import { Controller, Get, UseGuards } from '@nestjs/common';
+import { Controller, Get, Param, UseGuards } from '@nestjs/common';
 import { ApiBearerAuth, ApiExtraModels, ApiOkResponse, ApiOperation, ApiTags, getSchemaPath } from '@nestjs/swagger';
 import { AuthGuard } from '@nestjs/passport';
 import { FileService } from 'src/file/file.service';
@@ -39,7 +39,7 @@ export class TopicController {
     schema: {
       title: 'Get All Topics',
       type: 'array',
-      $ref: getSchemaPath(TopicProgressDto),
+      items: { $ref: getSchemaPath(TopicProgressDto) },
     },
   })
   async getAllTopics(@GetCurrentAccount() user: account): Promise<TopicProgressDto[]> {
@@ -74,6 +74,38 @@ export class TopicController {
 
       return data;
     } catch (error) {
+      console.log(error);
+
+      if (error instanceof ApiError) {
+        throw error;
+      }
+
+      throw new ApiError(500);
+    }
+  }
+
+  @Get('/:id')
+  @ApiOperation({ summary: 'Lấy thông tin topic' })
+  @ApiOkResponse({
+    schema: {
+      title: 'Get Topic Detail',
+      type: 'object',
+      $ref: getSchemaPath(TopicDto),
+    },
+  })
+  async getTopicById(@Param('id') id: string): Promise<TopicDto> {
+    try {
+      const topic = await this.topicService.getTopicById(id);
+
+      if (!topic) {
+        throw new ApiError(404, 'Topic not found');
+      }
+
+      const avatar = plainToClass(FileDto, await this.fileService.getFileById(topic.avatar));
+
+      return plainToClass(TopicDto, { ...topic, avatar });
+    }
+    catch (error) {
       console.log(error);
 
       if (error instanceof ApiError) {

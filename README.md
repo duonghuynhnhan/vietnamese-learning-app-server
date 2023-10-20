@@ -74,11 +74,34 @@ Nest is [MIT licensed](LICENSE).
 
 ## Build Local
 
+Install docker destop: https://docs.docker.com/desktop/install/windows-install/
+
 ```bash
 docker pull mysql
 docker run --name mysql -p 3306:3306 -e MYSQL_ROOT_PASSWORD=password -d mysql --default-authentication-plugin=mysql_native_password
 docker pull phpmyadmin
 docker run --name phpmyadmin -d --link mysql:db -e PMA_HOST=172.17.0.2 -p 8080:80 phpmyadmin
-yarn prisma generate
-yarn prisma db seed
+```
+
+On webbrowser, type localhost:8080, access with username: root, password: password
+
+```bash
+CREATE DATABASE vietnamese;
+USE vietnamese;
+```
+
+Import file vietnamese.sql
+
+Download and unzip, copy it to public folder
+https://drive.google.com/drive/folders/12Cl8Pd9eMbXl7UQt4iMbketb-ZD4y25x?usp=share_link
+
+```bash
+npm install --global yarn
+yarn --version
+
+npm i -g @nestjs/cli
+
+yarn
+
+yarn start:dev
 ```
