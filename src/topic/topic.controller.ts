@@ -1,20 +1,20 @@
-import { Body, Controller, Delete, Get, Param, Post, Put, UseGuards } from '@nestjs/common';
-import { ApiBearerAuth, ApiBody, ApiExtraModels, ApiOkResponse, ApiOperation, ApiTags, getSchemaPath } from '@nestjs/swagger';
+import { Controller, Get, UseGuards } from '@nestjs/common';
+import { ApiBearerAuth, ApiExtraModels, ApiOkResponse, ApiOperation, ApiTags, getSchemaPath } from '@nestjs/swagger';
 import { AuthGuard } from '@nestjs/passport';
 import { FileService } from 'src/file/file.service';
 import { plainToClass } from 'class-transformer';
-import { ApiError, ApiSuccess } from 'src/api-responses';
+import { ApiError } from 'src/api-responses';
 import { GetCurrentAccount, Role } from 'src/auth/decorators';
 import { AccountRole } from 'src/account/enum';
 import { FileDto } from 'src/file/dto';
 import { account } from '@prisma/client';
 import { TopicProgressService } from 'src/topic-progress/topic-progress.service';
-import { TopicProgressDto } from 'src/lesson-progress/dto';
 import { TopicService } from './topic.service';
 import { AccountService } from 'src/account/account.service';
 import { TopicProgressStatus } from 'src/topic-progress/enum';
 import { LessonService } from 'src/lesson/lesson.service';
 import { LessonProgressService } from 'src/lesson-progress/lesson-progress.service';
+import { TopicProgressDto } from 'src/topic-progress/dto';
 import { CreateTopicDto, TopicDto, UpdateTopicDto } from './dto';
 
 @Controller('topic')
@@ -60,7 +60,7 @@ export class TopicController {
         const numberOfLessons = await this.lessonService.getCountOfLessonsByTopicId(topicProgessing.id);
         const numberOfLessonsProgressing = await this.lessonProgressService.getCountOfLessonByTopicId(account.id, topicProgessing.id);
         const avatar = await this.fileService.getFileById(topicProgessing.avatar);
-        const progress = numberOfLessonsProgressing / numberOfLessons * 100;
+        const progress = numberOfLessonsProgressing / numberOfLessons;
 
         data.push(plainToClass(TopicProgressDto, { topic: plainToClass(TopicDto, { ...topicProgessing, avatar: plainToClass(FileDto, avatar) }), status: topicProgress.status, progress, lastModifiedAt: topicProgress.lastModifiedAt }));
 

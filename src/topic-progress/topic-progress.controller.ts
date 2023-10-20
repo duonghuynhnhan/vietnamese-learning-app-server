@@ -9,8 +9,7 @@ import { TopicProgressService } from './topic-progress.service';
 import { AccountService } from 'src/account/account.service';
 import { plainToClass } from 'class-transformer';
 import { ApiError } from 'src/api-responses';
-import { TopicProgressDto } from 'src/lesson-progress/dto';
-import { CreateTopicProgressDto } from './dto';
+import { CreateTopicProgressDto, TopicProgressDto } from './dto';
 
 @Controller('topic-progress')
 @ApiTags('TopicProgress')
@@ -56,7 +55,7 @@ export class TopicProgressController {
         throw new ApiError(400, 'Topic progress is exists');
       }
 
-      const topicProgressCreate = await this.topicProgressService.createTopicProgress({ ...createTopicProgressDto, accountId: account.id })
+      const topicProgressCreate = await this.topicProgressService.createTopicProgress({ ...createTopicProgressDto, accountId: account.id });
 
       return plainToClass(TopicProgressDto, topicProgressCreate);
     }
@@ -70,5 +69,4 @@ export class TopicProgressController {
       throw new ApiError(500);
     }
   }
-
 }

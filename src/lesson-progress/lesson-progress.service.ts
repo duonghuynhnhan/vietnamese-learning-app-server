@@ -16,8 +16,8 @@ export class LessonProgressService {
     return this.prismaService.lesson_progress.create({
       data: {
         lessonId: createLessonProgressDtoTemplate.lessonId,
-        topic_progressAccountId: createLessonProgressDtoTemplate.topicId,
-        topic_progressTopicId: createLessonProgressDtoTemplate.accountId,
+        topic_progressAccountId: createLessonProgressDtoTemplate.accountId,
+        topic_progressTopicId: createLessonProgressDtoTemplate.topicId,
         status: createLessonProgressDtoTemplate.status,
         createdAt,
         lastModifiedAt,
@@ -46,6 +46,19 @@ export class LessonProgressService {
         deletedAt: null,
         topic_progressAccountId: accountId,
         topic_progressTopicId: topicId,
+      },
+    });
+  }
+
+  getLessonProgressById(accountId: string, topicId: string, lessonId: string): Promise<lesson_progress> {
+    return this.prismaService.lesson_progress.findUnique({
+      where: {
+        deletedAt: null,
+        topic_progressAccountId_lessonId_topic_progressTopicId: {
+          topic_progressAccountId: accountId,
+          topic_progressTopicId: topicId,
+          lessonId,
+        }
       },
     });
   }
