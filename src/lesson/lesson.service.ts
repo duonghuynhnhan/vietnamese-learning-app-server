@@ -48,6 +48,15 @@ export class LessonService {
     });
   }
 
+  getCountOfLessonsByTopicId(topicId: string): Promise<number> {
+    return this.prismaService.lesson.count({
+      where: {
+        topicId,
+        deletedAt: null,
+      },
+    });
+  }
+
   getLessonById(id: string): Promise<lesson> {
     return this.prismaService.lesson.findUnique({
       where: {

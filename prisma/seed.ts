@@ -28,7 +28,7 @@ async function main() {
           phone: '0354984001',
           password: '$2a$12$H2q/2zRPJeIs71GvHnNd1OEnw2WXjNzT6WrVJ7Fr0/62u.uIT/Szu',
           role: 'Admin',
-          countryId: 'VI',
+          countryId: 'VN',
           createdAt,
         },
       ]

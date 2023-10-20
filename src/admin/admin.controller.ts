@@ -16,8 +16,9 @@ import { TopicService } from 'src/topic/topic.service';
 @Controller('admin')
 @ApiTags('Admin')
 @ApiExtraModels(TopicDto, CreateTopicDto, UpdateTopicDto, LessonDto, CreateLessonDto, UpdateLessonDto)
-// @ApiBearerAuth()
-// @UseGuards(AuthGuard())
+@UseGuards(AuthGuard())
+@ApiBearerAuth()
+@Role(AccountRole.Admin)
 export class AdminController {
   constructor(
     private topicService: TopicService,
@@ -26,7 +27,6 @@ export class AdminController {
   ) { }
 
   @Post('topic/create')
-  // @Role(AccountRole.Admin)
   @ApiOperation({ summary: 'Tạo mới topic' })
   @ApiBody({
     schema: {
@@ -239,8 +239,8 @@ export class AdminController {
       const attachment2File = await this.fileService.getFileById(attachment2);
       const attachment3File = await this.fileService.getFileById(attachment3);
 
-      if (type === LessonType.Audio || type === LessonType.Image) {
-        if (type === LessonType.Audio) {
+      if (type === LessonType.Listening || type === LessonType.Image) {
+        if (type === LessonType.Listening) {
           if (!attachmentQuestionFile) {
             throw new ApiError(400, 'Upload attachments');
           }
@@ -267,6 +267,18 @@ export class AdminController {
 
           return plainToClass(LessonDto, await this.lessonService.createLesson({ ...createLessonDto, attachmentQuestion: null, rightAnswer: null, wrongAnswer1: null, wrongAnswer2: null, wrongAnswer3: null }));
         }
+      }
+
+      if (type === LessonType.Speaking) {
+        if (!attachmentQuestionFile) {
+          throw new ApiError(400, 'Upload attachments');
+        }
+
+        if (!attachmentQuestionFile.mimeType.startsWith('audio/')) {
+          throw new ApiError(400, 'Upload audio attachments');
+        }
+
+        return plainToClass(LessonDto, await this.lessonService.createLesson({ ...createLessonDto, rightAnswer: null, wrongAnswer1: null, wrongAnswer2: null, wrongAnswer3: null, attachment0: null, attachment1: null, attachment2: null, attachment3: null }));
       }
 
       if (!rightAnswer || !wrongAnswer1 || !wrongAnswer2 || !wrongAnswer3) {

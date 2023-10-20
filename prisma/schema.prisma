@@ -102,8 +102,7 @@ model topic_progress {
 }
 
 model lesson_progress {
-  status   String @db.VarChar(255)
-  progress Float
+  status String @db.VarChar(255)
 
   lesson                  lesson         @relation(fields: [lessonId], references: [id])
   lessonId                String

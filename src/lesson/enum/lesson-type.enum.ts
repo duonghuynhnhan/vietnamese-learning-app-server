@@ -1,6 +1,7 @@
 export enum LessonType {
   'Image' = 'Image',
-  'Audio' = 'Audio',
+  'Listening' = 'Listening',
   'Multiple' = 'Multiple',
   'Fill' = 'Fill',
+  'Speaking' = 'Speaking',
 }
