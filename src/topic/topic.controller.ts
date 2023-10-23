@@ -60,7 +60,7 @@ export class TopicController {
         const numberOfLessons = await this.lessonService.getCountOfLessonsByTopicId(topicProgessing.id);
         const numberOfLessonsProgressing = await this.lessonProgressService.getCountOfLessonByTopicId(account.id, topicProgessing.id);
         const avatar = await this.fileService.getFileById(topicProgessing.avatar);
-        const progress = numberOfLessonsProgressing / numberOfLessons;
+        const progress = numberOfLessons !== 0 ? numberOfLessonsProgressing / numberOfLessons : 0;
 
         data.push(plainToClass(TopicProgressDto, { topic: plainToClass(TopicDto, { ...topicProgessing, avatar: plainToClass(FileDto, avatar) }), status: topicProgress.status, progress, lastModifiedAt: topicProgress.lastModifiedAt }));
 
