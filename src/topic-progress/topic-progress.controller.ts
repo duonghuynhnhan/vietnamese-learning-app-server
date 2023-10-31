@@ -8,7 +8,7 @@ import { TopicService } from 'src/topic/topic.service';
 import { TopicProgressService } from './topic-progress.service';
 import { AccountService } from 'src/account/account.service';
 import { plainToClass } from 'class-transformer';
-import { ApiError } from 'src/api-responses';
+import { ApiError, ApiSuccess } from 'src/api-responses';
 import { CreateTopicProgressDto, TopicProgressDto } from './dto';
 
 @Controller('topic-progress')
@@ -40,7 +40,7 @@ export class TopicProgressController {
       $ref: getSchemaPath(TopicProgressDto),
     },
   })
-  async createTopicProgress(@GetCurrentAccount() user: account, @Body() createTopicProgressDto: CreateTopicProgressDto): Promise<TopicProgressDto> {
+  async createTopicProgress(@GetCurrentAccount() user: account, @Body() createTopicProgressDto: CreateTopicProgressDto): Promise<TopicProgressDto | ApiSuccess> {
     try {
       const { topicId } = createTopicProgressDto;
       const topic = await this.topicService.getTopicById(topicId);
@@ -52,7 +52,7 @@ export class TopicProgressController {
 
       const topicProgressFind = await this.topicProgressService.getTopicProgressById(topicId, account.id);
       if (topicProgressFind) {
-        throw new ApiError(400, 'Topic progress is exists');
+        return { statusCode: 201, message: 'Create Topic Progress Successfully' };
       }
 
       const topicProgressCreate = await this.topicProgressService.createTopicProgress({ ...createTopicProgressDto, accountId: account.id });

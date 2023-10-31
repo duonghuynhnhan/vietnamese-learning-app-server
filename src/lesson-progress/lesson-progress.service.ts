@@ -61,4 +61,25 @@ export class LessonProgressService {
       },
     });
   }
+
+  updateLessonProgressStatus(accountId: string, topicId: string, lessonId: string, status: string): Promise<lesson_progress> {
+    const updatedAt = new Date().toISOString();
+    const lastModifiedAt = new Date().toISOString();
+
+    return this.prismaService.lesson_progress.update({
+      where: {
+        deletedAt: null,
+        topic_progressAccountId_lessonId_topic_progressTopicId: {
+          topic_progressAccountId: accountId,
+          topic_progressTopicId: topicId,
+          lessonId,
+        }
+      },
+      data: {
+        status,
+        updatedAt,
+        lastModifiedAt,
+      },
+    });
+  }
 }

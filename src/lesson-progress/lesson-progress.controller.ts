@@ -58,12 +58,18 @@ export class LessonProgressController {
 
       const topicProgress = await this.topicProgressService.getTopicProgressById(lesson.topicId, account.id);
       if (!topicProgress) {
-        throw new ApiError(400, 'You must create topic progress');
+        await this.topicProgressService.createTopicProgress({ topicId: lesson.topicId, accountId: account.id });
+
+        const lessonProgressCreate = await this.lessonProgressService.createLessonProgress({ ...createLessonProgressDto, accountId: account.id, topicId: lesson.topicId });
+
+        return plainToClass(LessonProgressDto, lessonProgressCreate);
       }
 
       const lessonProgressFind = await this.lessonProgressService.getLessonProgressById(account.id, lesson.topicId, lesson.id);
       if (lessonProgressFind) {
-        throw new ApiError(400, 'Lesson progress is exists');
+        const lessonProgess = await this.lessonProgressService.updateLessonProgressStatus(account.id, lesson.topicId, lesson.id, createLessonProgressDto.status);
+
+        return plainToClass(LessonProgressDto, lessonProgess);
       }
 
       const lessonProgressCreate = await this.lessonProgressService.createLessonProgress({ ...createLessonProgressDto, accountId: account.id, topicId: lesson.topicId });

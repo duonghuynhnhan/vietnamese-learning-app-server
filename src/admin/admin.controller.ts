@@ -270,13 +270,13 @@ export class AdminController {
       }
 
       if (type === LessonType.Speaking) {
-        if (!attachmentQuestionFile) {
-          throw new ApiError(400, 'Upload attachments');
-        }
+        // if (!attachmentQuestionFile) {
+        //   throw new ApiError(400, 'Upload attachments');
+        // }
 
-        if (!attachmentQuestionFile.mimeType.startsWith('audio/')) {
-          throw new ApiError(400, 'Upload audio attachments');
-        }
+        // if (!attachmentQuestionFile.mimeType.startsWith('audio/')) {
+        //   throw new ApiError(400, 'Upload audio attachments');
+        // }
 
         return plainToClass(LessonDto, await this.lessonService.createLesson({ ...createLessonDto, rightAnswer: null, wrongAnswer1: null, wrongAnswer2: null, wrongAnswer3: null, attachment0: null, attachment1: null, attachment2: null, attachment3: null }));
       }

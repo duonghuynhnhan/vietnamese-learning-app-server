@@ -13,11 +13,11 @@ import { LessonProgressDto } from 'src/lesson-progress/dto';
 import { account } from '@prisma/client';
 import { AccountService } from 'src/account/account.service';
 import { LessonService } from './lesson.service';
-import { CreateLessonDto, LessonDto, UpdateLessonDto } from './dto';
+import { CreateLessonDto, LessonDataDto, LessonDto, UpdateLessonDto } from './dto';
 
 @Controller('lesson')
 @ApiTags('Lesson')
-@ApiExtraModels(LessonDto, CreateLessonDto, UpdateLessonDto, LessonProgressDto)
+@ApiExtraModels(LessonDto, CreateLessonDto, UpdateLessonDto, LessonProgressDto, LessonDataDto)
 @ApiBearerAuth()
 @UseGuards(AuthGuard())
 @Role(AccountRole.User)
@@ -35,13 +35,14 @@ export class LessonController {
   @ApiOkResponse({
     schema: {
       title: 'Get All Lesson Of Topic',
-      type: 'array',
-      items: { $ref: getSchemaPath(LessonProgressDto) },
+      type: 'object',
+      $ref: getSchemaPath(LessonDataDto),
     },
   })
-  async getAllTopics(@GetCurrentAccount() user: account, @Param('id') id: string): Promise<LessonProgressDto[]> {
+  async getAllLessonsByTopicId(@GetCurrentAccount() user: account, @Param('id') id: string): Promise<LessonDataDto> {
     try {
-      const data: LessonProgressDto[] = [];
+      const learnedLessons: LessonProgressDto[] = [];
+      const unlearnedLessons: LessonProgressDto[] = [];
       const account = await this.accountService.getAccountByUsername(user.username);
       const topic = await this.topicService.getTopicById(id);
 
@@ -65,7 +66,7 @@ export class LessonController {
         const attachment2 = await this.fileService.getFileById(lessonNotInProgress.attachment2 ? lessonNotInProgress.attachment2 : '');
         const attachment3 = await this.fileService.getFileById(lessonNotInProgress.attachment3 ? lessonNotInProgress.attachment3 : '');
 
-        data.push(plainToClass(LessonProgressDto, {
+        unlearnedLessons.push(plainToClass(LessonProgressDto, {
           lesson: plainToClass(LessonDto, {
             ...lessonNotInProgress, attachmentQuestion: plainToClass(FileDto, attachmentQuestion),
             attachment0: attachment0 ? plainToClass(FileDto, attachment0) : null,
@@ -87,7 +88,7 @@ export class LessonController {
         const attachment2 = await this.fileService.getFileById(lessonProgressing.attachment2 ? lessonProgressing.attachment2 : '');
         const attachment3 = await this.fileService.getFileById(lessonProgressing.attachment3 ? lessonProgressing.attachment3 : '');
 
-        data.push(plainToClass(LessonProgressDto, {
+        learnedLessons.push(plainToClass(LessonProgressDto, {
           lesson: plainToClass(LessonDto, {
             ...lessonProgressing, attachmentQuestion: plainToClass(FileDto, attachmentQuestion),
             attachment0: attachment0 ? plainToClass(FileDto, attachment0) : null,
@@ -100,7 +101,7 @@ export class LessonController {
         }));
       }
 
-      return data;
+      return { unlearnedLessons, learnedLessons };
     } catch (error) {
       console.log(error);
 
