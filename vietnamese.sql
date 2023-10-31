@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 172.17.0.2
--- Generation Time: Oct 20, 2023 at 02:32 PM
+-- Generation Time: Oct 31, 2023 at 03:17 AM
 -- Server version: 8.0.33
 -- PHP Version: 8.2.8
 
@@ -406,12 +406,18 @@ INSERT INTO `lesson` (`id`, `type`, `question`, `attachmentQuestion`, `rightAnsw
 ('01c3c9ec-a28d-49eb-812b-9d2e2c6c6ef9', 'Fill', 'Con ... tử', NULL, 'sư', NULL, 'cá', NULL, 'bò', NULL, 'chim', NULL, '2023-10-19T08:01:37.225Z', NULL, NULL, 'dc93f3a4-5c77-49a2-ba2f-ef21509d403e'),
 ('1482ed52-1dd6-4cb4-a8c1-78ea9a360f1b', 'Listening', 'Hãy lắng nghe và chọn đúng từ bạn nghe được', '2accafaf-b35e-4d6c-ad59-3c7da7f833ca', 'Cá hồi', NULL, 'Cá heo', NULL, 'Cá voi', NULL, 'Cá chuồn', NULL, '2023-10-19T08:19:00.998Z', NULL, NULL, 'dc93f3a4-5c77-49a2-ba2f-ef21509d403e'),
 ('411101ed-43fb-42c2-8ed8-714c84a2ec78', 'Multiple', 'Con vật có cánh và có thể bay lượn khắp bầu trời?', NULL, 'Chim sẻ', NULL, 'Chim cánh cụt', NULL, 'Đà điểu', NULL, 'Rắn', NULL, '2023-10-19T07:54:31.624Z', NULL, NULL, 'dc93f3a4-5c77-49a2-ba2f-ef21509d403e'),
+('51712c8c-f289-4191-9aa2-9455cb688921', 'Speaking', 'Con chó biết sủa', '', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2023-10-31T03:16:09.030Z', NULL, NULL, 'dc93f3a4-5c77-49a2-ba2f-ef21509d403e'),
 ('66ebddd9-c586-40a2-83ee-5ac105c5be4d', 'Multiple', 'Con vật nào có màu lông trắng và đen và sống ở rừng nhiệt đới?', NULL, 'Gấu trúc', NULL, 'Gấu đen', NULL, 'Lợn rừng', NULL, 'Sư tử', NULL, '2023-10-19T07:59:29.108Z', NULL, NULL, 'dc93f3a4-5c77-49a2-ba2f-ef21509d403e'),
+('6cc6cb1c-ae27-4466-a7df-3e6bec370a1c', 'Speaking', 'Con chó', '', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2023-10-31T03:15:37.700Z', NULL, NULL, 'dc93f3a4-5c77-49a2-ba2f-ef21509d403e'),
+('a1328e39-3923-4e9a-a379-7cddef7a79d3', 'Speaking', 'Con công', '', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2023-10-31T03:15:45.509Z', NULL, NULL, 'dc93f3a4-5c77-49a2-ba2f-ef21509d403e'),
+('b3b47ef7-04d8-4430-9fbc-9defe7ded94c', 'Speaking', 'Con chuột', '', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2023-10-31T03:15:57.102Z', NULL, NULL, 'dc93f3a4-5c77-49a2-ba2f-ef21509d403e'),
 ('c27ea88d-028b-4ccb-ad2d-e7d95f1ae645', 'Multiple', 'Con vật sống dưới nước?', NULL, 'Cá heo', NULL, 'Chuột túi', NULL, 'Cáo', NULL, 'Đại bàng', NULL, '2023-10-19T07:55:35.237Z', NULL, NULL, 'dc93f3a4-5c77-49a2-ba2f-ef21509d403e'),
+('d31f090b-a79c-4102-8cf2-0d0faf6c251d', 'Speaking', 'Con mèo bắt chuột', '', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2023-10-31T03:17:38.793Z', NULL, NULL, 'dc93f3a4-5c77-49a2-ba2f-ef21509d403e'),
 ('d5c9b47d-f2fb-49aa-a36e-8a35d01a6ceb', 'Listening', 'Hãy lắng nghe và chọn đúng từ bạn nghe được', '9c396847-cc34-4f49-9dfd-e5bac765d72a', 'Đại bàng', NULL, 'Hoàng yến', NULL, 'Chim sẻ', NULL, 'Vành khuyên', NULL, '2023-10-19T08:06:10.208Z', NULL, NULL, 'dc93f3a4-5c77-49a2-ba2f-ef21509d403e'),
 ('dd96a911-3fa2-4dfa-aa02-530a31a15904', 'Image', 'Con chó?', NULL, NULL, '4e622268-6525-45a2-accf-cc49be9d330e', NULL, 'cbb7dcf6-fb31-4826-b2cf-f2e120d72b56', NULL, '9c784f20-9e8d-4d03-8430-566de8b11f34', NULL, '257718a1-557c-47ff-a69e-e05c8a11e64e', '2023-10-19T07:48:03.515Z', NULL, NULL, 'dc93f3a4-5c77-49a2-ba2f-ef21509d403e'),
 ('e28baa5d-3461-4e40-a0c7-9aa8b3a773fa', 'Multiple', 'Con vật nào sống ở Bắc Cực?', NULL, 'Gấu bắc cực', NULL, 'Chim cánh cụt', NULL, 'Cáo bắc cực', NULL, 'Mèo bắc cực', NULL, '2023-10-19T07:53:15.458Z', NULL, NULL, 'dc93f3a4-5c77-49a2-ba2f-ef21509d403e'),
-('eb6847a8-f117-4f9d-a8ca-1e1f4169c9ee', 'Listening', 'Hãy lắng nghe và chọn đúng từ bạn nghe được', '8544274b-1cd3-457e-8926-144567ba0de4', 'Nhền nhện', NULL, 'Châu chấu', NULL, 'Bọ cánh cứng', NULL, 'Kiến lửa', NULL, '2023-10-19T08:14:58.868Z', NULL, NULL, 'dc93f3a4-5c77-49a2-ba2f-ef21509d403e');
+('eb6847a8-f117-4f9d-a8ca-1e1f4169c9ee', 'Listening', 'Hãy lắng nghe và chọn đúng từ bạn nghe được', '8544274b-1cd3-457e-8926-144567ba0de4', 'Nhền nhện', NULL, 'Châu chấu', NULL, 'Bọ cánh cứng', NULL, 'Kiến lửa', NULL, '2023-10-19T08:14:58.868Z', NULL, NULL, 'dc93f3a4-5c77-49a2-ba2f-ef21509d403e'),
+('eced8d64-9a69-4f64-bb2b-743543666cbb', 'Speaking', 'Con mèo', '', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2023-10-31T03:15:10.570Z', NULL, NULL, 'dc93f3a4-5c77-49a2-ba2f-ef21509d403e');
 
 -- --------------------------------------------------------
 
@@ -491,7 +497,7 @@ CREATE TABLE `topic_progress` (
 
 INSERT INTO `topic_progress` (`status`, `progress`, `accountId`, `topicId`, `createdAt`, `deletedAt`, `updatedAt`, `lastModifiedAt`) VALUES
 ('Doing', 0, 'ca09078a-3677-488c-a49c-d2144f79537e', 'dc93f3a4-5c77-49a2-ba2f-ef21509d403e', '2023-10-20T09:36:01.783Z', NULL, NULL, '2023-10-20T09:36:01.783Z'),
-('Doing', 0.1111111111111111, 'e7f00e30-5669-4f07-bfea-a0cffad9427e', 'dc93f3a4-5c77-49a2-ba2f-ef21509d403e', '2023-10-20T10:14:17.133Z', NULL, '2023-10-20T14:29:39.476Z', '2023-10-20T14:29:39.476Z');
+('Doing', 0.07142857142857142, 'e7f00e30-5669-4f07-bfea-a0cffad9427e', 'dc93f3a4-5c77-49a2-ba2f-ef21509d403e', '2023-10-20T10:14:17.133Z', NULL, '2023-10-31T03:16:47.241Z', '2023-10-31T03:16:47.241Z');
 
 -- --------------------------------------------------------
 
