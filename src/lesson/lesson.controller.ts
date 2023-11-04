@@ -69,22 +69,22 @@ export class LessonController {
         const answers: AnswerDto[] = [];
         answers.push(plainToClass(AnswerDto, {
           answer: lessonNotInProgress.rightAnswer,
-          attachment0: attachment0 ? plainToClass(FileDto, attachment0) : null,
+          attachment: attachment0 ? plainToClass(FileDto, attachment0) : null,
           isCorrect: true,
         }));
         answers.push(plainToClass(AnswerDto, {
           answer: lessonNotInProgress.wrongAnswer1,
-          attachment1: attachment1 ? plainToClass(FileDto, attachment1) : null,
+          attachment: attachment1 ? plainToClass(FileDto, attachment1) : null,
           isCorrect: false,
         }));
         answers.push(plainToClass(AnswerDto, {
           answer: lessonNotInProgress.wrongAnswer2,
-          attachment2: attachment2 ? plainToClass(FileDto, attachment2) : null,
+          attachment: attachment2 ? plainToClass(FileDto, attachment2) : null,
           isCorrect: false,
         }));
         answers.push(plainToClass(AnswerDto, {
           answer: lessonNotInProgress.wrongAnswer3,
-          attachment3: attachment3 ? plainToClass(FileDto, attachment3) : null,
+          attachment: attachment3 ? plainToClass(FileDto, attachment3) : null,
           isCorrect: false,
         }));
 
@@ -113,22 +113,22 @@ export class LessonController {
         const answers: AnswerDto[] = [];
         answers.push(plainToClass(AnswerDto, {
           answer: lessonProgressing.rightAnswer,
-          attachment0: attachment0 ? plainToClass(FileDto, attachment0) : null,
+          attachment: attachment0 ? plainToClass(FileDto, attachment0) : null,
           isCorrect: true,
         }));
         answers.push(plainToClass(AnswerDto, {
           answer: lessonProgressing.wrongAnswer1,
-          attachment1: attachment1 ? plainToClass(FileDto, attachment1) : null,
+          attachment: attachment1 ? plainToClass(FileDto, attachment1) : null,
           isCorrect: false,
         }));
         answers.push(plainToClass(AnswerDto, {
           answer: lessonProgressing.wrongAnswer2,
-          attachment2: attachment2 ? plainToClass(FileDto, attachment2) : null,
+          attachment: attachment2 ? plainToClass(FileDto, attachment2) : null,
           isCorrect: false,
         }));
         answers.push(plainToClass(AnswerDto, {
           answer: lessonProgressing.wrongAnswer3,
-          attachment3: attachment3 ? plainToClass(FileDto, attachment3) : null,
+          attachment: attachment3 ? plainToClass(FileDto, attachment3) : null,
           isCorrect: false,
         }));
 
@@ -183,22 +183,22 @@ export class LessonController {
       const answers: AnswerDto[] = [];
       answers.push(plainToClass(AnswerDto, {
         answer: lesson.rightAnswer,
-        attachment0: attachment0 ? plainToClass(FileDto, attachment0) : null,
+        attachment: attachment0 ? plainToClass(FileDto, attachment0) : null,
         isCorrect: true,
       }));
       answers.push(plainToClass(AnswerDto, {
         answer: lesson.wrongAnswer1,
-        attachment1: attachment1 ? plainToClass(FileDto, attachment1) : null,
+        attachment: attachment1 ? plainToClass(FileDto, attachment1) : null,
         isCorrect: false,
       }));
       answers.push(plainToClass(AnswerDto, {
         answer: lesson.wrongAnswer2,
-        attachment2: attachment2 ? plainToClass(FileDto, attachment2) : null,
+        attachment: attachment2 ? plainToClass(FileDto, attachment2) : null,
         isCorrect: false,
       }));
       answers.push(plainToClass(AnswerDto, {
         answer: lesson.wrongAnswer3,
-        attachment3: attachment3 ? plainToClass(FileDto, attachment3) : null,
+        attachment: attachment3 ? plainToClass(FileDto, attachment3) : null,
         isCorrect: false,
       }));
 
