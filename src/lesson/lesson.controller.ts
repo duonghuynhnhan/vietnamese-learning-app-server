@@ -180,13 +180,34 @@ export class LessonController {
       const attachment2 = await this.fileService.getFileById(lesson.attachment2 ? lesson.attachment2 : '');
       const attachment3 = await this.fileService.getFileById(lesson.attachment3 ? lesson.attachment3 : '');
 
-      return plainToClass(LessonDto, {
-        ...lesson,
-        attachmentQuestion: plainToClass(FileDto, attachmentQuestion),
+      const answers: AnswerDto[] = [];
+      answers.push(plainToClass(AnswerDto, {
+        answer: lesson.rightAnswer,
         attachment0: attachment0 ? plainToClass(FileDto, attachment0) : null,
+        isCorrect: true,
+      }));
+      answers.push(plainToClass(AnswerDto, {
+        answer: lesson.wrongAnswer1,
         attachment1: attachment1 ? plainToClass(FileDto, attachment1) : null,
+        isCorrect: false,
+      }));
+      answers.push(plainToClass(AnswerDto, {
+        answer: lesson.wrongAnswer2,
         attachment2: attachment2 ? plainToClass(FileDto, attachment2) : null,
+        isCorrect: false,
+      }));
+      answers.push(plainToClass(AnswerDto, {
+        answer: lesson.wrongAnswer3,
         attachment3: attachment3 ? plainToClass(FileDto, attachment3) : null,
+        isCorrect: false,
+      }));
+
+      return plainToClass(LessonDto, {
+        id: lesson.id,
+        type: lesson.type,
+        question: lesson.question,
+        attachmentQuestion: plainToClass(FileDto, attachmentQuestion),
+        answers,
       });
     }
     catch (error) {
