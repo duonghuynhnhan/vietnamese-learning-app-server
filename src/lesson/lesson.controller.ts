@@ -13,7 +13,7 @@ import { LessonProgressDto } from 'src/lesson-progress/dto';
 import { account } from '@prisma/client';
 import { AccountService } from 'src/account/account.service';
 import { LessonService } from './lesson.service';
-import { CreateLessonDto, LessonDataDto, LessonDto, UpdateLessonDto } from './dto';
+import { AnswerDto, CreateLessonDto, LessonDataDto, LessonDto, UpdateLessonDto } from './dto';
 
 @Controller('lesson')
 @ApiTags('Lesson')
@@ -66,13 +66,35 @@ export class LessonController {
         const attachment2 = await this.fileService.getFileById(lessonNotInProgress.attachment2 ? lessonNotInProgress.attachment2 : '');
         const attachment3 = await this.fileService.getFileById(lessonNotInProgress.attachment3 ? lessonNotInProgress.attachment3 : '');
 
+        const answers: AnswerDto[] = [];
+        answers.push(plainToClass(AnswerDto, {
+          answer: lessonNotInProgress.rightAnswer,
+          attachment0: attachment0 ? plainToClass(FileDto, attachment0) : null,
+          isCorrect: true,
+        }));
+        answers.push(plainToClass(AnswerDto, {
+          answer: lessonNotInProgress.wrongAnswer1,
+          attachment1: attachment1 ? plainToClass(FileDto, attachment1) : null,
+          isCorrect: false,
+        }));
+        answers.push(plainToClass(AnswerDto, {
+          answer: lessonNotInProgress.wrongAnswer2,
+          attachment2: attachment2 ? plainToClass(FileDto, attachment2) : null,
+          isCorrect: false,
+        }));
+        answers.push(plainToClass(AnswerDto, {
+          answer: lessonNotInProgress.wrongAnswer3,
+          attachment3: attachment3 ? plainToClass(FileDto, attachment3) : null,
+          isCorrect: false,
+        }));
+
         unlearnedLessons.push(plainToClass(LessonProgressDto, {
           lesson: plainToClass(LessonDto, {
-            ...lessonNotInProgress, attachmentQuestion: plainToClass(FileDto, attachmentQuestion),
-            attachment0: attachment0 ? plainToClass(FileDto, attachment0) : null,
-            attachment1: attachment1 ? plainToClass(FileDto, attachment1) : null,
-            attachment2: attachment2 ? plainToClass(FileDto, attachment2) : null,
-            attachment3: attachment3 ? plainToClass(FileDto, attachment3) : null,
+            id: lessonNotInProgress.id,
+            type: lessonNotInProgress.type,
+            question: lessonNotInProgress.question,
+            attachmentQuestion: plainToClass(FileDto, attachmentQuestion),
+            answers,
           }),
           status: 'Unknown',
           lastModifiedAt: null,
@@ -88,13 +110,35 @@ export class LessonController {
         const attachment2 = await this.fileService.getFileById(lessonProgressing.attachment2 ? lessonProgressing.attachment2 : '');
         const attachment3 = await this.fileService.getFileById(lessonProgressing.attachment3 ? lessonProgressing.attachment3 : '');
 
+        const answers: AnswerDto[] = [];
+        answers.push(plainToClass(AnswerDto, {
+          answer: lessonProgressing.rightAnswer,
+          attachment0: attachment0 ? plainToClass(FileDto, attachment0) : null,
+          isCorrect: true,
+        }));
+        answers.push(plainToClass(AnswerDto, {
+          answer: lessonProgressing.wrongAnswer1,
+          attachment1: attachment1 ? plainToClass(FileDto, attachment1) : null,
+          isCorrect: false,
+        }));
+        answers.push(plainToClass(AnswerDto, {
+          answer: lessonProgressing.wrongAnswer2,
+          attachment2: attachment2 ? plainToClass(FileDto, attachment2) : null,
+          isCorrect: false,
+        }));
+        answers.push(plainToClass(AnswerDto, {
+          answer: lessonProgressing.wrongAnswer3,
+          attachment3: attachment3 ? plainToClass(FileDto, attachment3) : null,
+          isCorrect: false,
+        }));
+
         learnedLessons.push(plainToClass(LessonProgressDto, {
           lesson: plainToClass(LessonDto, {
-            ...lessonProgressing, attachmentQuestion: plainToClass(FileDto, attachmentQuestion),
-            attachment0: attachment0 ? plainToClass(FileDto, attachment0) : null,
-            attachment1: attachment1 ? plainToClass(FileDto, attachment1) : null,
-            attachment2: attachment2 ? plainToClass(FileDto, attachment2) : null,
-            attachment3: attachment3 ? plainToClass(FileDto, attachment3) : null,
+            id: lessonProgressing.id,
+            type: lessonProgressing.type,
+            question: lessonProgressing.question,
+            attachmentQuestion: plainToClass(FileDto, attachmentQuestion),
+            answers,
           }),
           status: lessonProgess.status,
           lastModifiedAt: lessonProgess.lastModifiedAt,
