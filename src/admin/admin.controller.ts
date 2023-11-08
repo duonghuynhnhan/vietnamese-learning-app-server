@@ -265,7 +265,7 @@ export class AdminController {
             throw new ApiError(400, 'Upload image attachments');
           }
 
-          return plainToClass(LessonDto, await this.lessonService.createLesson({ ...createLessonDto, attachmentQuestion: null, rightAnswer: null, wrongAnswer1: null, wrongAnswer2: null, wrongAnswer3: null }));
+          return plainToClass(LessonDto, await this.lessonService.createLesson({ ...createLessonDto, attachmentQuestion: null }));
         }
       }
 
