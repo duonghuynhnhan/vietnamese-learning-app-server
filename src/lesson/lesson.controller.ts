@@ -43,8 +43,7 @@ export class LessonController {
   })
   async getAllLessonsByTopicId(@GetCurrentAccount() user: account, @Param('id') id: string): Promise<LessonProgressDto[]> {
     try {
-      const learnedLessons: LessonProgressDto[] = [];
-      const unlearnedLessons: LessonProgressDto[] = [];
+      const data: LessonProgressDto[] = [];
       const account = await this.accountService.getAccountByUsername(user.username);
       const topic = await this.topicService.getTopicById(id);
 
@@ -53,101 +52,145 @@ export class LessonController {
       }
 
       const lessons = await this.lessonService.getAllLessonsByTopicId(id);
-      const lessonsInProgress = await this.lessonProgressService.getAllLessonProgress(id, account.id);
 
-      const lessonIdsInProgress = lessonsInProgress.map(progress => progress.lessonId);
-      const lessonsNotInProgress = lessons.filter(lesson => !lessonIdsInProgress.includes(lesson.id));
-      const lessonIdsProgressing = lessonsInProgress.map(progress => progress.lessonId);
-      const lessonsProgressing = lessons.filter(lesson => lessonIdsProgressing.includes(lesson.id));
+      for (const lesson of lessons) {
+        const lessonProgess = await this.lessonProgressService.getLessonProgressById(account.id, lesson.topicId, lesson.id);
 
-
-      for (const lessonNotInProgress of lessonsNotInProgress) {
-        const attachmentQuestion = await this.fileService.getFileById(lessonNotInProgress.attachmentQuestion ? lessonNotInProgress.attachmentQuestion : '');
-        const attachment0 = await this.fileService.getFileById(lessonNotInProgress.attachment0 ? lessonNotInProgress.attachment0 : '');
-        const attachment1 = await this.fileService.getFileById(lessonNotInProgress.attachment1 ? lessonNotInProgress.attachment1 : '');
-        const attachment2 = await this.fileService.getFileById(lessonNotInProgress.attachment2 ? lessonNotInProgress.attachment2 : '');
-        const attachment3 = await this.fileService.getFileById(lessonNotInProgress.attachment3 ? lessonNotInProgress.attachment3 : '');
+        const attachmentQuestion = await this.fileService.getFileById(lesson.attachmentQuestion ? lesson.attachmentQuestion : '');
+        const attachment0 = await this.fileService.getFileById(lesson.attachment0 ? lesson.attachment0 : '');
+        const attachment1 = await this.fileService.getFileById(lesson.attachment1 ? lesson.attachment1 : '');
+        const attachment2 = await this.fileService.getFileById(lesson.attachment2 ? lesson.attachment2 : '');
+        const attachment3 = await this.fileService.getFileById(lesson.attachment3 ? lesson.attachment3 : '');
 
         const answers: AnswerDto[] = [];
         answers.push(plainToClass(AnswerDto, {
-          answer: lessonNotInProgress.rightAnswer,
+          answer: lesson.rightAnswer,
           attachment: attachment0 ? plainToClass(FileDto, attachment0) : null,
           isCorrect: true,
         }));
         answers.push(plainToClass(AnswerDto, {
-          answer: lessonNotInProgress.wrongAnswer1,
+          answer: lesson.wrongAnswer1,
           attachment: attachment1 ? plainToClass(FileDto, attachment1) : null,
           isCorrect: false,
         }));
         answers.push(plainToClass(AnswerDto, {
-          answer: lessonNotInProgress.wrongAnswer2,
+          answer: lesson.wrongAnswer2,
           attachment: attachment2 ? plainToClass(FileDto, attachment2) : null,
           isCorrect: false,
         }));
         answers.push(plainToClass(AnswerDto, {
-          answer: lessonNotInProgress.wrongAnswer3,
+          answer: lesson.wrongAnswer3,
           attachment: attachment3 ? plainToClass(FileDto, attachment3) : null,
           isCorrect: false,
         }));
 
-        unlearnedLessons.push(plainToClass(LessonProgressDto, {
+        data.push(plainToClass(LessonProgressDto, {
           lesson: plainToClass(LessonDto, {
-            id: lessonNotInProgress.id,
-            type: lessonNotInProgress.type,
-            question: lessonNotInProgress.question,
+            id: lesson.id,
+            type: lesson.type,
+            question: lesson.question,
             attachmentQuestion: plainToClass(FileDto, attachmentQuestion),
             answers,
           }),
-          status: 'Unknown',
-          lastModifiedAt: null,
+          status: lessonProgess ? lessonProgess.status : 'Unknown',
+          lastModifiedAt: lessonProgess ? lessonProgess.lastModifiedAt : null,
         }));
       }
+      // const lessonsInProgress = await this.lessonProgressService.getAllLessonProgress(id, account.id);
 
-      for (const lessonProgressing of lessonsProgressing) {
-        const lessonProgess = await this.lessonProgressService.getLessonProgressById(account.id, lessonProgressing.topicId, lessonProgressing.id);
+      // const lessonIdsInProgress = lessonsInProgress.map(progress => progress.lessonId);
+      // const lessonsNotInProgress = lessons.filter(lesson => !lessonIdsInProgress.includes(lesson.id));
+      // const lessonIdsProgressing = lessonsInProgress.map(progress => progress.lessonId);
+      // const lessonsProgressing = lessons.filter(lesson => lessonIdsProgressing.includes(lesson.id));
 
-        const attachmentQuestion = await this.fileService.getFileById(lessonProgressing.attachmentQuestion ? lessonProgressing.attachmentQuestion : '');
-        const attachment0 = await this.fileService.getFileById(lessonProgressing.attachment0 ? lessonProgressing.attachment0 : '');
-        const attachment1 = await this.fileService.getFileById(lessonProgressing.attachment1 ? lessonProgressing.attachment1 : '');
-        const attachment2 = await this.fileService.getFileById(lessonProgressing.attachment2 ? lessonProgressing.attachment2 : '');
-        const attachment3 = await this.fileService.getFileById(lessonProgressing.attachment3 ? lessonProgressing.attachment3 : '');
 
-        const answers: AnswerDto[] = [];
-        answers.push(plainToClass(AnswerDto, {
-          answer: lessonProgressing.rightAnswer,
-          attachment: attachment0 ? plainToClass(FileDto, attachment0) : null,
-          isCorrect: true,
-        }));
-        answers.push(plainToClass(AnswerDto, {
-          answer: lessonProgressing.wrongAnswer1,
-          attachment: attachment1 ? plainToClass(FileDto, attachment1) : null,
-          isCorrect: false,
-        }));
-        answers.push(plainToClass(AnswerDto, {
-          answer: lessonProgressing.wrongAnswer2,
-          attachment: attachment2 ? plainToClass(FileDto, attachment2) : null,
-          isCorrect: false,
-        }));
-        answers.push(plainToClass(AnswerDto, {
-          answer: lessonProgressing.wrongAnswer3,
-          attachment: attachment3 ? plainToClass(FileDto, attachment3) : null,
-          isCorrect: false,
-        }));
+      // for (const lessonNotInProgress of lessonsNotInProgress) {
+      //   const attachmentQuestion = await this.fileService.getFileById(lessonNotInProgress.attachmentQuestion ? lessonNotInProgress.attachmentQuestion : '');
+      //   const attachment0 = await this.fileService.getFileById(lessonNotInProgress.attachment0 ? lessonNotInProgress.attachment0 : '');
+      //   const attachment1 = await this.fileService.getFileById(lessonNotInProgress.attachment1 ? lessonNotInProgress.attachment1 : '');
+      //   const attachment2 = await this.fileService.getFileById(lessonNotInProgress.attachment2 ? lessonNotInProgress.attachment2 : '');
+      //   const attachment3 = await this.fileService.getFileById(lessonNotInProgress.attachment3 ? lessonNotInProgress.attachment3 : '');
 
-        learnedLessons.push(plainToClass(LessonProgressDto, {
-          lesson: plainToClass(LessonDto, {
-            id: lessonProgressing.id,
-            type: lessonProgressing.type,
-            question: lessonProgressing.question,
-            attachmentQuestion: plainToClass(FileDto, attachmentQuestion),
-            answers,
-          }),
-          status: lessonProgess.status,
-          lastModifiedAt: lessonProgess.lastModifiedAt,
-        }));
-      }
+      //   const answers: AnswerDto[] = [];
+      //   answers.push(plainToClass(AnswerDto, {
+      //     answer: lessonNotInProgress.rightAnswer,
+      //     attachment: attachment0 ? plainToClass(FileDto, attachment0) : null,
+      //     isCorrect: true,
+      //   }));
+      //   answers.push(plainToClass(AnswerDto, {
+      //     answer: lessonNotInProgress.wrongAnswer1,
+      //     attachment: attachment1 ? plainToClass(FileDto, attachment1) : null,
+      //     isCorrect: false,
+      //   }));
+      //   answers.push(plainToClass(AnswerDto, {
+      //     answer: lessonNotInProgress.wrongAnswer2,
+      //     attachment: attachment2 ? plainToClass(FileDto, attachment2) : null,
+      //     isCorrect: false,
+      //   }));
+      //   answers.push(plainToClass(AnswerDto, {
+      //     answer: lessonNotInProgress.wrongAnswer3,
+      //     attachment: attachment3 ? plainToClass(FileDto, attachment3) : null,
+      //     isCorrect: false,
+      //   }));
 
-      return [].concat(unlearnedLessons, learnedLessons);
+      //   unlearnedLessons.push(plainToClass(LessonProgressDto, {
+      //     lesson: plainToClass(LessonDto, {
+      //       id: lessonNotInProgress.id,
+      //       type: lessonNotInProgress.type,
+      //       question: lessonNotInProgress.question,
+      //       attachmentQuestion: plainToClass(FileDto, attachmentQuestion),
+      //       answers,
+      //     }),
+      //     status: 'Unknown',
+      //     lastModifiedAt: null,
+      //   }));
+      // }
+
+      // for (const lessonProgressing of lessonsProgressing) {
+      //   const lessonProgess = await this.lessonProgressService.getLessonProgressById(account.id, lessonProgressing.topicId, lessonProgressing.id);
+
+      //   const attachmentQuestion = await this.fileService.getFileById(lessonProgressing.attachmentQuestion ? lessonProgressing.attachmentQuestion : '');
+      //   const attachment0 = await this.fileService.getFileById(lessonProgressing.attachment0 ? lessonProgressing.attachment0 : '');
+      //   const attachment1 = await this.fileService.getFileById(lessonProgressing.attachment1 ? lessonProgressing.attachment1 : '');
+      //   const attachment2 = await this.fileService.getFileById(lessonProgressing.attachment2 ? lessonProgressing.attachment2 : '');
+      //   const attachment3 = await this.fileService.getFileById(lessonProgressing.attachment3 ? lessonProgressing.attachment3 : '');
+
+      //   const answers: AnswerDto[] = [];
+      //   answers.push(plainToClass(AnswerDto, {
+      //     answer: lessonProgressing.rightAnswer,
+      //     attachment: attachment0 ? plainToClass(FileDto, attachment0) : null,
+      //     isCorrect: true,
+      //   }));
+      //   answers.push(plainToClass(AnswerDto, {
+      //     answer: lessonProgressing.wrongAnswer1,
+      //     attachment: attachment1 ? plainToClass(FileDto, attachment1) : null,
+      //     isCorrect: false,
+      //   }));
+      //   answers.push(plainToClass(AnswerDto, {
+      //     answer: lessonProgressing.wrongAnswer2,
+      //     attachment: attachment2 ? plainToClass(FileDto, attachment2) : null,
+      //     isCorrect: false,
+      //   }));
+      //   answers.push(plainToClass(AnswerDto, {
+      //     answer: lessonProgressing.wrongAnswer3,
+      //     attachment: attachment3 ? plainToClass(FileDto, attachment3) : null,
+      //     isCorrect: false,
+      //   }));
+
+      //   learnedLessons.push(plainToClass(LessonProgressDto, {
+      //     lesson: plainToClass(LessonDto, {
+      //       id: lessonProgressing.id,
+      //       type: lessonProgressing.type,
+      //       question: lessonProgressing.question,
+      //       attachmentQuestion: plainToClass(FileDto, attachmentQuestion),
+      //       answers,
+      //     }),
+      //     status: lessonProgess.status,
+      //     lastModifiedAt: lessonProgess.lastModifiedAt,
+      //   }));
+      // }
+
+      return data;
     } catch (error) {
       console.log(error);
 
