@@ -35,11 +35,13 @@ export class LessonController {
   @ApiOkResponse({
     schema: {
       title: 'Get All Lesson Of Topic',
-      type: 'object',
-      $ref: getSchemaPath(LessonDataDto),
-    },
+      type: 'array',
+      items: {
+        $ref: getSchemaPath(LessonProgressDto),
+      },
+    }
   })
-  async getAllLessonsByTopicId(@GetCurrentAccount() user: account, @Param('id') id: string): Promise<LessonDataDto> {
+  async getAllLessonsByTopicId(@GetCurrentAccount() user: account, @Param('id') id: string): Promise<LessonProgressDto[]> {
     try {
       const learnedLessons: LessonProgressDto[] = [];
       const unlearnedLessons: LessonProgressDto[] = [];
@@ -145,7 +147,7 @@ export class LessonController {
         }));
       }
 
-      return { unlearnedLessons, learnedLessons };
+      return [].concat(unlearnedLessons, learnedLessons);
     } catch (error) {
       console.log(error);
 

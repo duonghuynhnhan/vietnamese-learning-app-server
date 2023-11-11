@@ -4,13 +4,7 @@ import { LessonProgressDto } from "src/lesson-progress/dto";
 export class LessonDataDto {
   @ApiProperty({
     type: () => [LessonProgressDto],
-    description: 'This is learned lessons',
+    description: 'This is lessons',
   })
-  learnedLessons: LessonProgressDto[];
-
-  @ApiProperty({
-    type: () => [LessonProgressDto],
-    description: 'This is unlearned lessons',
-  })
-  unlearnedLessons: LessonProgressDto[];
+  lessons: LessonProgressDto[];
 }
